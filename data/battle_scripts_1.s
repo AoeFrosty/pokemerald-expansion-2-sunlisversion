@@ -8036,6 +8036,23 @@ BattleScript_TryIntimidateHoldEffects:
 BattleScript_TryIntimidateHoldEffectsRet:
 	return
 
+BattleScript_TryFrightenHoldEffects:
+	itemstatchangeeffects BS_TARGET
+	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryFrightenHoldEffectsRet
+	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPEED, 12, BattleScript_TryFrightenHoldEffectsRet
+	setstatchanger STAT_SPEED, 1, FALSE
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryFrightenHoldEffectsRet
+	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	copybyte sBATTLER, gBattlerTarget
+	setlastuseditem BS_TARGET
+	printstring STRINGID_USINGITEMSTATOFPKMNROSE
+	waitmessage B_WAIT_TIME_LONG
+	removeitem BS_TARGET
+BattleScript_TryFrightenHoldEffectsRet:
+	return
+
 BattleScript_IntimidateActivates::
 	savetarget
 .if B_ABILITY_POP_UP == TRUE

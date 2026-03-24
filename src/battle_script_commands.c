@@ -3310,9 +3310,13 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                 }
                 break;
             case MOVE_EFFECT_FLINCH:
-                // if (IS_BATTLER_OF_TYPE == TYPE_ROCK)
-                // {gBattlescriptCurrInstr = BattleScript_FlinchPrevention;}
-                if (battlerAbility == ABILITY_INNER_FOCUS)
+                if (IS_BATTLER_OF_TYPE(gEffectBattler, TYPE_ROCK)
+                && (primary == TRUE || certain == TRUE))
+            {
+                BattleScriptPush(gBattlescriptCurrInstr + 1);
+                gBattlescriptCurrInstr = BattleScript_FlinchPrevention; //currently this will say whatever ability the rock type has prevented the flinch need new script
+            }  
+                else if (battlerAbility == ABILITY_INNER_FOCUS)
                 {
                     // Inner Focus ALWAYS prevents flinching but only activates
                     // on a move that's supposed to flinch, like Fake Out

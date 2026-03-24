@@ -7547,8 +7547,8 @@ static const struct LevelUpMove sCelebiLevelUpLearnset[] = {
 
 #if P_FAMILY_TREECKO
 static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
+    LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
+    LEVEL_UP_MOVE( 6, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_LEAFAGE),
     LEVEL_UP_MOVE( 8, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_BULLET_SEED),

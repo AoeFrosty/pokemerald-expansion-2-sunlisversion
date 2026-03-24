@@ -371,8 +371,8 @@
 //#define ABILITY_GRAVITY_SURGE 335   //sets gravity on entry                                                     TEST
 //#define ABILITY_MAGICAL_SURGE 336   //sets magic room on entry                                                  TEST
 //#define ABILITY_WONDER_SURGE 337    //sets wonder room on entry                                                 TEST
-//#define ABILITY_PLACEHOLDER 338
-//#define ABILITY_LUCKY_SPIRIT 339    //sets lucky chant on entry                                                 TEST
+//#define ABILITY_SOLAR_HYDRA 338     //grass moves chance to burn
+//#define ABILITY_DRAGON_SONG 339    //Liquid voice for dragons                                               TEST
 //#define ABILITY_FILTHY_FORM 340     //sets mud sport on entry                                                   TEST
 //#define ABILITY_ENDLESS_HUNGER 341  //as long as holdng a berry recover hp per turn UNSURE HOW TO MAKE
 
@@ -387,17 +387,17 @@
 #define ABILITY_TRUE_POWER 347      //double special attack
 #define ABILITY_PRECISE_TACTICS 348 //look into battle util and battle script command lines
 #define ABILITY_FIRE_DRIFT 349   //prio to fire attacks like gale wings
-// #define ABILITY_PERCEPTIVE 350   //immune to hazards
+// #define ABILITY_ROYAL_COAT 350   //shield dust for cats
 // #define ABILITY_COZY_DREAMS 351  //heal at end of each turn
-// #define ABILITY_SOUL_DRAIN 352   //drain all non ghost/dark types
+// #define ABILITY_SOUL_BURN 352   //ghost moves chance to burn
 #define ABILITY_DIRT_DEVIL 353   //supersweet syrup for poison and ground types "messy"
 #define ABILITY_SPIKY_ARMOR 354  //toxic debris but spikes                 
 #define ABILITY_SKEPTIC 355         //thick fat versus ghost and dark types
 #define ABILITY_CLUTCH_UP 356    //when reduced by half omni boost but cannot retreat
 #define ABILITY_HELLFIRE 357     //iron barbs
 #define ABILITY_LAST_LINE 358    //beserk but defenses
-// #define ABILITY_DUST_FORM 359    //uses powder on hit
-// #define ABILITY_FAIRY_DUST 360   //uses magic powder on hit
+// #define ABILITY_SURGE_HUNTER 359    //merciless on para targets for jolteon
+// #define ABILITY_COLD_STEEL 360   //fighting damage halved, and fire damage halved for mega beartic called cold steel?
 #define ABILITY_SAND_SONG 361    //liquid voice for ground moves
 #define ABILITY_INFLATE 362      //raise defenses when hit by a wind move
 #define ABILITY_ANCIENT_IDOL 363 //raise special defense like defiant
@@ -406,7 +406,6 @@
 #define ABILITY_TRAINED_MIND 366 //scrappy but psychic v dark
 #define ABILITY_SNOW_STALKER 367  //solar power for snow
 #define ABILITY_SANDY_SOUL 368   //protosynthesis with sand
-//royal coat aka shield dust for pyroar
 //remember to build the description doc for 328+
 
 #define ABILITIES_COUNT_GEN9 371

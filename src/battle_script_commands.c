@@ -3310,6 +3310,8 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                 }
                 break;
             case MOVE_EFFECT_FLINCH:
+                // if (IS_BATTLER_OF_TYPE == TYPE_ROCK)
+                // {gBattlescriptCurrInstr = BattleScript_FlinchPrevention;}
                 if (battlerAbility == ABILITY_INNER_FOCUS)
                 {
                     // Inner Focus ALWAYS prevents flinching but only activates

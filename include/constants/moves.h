@@ -1096,6 +1096,23 @@
 #define MOVE_TREMOR_BARGE 1030      //sand electro shot physical
 
 
+
+//Phantom Cleave- liquidation for dusknoir and trevanent
+//Thunder Lariat- darkest lariat for electivire and luxray
+//potential fighting move to hit switching mons
+//Venom rend- physical version of venoshock
+//flying physical move that always crits for fearow
+//Snowball Assault- fell stinger but ice
+//Head games- confusion and taunt for dodrio and passiman
+//flying triple axel for dodrio
+//65BP physical fire spread move with 95 acc and 10 burn/flinch for flareon
+
+
+
+
+
+
+
 //do defensive growth in sand
 // Ancient Wing- flying move boosted in sand
 // Shell slash - rock move boosted in rain

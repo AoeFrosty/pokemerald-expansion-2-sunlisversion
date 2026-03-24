@@ -7129,7 +7129,8 @@ bool32 CanGetFrostbite(u32 battler)
 
 bool32 CanBeConfused(u32 battler)
 {
-    if (GetBattlerAbility(battler) == ABILITY_OWN_TEMPO
+    if (IS_BATTLER_OF_TYPE(battler, TYPE_PSYCHIC)
+     || GetBattlerAbility(battler) == ABILITY_OWN_TEMPO
      || gBattleMons[battler].status2 & STATUS2_CONFUSION
      || IsBattlerTerrainAffected(battler, STATUS_FIELD_MISTY_TERRAIN))
         return FALSE;

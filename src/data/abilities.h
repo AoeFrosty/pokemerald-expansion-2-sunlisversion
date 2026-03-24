@@ -2565,54 +2565,54 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Poison moves go first."),
         .aiRating = 6,
     },
-    [ABILITY_GRAVITY_SURGE] =
-    {
-        .name = _("Gravity Surge"),
-        .description = COMPOUND_STRING("Sets Gravity on entry."),
-        .aiRating = 5,
-    },
-    [ABILITY_MAGICAL_SURGE] =
-    {
-        .name = _("Magical Surge"),
-        .description = COMPOUND_STRING("Sets Magic Room on entry."),
-        .aiRating = 5,
-    },
-    [ABILITY_WONDER_SURGE] =
-    {
-        .name = _("Wonder Surge"),
-        .description = COMPOUND_STRING("Sets Wonder room on entry."),
-        .aiRating = 5,
-    },
-    [ABILITY_RESOLVE] =
-    {
-        .name = _("Resolve"),
-        .description = COMPOUND_STRING("Sets Misty on entry."),
-        .aiRating = 5,
-    },
+    // [ABILITY_GRAVITY_SURGE] =
+    // {
+    //     .name = _("Gravity Surge"),
+    //     .description = COMPOUND_STRING("Sets Gravity on entry."),
+    //     .aiRating = 5,
+    // },
+    // [ABILITY_MAGICAL_SURGE] =
+    // {
+    //     .name = _("Magical Surge"),
+    //     .description = COMPOUND_STRING("Sets Magic Room on entry."),
+    //     .aiRating = 5,
+    // },
+    // [ABILITY_WONDER_SURGE] =
+    // {
+    //     .name = _("Wonder Surge"),
+    //     .description = COMPOUND_STRING("Sets Wonder room on entry."),
+    //     .aiRating = 5,
+    // },
+    // [ABILITY_RESOLVE] =
+    // {
+    //     .name = _("Resolve"),
+    //     .description = COMPOUND_STRING("Sets Misty on entry."),
+    //     .aiRating = 5,
+    // },
     // [ABILITY_THICK_STEAM] =
     // {
     //     .name = _("Thick Steam"),
     //     .description = COMPOUND_STRING("Sets Mist when hit."),
     //     .aiRating = 5,
     // },
-    [ABILITY_LUCKY_SPIRIT] =
-    {
-        .name = _("Lucky Spirit"),
-        .description = COMPOUND_STRING("Sets Lucky chant on entry."),
-        .aiRating = 5,
-    },
-    [ABILITY_FILTHY_FORM] =
-    {
-        .name = _("Filthy Form"),
-        .description = COMPOUND_STRING("Sets Mud sport on entry."),
-        .aiRating = 5,
-    },
-    [ABILITY_ENDLESS_HUNGER] =
-    {
-        .name = _("Endless hunger"),
-        .description = COMPOUND_STRING("Slight recovery when holding berry"),
-        .aiRating = 3,
-    },
+    // [ABILITY_LUCKY_SPIRIT] =
+    // {
+    //     .name = _("Lucky Spirit"),
+    //     .description = COMPOUND_STRING("Sets Lucky chant on entry."),
+    //     .aiRating = 5,
+    // },
+    // [ABILITY_FILTHY_FORM] =
+    // {
+    //     .name = _("Filthy Form"),
+    //     .description = COMPOUND_STRING("Sets Mud sport on entry."),
+    //     .aiRating = 5,
+    // },
+    // [ABILITY_ENDLESS_HUNGER] =
+    // {
+    //     .name = _("Endless hunger"),
+    //     .description = COMPOUND_STRING("Slight recovery when holding berry"),
+    //     .aiRating = 3,
+    // },
     [ABILITY_DRAGONATE] =
     {
         .name = _("Dragonate"),

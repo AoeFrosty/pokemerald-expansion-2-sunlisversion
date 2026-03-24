@@ -348,7 +348,7 @@
 #define ABILITY_NOXIOUS_ARMOR 316   //take less damage if enemy is poisoned
 #define ABILITY_DROWSY_AURA 317     //sleep on hit
 #define ABILITY_BULLY 318           //chance to reduce def on hit
-#define ABILITY_DESERT_ARMOR 319    //reduced inc damage in sand                                                NTM
+//#define ABILITY_DESERT_ARMOR 319    //reduced inc damage in sand                                                NTM
 #define ABILITY_PRIDE 320           //SpA guts
 #define ABILITY_ABSOLUTE_ZERO 321   //reduced inc damage in snow
 #define ABILITY_BOUNTIFUL_BLOOM 322 //boost grass/ground moves in rain
@@ -366,13 +366,17 @@
 
 //Stage 2
 #define ABILITY_VENOM_SURGE 334     //gale wings for poison moves
-#define ABILITY_GRAVITY_SURGE 335   //sets gravity on entry                                                     TEST
-#define ABILITY_MAGICAL_SURGE 336   //sets magic room on entry                                                  TEST
-#define ABILITY_WONDER_SURGE 337    //sets wonder room on entry                                                 TEST
-#define ABILITY_RESOLVE 338         //sets mist on entry                                                        TEST
-#define ABILITY_LUCKY_SPIRIT 339    //sets lucky chant on entry                                                 TEST
-#define ABILITY_FILTHY_FORM 340     //sets mud sport on entry                                                   TEST
-#define ABILITY_ENDLESS_HUNGER 341  //as long as holdng a berry recover hp per turn UNSURE HOW TO MAKE
+
+//DONT WORK RIGHT NOW DO WE KEEP?
+//#define ABILITY_GRAVITY_SURGE 335   //sets gravity on entry                                                     TEST
+//#define ABILITY_MAGICAL_SURGE 336   //sets magic room on entry                                                  TEST
+//#define ABILITY_WONDER_SURGE 337    //sets wonder room on entry                                                 TEST
+//#define ABILITY_PLACEHOLDER 338
+//#define ABILITY_LUCKY_SPIRIT 339    //sets lucky chant on entry                                                 TEST
+//#define ABILITY_FILTHY_FORM 340     //sets mud sport on entry                                                   TEST
+//#define ABILITY_ENDLESS_HUNGER 341  //as long as holdng a berry recover hp per turn UNSURE HOW TO MAKE
+
+
 #define ABILITY_DRAGONATE 342       //pixelate for dragons                                                      DONE
 #define ABILITY_VENGEFUL 343        //chance to ghost curse when hit with a contact move
 #define ABILITY_FRIGHTEN 344       //special intimidate                

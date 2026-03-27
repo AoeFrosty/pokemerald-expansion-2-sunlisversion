@@ -2751,6 +2751,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Makes sound moves Dragon."),
         .aiRating = 5,
     },
+    [ABILITY_SURGE_HUNTER] =
+    {
+        .name = _("Surge Hunter"),
+        .description = COMPOUND_STRING("Criticals paralyzed foes."),
+        .aiRating = 4,
+    },
 
 
 

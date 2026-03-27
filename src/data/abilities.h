@@ -2615,7 +2615,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     // },
     [ABILITY_DRAGONATE] =
     {
-        .name = _("Dragonate"),
+        .name = _("Dragonize"),
         .description = COMPOUND_STRING("Normal moves become Dragon."),
         .aiRating = 8,
     },
@@ -2744,6 +2744,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
         .failsOnImposter = TRUE,
+    },
+    [ABILITY_DRAGON_SONG] =
+    {
+        .name = _("Dragon Song"),
+        .description = COMPOUND_STRING("Makes sound moves Dragon."),
+        .aiRating = 5,
     },
 
 

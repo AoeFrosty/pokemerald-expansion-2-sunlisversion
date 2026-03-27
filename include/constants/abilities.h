@@ -372,7 +372,7 @@
 //#define ABILITY_MAGICAL_SURGE 336   //sets magic room on entry                                                  TEST
 //#define ABILITY_WONDER_SURGE 337    //sets wonder room on entry                                                 TEST
 //#define ABILITY_SOLAR_HYDRA 338     //grass moves chance to burn
-//#define ABILITY_DRAGON_SONG 339    //Liquid voice for dragons                                               TEST
+#define ABILITY_DRAGON_SONG 339    //Liquid voice for dragons                                               TEST
 //#define ABILITY_FILTHY_FORM 340     //sets mud sport on entry                                                   TEST
 //#define ABILITY_ENDLESS_HUNGER 341  //as long as holdng a berry recover hp per turn UNSURE HOW TO MAKE
 

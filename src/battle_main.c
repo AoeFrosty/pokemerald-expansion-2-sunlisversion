@@ -6089,6 +6089,10 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     {
         return TYPE_GROUND;
     }
+    else if (gMovesInfo[move].soundMove && ability == ABILITY_DRAGON_SONG)
+    {
+        return TYPE_DRAGON;
+    }
     else if (moveEffect == EFFECT_AURA_WHEEL && species == SPECIES_MORPEKO_HANGRY)
     {
         return TYPE_DARK;

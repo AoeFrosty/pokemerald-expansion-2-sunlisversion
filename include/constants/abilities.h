@@ -348,7 +348,7 @@
 #define ABILITY_NOXIOUS_ARMOR 316   //take less damage if enemy is poisoned
 #define ABILITY_DROWSY_AURA 317     //sleep on hit
 #define ABILITY_BULLY 318           //chance to reduce def on hit
-//#define ABILITY_DESERT_ARMOR 319    //reduced inc damage in sand                                                NTM
+#define ABILITY_DESERT_ARMOR 319    //reduced inc damage in sand                                                NTM
 #define ABILITY_PRIDE 320           //SpA guts
 #define ABILITY_ABSOLUTE_ZERO 321   //reduced inc damage in snow
 #define ABILITY_BOUNTIFUL_BLOOM 322 //boost grass/ground moves in rain

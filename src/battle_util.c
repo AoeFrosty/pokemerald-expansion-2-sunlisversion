@@ -10559,6 +10559,10 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
         if  (IsBattlerWeatherAffected(battlerDef, B_WEATHER_HAIL | B_WEATHER_SNOW))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));
         break;
+    case ABILITY_DESERT_ARMOR:
+        if  (IsBattlerWeatherAffected(battlerDef, B_WEATHER_SANDSTORM | B_WEATHER_SANDSTORM_PERMANENT))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));
+        break;
     case ABILITY_FOCUS_FLOOD:
         if  (IsBattlerWeatherAffected(battlerDef, B_WEATHER_RAIN | B_WEATHER_RAIN_PERMANENT))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));

@@ -2757,6 +2757,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Criticals paralyzed foes."),
         .aiRating = 4,
     },
+    [ABILITY_ROYAL_COAT] =
+    {
+        .name = _("Royal Coat"),
+        .description = COMPOUND_STRING("Prevents added effects."),
+        .aiRating = 5,
+        .breakable = TRUE,
+    },
 
 
 

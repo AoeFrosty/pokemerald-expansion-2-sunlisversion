@@ -387,7 +387,7 @@
 #define ABILITY_TRUE_POWER 347      //double special attack
 #define ABILITY_PRECISE_TACTICS 348 //look into battle util and battle script command lines
 #define ABILITY_FIRE_DRIFT 349   //prio to fire attacks like gale wings
-// #define ABILITY_ROYAL_COAT 350   //shield dust for cats
+#define ABILITY_ROYAL_COAT 350   //shield dust for cats
 // #define ABILITY_COZY_DREAMS 351  //heal at end of each turn
 // #define ABILITY_SOUL_BURN 352   //ghost moves chance to burn
 #define ABILITY_DIRT_DEVIL 353   //supersweet syrup for poison and ground types "messy"

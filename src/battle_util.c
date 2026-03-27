@@ -9833,7 +9833,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         break;
 		case ABILITY_MAGMA_ARMOR:
         if (moveType == TYPE_FIRE)
-           modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;   
     case ABILITY_STEELWORKER:
         if (moveType == TYPE_STEEL)

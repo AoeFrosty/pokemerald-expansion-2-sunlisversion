@@ -1107,6 +1107,7 @@
 
 //potential fighting move to hit switching mons
 //do defensive growth in sand
+//fox fire confuse or burn or both
 
 
 #define MOVES_COUNT_GEN9 1039

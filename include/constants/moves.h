@@ -1094,41 +1094,22 @@
 #define MOVE_GLACIAL_TEMPEST 1028   //electro shot but snow
 #define MOVE_DESERT_STORM 1029      //sand electro shot
 #define MOVE_TREMOR_BARGE 1030      //sand electro shot physical
+#define MOVE_PHANTOM_CLEAVE 1031    //ghost liquidation for dusknoir and trevanent
+#define MOVE_THUNDER_LARIAT 1032    //darkest lariat for electivire and luxray
+#define MOVE_VENOM_REND 1033        //physical venoshock
+#define MOVE_SNOWPLOW 1034          //ice fell stinger
+#define MOVE_TRIPLE_PECK 1035       //triple axel for dodrio
+#define MOVE_MOLTEN_BURST 1036      //65BP physical fire spread move with 95 acc and 10 burn flinch for flareon
+#define MOVE_HEAD_GAMES 1037        //confusion and taunt
+#define MOVE_FURY_SWEEP 1038        //always crits flying for fearow
+#define MOVE_TECTONIC_SLAM 1039     //120BP, 85 acc move that breaks screens ground for donphan and rhyperior
 
 
-
-//Phantom Cleave- liquidation for dusknoir and trevanent
-//Thunder Lariat- darkest lariat for electivire and luxray
 //potential fighting move to hit switching mons
-//Venom rend- physical version of venoshock
-//flying physical move that always crits for fearow
-//Snowball Assault- fell stinger but ice
-//Head games- confusion and taunt for dodrio and passiman
-//flying triple axel for dodrio
-//65BP physical fire spread move with 95 acc and 10 burn/flinch for flareon
-
-
-
-
-
-
-
 //do defensive growth in sand
-// Ancient Wing- flying move boosted in sand
-// Shell slash - rock move boosted in rain
-// Shell burst - rock move boosted in rain
-// Molt - cure status and raise speed
-// Sand Barrier - raise def and summon sand
-// Battering ram- rock move that ignores enemies defense changes/protect if first doesn't work
-// Platinum Shield- raises def spdef and ATK by 2 stages lowers speed and spA by one stage
-// Avian dive- flying switch move that heals
-// Geyser launch- prio move 40 BP always lowers enemy speed
-// Rainbow Freeze- ice move boosted in snow
-// Storm siphon- physical water drain move
-// Titan Maw- always Crit bite move
 
 
-#define MOVES_COUNT_GEN9 1031
+#define MOVES_COUNT_GEN9 1040
 
 #define MOVES_COUNT         MOVES_COUNT_GEN9
 

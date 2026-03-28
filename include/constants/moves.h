@@ -1039,7 +1039,7 @@
 #define MOVE_DRACONIC_BARRAGE 974   //TEST
 #define MOVE_DRACO_STREAM 975       //TEST
 #define MOVE_SPARKLY_SPRITZ 976     //TEST
-#define MOVE_INTIMIDATING_AURA 977      //WIP follow me but ghosts immune
+#define MOVE_PLACEHOLDERA 977                                       //PLACEHOLDER   
 #define MOVE_INFERNAL_BLAST 978
 #define MOVE_WHIMSICAL_STORM 979
 #define MOVE_SHELL_SWORD 980

@@ -23672,31 +23672,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboMoves = {COMBO_STARTER_HAIL},
     },
 
-    [MOVE_INTIMIDATING_AURA] =          //make new effect so ghost types can be immune
-    {
-        .name = COMPOUND_STRING("IntimidatingAura"),
-        .description = COMPOUND_STRING(
-            "Draws attention to make\n"
-            "foes attack only the user."),
-        .effect = EFFECT_FOLLOW_ME,
-        .power = 0,
-        .type = TYPE_DARK,
-        .accuracy = 100,
-        .pp = 20,
-        .target = MOVE_TARGET_USER,
-        .priority = B_UPDATED_MOVE_DATA >= GEN_6 ? 2 : 3,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_RESET_STATS },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .metronomeBanned = TRUE,
-        .copycatBanned = TRUE,
-        .assistBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
-        .contestCategory = CONTEST_CATEGORY_CUTE,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0}
-    },
+
 
     [MOVE_SPECTRAL_SWIPE] =
     {

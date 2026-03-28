@@ -1085,31 +1085,31 @@
 #define MOVE_RAINBOW_FREEZE 1019
 #define MOVE_STORM_SIPHON 1020
 #define MOVE_TITAN_MAW 1021
-// #define MOVE_WITCHS_HEX 1022     //if on psychic or mystic terrain give enemy negative omni boost
-#define MOVE_EMPERORS_DIVE 1023     //water power up punch for def does extra damage versus minimize
-#define MOVE_PARASITE 1024          //leech seed
-#define MOVE_AROMATIC_GALE 1025     //bug type clear smog
-#define MOVE_UMBRAL_STRIKE 1026     //dark chance to lower enemy atk
-#define MOVE_SNEAKY_SCAM 1027       //dark special prio move
-#define MOVE_GLACIAL_TEMPEST 1028   //electro shot but snow
-#define MOVE_DESERT_STORM 1029      //sand electro shot
-#define MOVE_TREMOR_BARGE 1030      //sand electro shot physical
-#define MOVE_PHANTOM_CLEAVE 1031    //ghost liquidation for dusknoir and trevanent
-#define MOVE_THUNDER_LARIAT 1032    //darkest lariat for electivire and luxray
-#define MOVE_VENOM_REND 1033        //physical venoshock
-#define MOVE_SNOWPLOW 1034          //ice fell stinger
-#define MOVE_TRIPLE_PECK 1035       //triple axel for dodrio
-#define MOVE_MOLTEN_BURST 1036      //65BP physical fire spread move with 95 acc and 10 burn flinch for flareon
-#define MOVE_HEAD_GAMES 1037        //confusion and taunt
-#define MOVE_FURY_SWEEP 1038        //always crits flying for fearow
-#define MOVE_TECTONIC_SLAM 1039     //120BP, 85 acc move that breaks screens ground for donphan and rhyperior
+#define MOVE_EMPERORS_DIVE 1022     //water power up punch for def does extra damage versus minimize
+#define MOVE_PARASITE 1023          //leech seed
+#define MOVE_AROMATIC_GALE 1024     //bug type clear smog
+#define MOVE_UMBRAL_STRIKE 1025     //dark chance to lower enemy atk
+#define MOVE_SNEAKY_SCAM 1026       //dark special prio move
+#define MOVE_GLACIAL_TEMPEST 1027   //electro shot but snow
+#define MOVE_DESERT_STORM 1028      //sand electro shot
+#define MOVE_TREMOR_BARGE 1029      //sand electro shot physical
+//Stage 5 final stage can max 15 moves must cleanse 20 moves after done
+#define MOVE_PHANTOM_CLEAVE 1030    //ghost liquidation for dusknoir and trevanent
+#define MOVE_THUNDER_LARIAT 1031    //darkest lariat for electivire and luxray
+#define MOVE_VENOM_REND 1032        //physical venoshock
+#define MOVE_SNOWPLOW 1033          //ice fell stinger
+#define MOVE_TRIPLE_PECK 1034       //triple axel for dodrio
+#define MOVE_MOLTEN_BURST 1035      //65BP physical fire spread move with 95 acc and 10 burn flinch for flareon
+#define MOVE_HEAD_GAMES 1036        //confusion and taunt
+#define MOVE_FURY_SWEEP 1037        //always crits flying for fearow
+#define MOVE_TECTONIC_SLAM 1038     //120BP, 85 acc move that breaks screens ground for donphan and rhyperior
 
 
 //potential fighting move to hit switching mons
 //do defensive growth in sand
 
 
-#define MOVES_COUNT_GEN9 1040
+#define MOVES_COUNT_GEN9 1039
 
 #define MOVES_COUNT         MOVES_COUNT_GEN9
 

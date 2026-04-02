@@ -2764,7 +2764,13 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 5,
         .breakable = TRUE,
     },
-
+[ABILITY_COLD_STEEL] =
+    {
+        .name = _("Cold Steel"),
+        .description = COMPOUND_STRING("Heat-and-fight protection."),
+        .aiRating = 7,
+        .breakable = TRUE,
+    },
 
 
 };

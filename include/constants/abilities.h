@@ -397,7 +397,7 @@
 #define ABILITY_HELLFIRE 357     //iron barbs
 #define ABILITY_LAST_LINE 358    //beserk but defenses
 #define ABILITY_SURGE_HUNTER 359    //merciless on para targets for jolteon
-// #define ABILITY_COLD_STEEL 360   //fighting damage halved, and fire damage halved for mega beartic called cold steel?
+#define ABILITY_COLD_STEEL 360   //fighting damage halved, and fire damage halved for mega beartic called cold steel?
 #define ABILITY_SAND_SONG 361    //liquid voice for ground moves
 #define ABILITY_INFLATE 362      //raise defenses when hit by a wind move
 #define ABILITY_ANCIENT_IDOL 363 //raise special defense like defiant

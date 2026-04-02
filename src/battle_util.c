@@ -10379,6 +10379,15 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
                 RecordAbilityBattle(battlerDef, ABILITY_SKEPTIC);
         }
         break;
+    
+    case ABILITY_COLD_STEEL:
+        if (moveType == TYPE_FIRE || moveType == TYPE_FIGHTING)
+        {
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
+            if (damageCalcData->updateFlags)
+                RecordAbilityBattle(battlerDef, ABILITY_COLD_STEEL);
+        }
+        break;
     }
 
     // ally's abilities

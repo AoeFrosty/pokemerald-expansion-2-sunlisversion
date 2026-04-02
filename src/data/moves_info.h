@@ -25066,6 +25066,36 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = gBattleAnimMove_TripleAxel,
     },
 
+    [MOVE_MOLTEN_BURST] =
+    {
+        .name = COMPOUND_STRING("Molten Burst"),
+        .description = COMPOUND_STRING(
+            "Crashes down on the\n"
+            "foes. May inflict a burn."),
+        .effect = EFFECT_HIT,
+        .power = 65,
+        .type = TYPE_FIRE,
+        .accuracy = 95,
+        .pp = 10,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .windMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 10,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 10,
+        }),
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
+        .battleAnimScript = gBattleAnimMove_HeatWave,
+    },
+
     //bulag
 
     // Z-Moves

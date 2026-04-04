@@ -1678,10 +1678,74 @@
 #define SPECIES_SAMUROTT_H_MEGA                         1561
 #define SPECIES_SKELEDIRGE_MEGA                         1562
 #define SPECIES_MILOTIC_MEGA                            1563
-#define SPECIES_RAICHU_MEGA                             1564
+#define SPECIES_RAICHU_MEGA                             1564    //need to remove or turn into Z
 #define SPECIES_TROPIUS_MEGA                            1565
-#define SPECIES_LUGIA_PRIMAL                            1566
-#define SPECIES_HO_OH_PRIMAL                            1567
+//ZA Megas
+#define SPECIES_RAICHU_MEGA_X                           1566
+#define SPECIES_RAICHU_MEGA_Y                           1567
+#define SPECIES_CLEFABLE_MEGA_X                         1568
+#define SPECIES_VICTREEBEL_MEGA                         1569
+#define SPECIES_STARMIE_MEGA                            1570
+#define SPECIES_DRAGONITE_MEGA                          1571
+#define SPECIES_MEGANIUM_MEGA                           1572
+#define SPECIES_FERALIGATR_MEGA                         1573
+#define SPECIES_SKARMORY_MEGA                           1574
+#define SPECIES_CHIMECHO_MEGA                           1575
+#define SPECIES_ABSOL_MEGA_Z                            1576
+#define SPECIES_STARAPTOR_MEGA                          1577
+#define SPECIES_GARCHOMP_MEGA_Z                         1578
+#define SPECIES_LUCARIO_MEGA_Z                          1579
+#define SPECIES_FROSLASS_MEGA                           1580
+#define SPECIES_HEATRAN_MEGA                            1581
+#define SPECIES_DARKRAI_MEGA                            1582
+#define SPECIES_EMBOAR_MEGA                             1583
+#define SPECIES_EXCADRILL_MEGA                          1584
+#define SPECIES_SCOLIPEDE_MEGA                          1585
+#define SPECIES_SCRAFTY_MEGA_X                          1586
+#define SPECIES_EELEKTROSS_MEGA                         1587
+#define SPECIES_CHANDELURE_MEGA                         1588
+#define SPECIES_GOLURK_MEGA                             1589
+#define SPECIES_CHESNAUGHT_MEGA                         1590
+#define SPECIES_DELPHOX_MEGA                            1591
+#define SPECIES_GRENINJA_MEGA                           1592
+#define SPECIES_PYROAR_MEGA                             1593
+#define SPECIES_FLOETTE_MEGA                            1594
+#define SPECIES_MEOWSTIC_MEGA                           1595
+#define SPECIES_MALAMAR_MEGA                            1596
+#define SPECIES_BARBARACLE_MEGA_X                       1597
+#define SPECIES_DRAGALGE_MEGA                           1598
+#define SPECIES_HAWLUCHA_MEGA                           1599
+#define SPECIES_ZYGARDE_MEGA                            1600
+#define SPECIES_CRABOMINABLE_MEGA                       1601
+#define SPECIES_GOLISOPOD_MEGA                          1602
+#define SPECIES_DRAMPA_MEGA                             1603
+#define SPECIES_MAGEARNA_MEGA                           1604
+#define SPECIES_ZERAORA_MEGA                            1605
+#define SPECIES_FALINKS_MEGA_X                          1606
+#define SPECIES_SCOVILLAIN_MEGA                         1607
+#define SPECIES_GLIMMORA_MEGA                           1608
+#define SPECIES_TATSUGIRI_MEGA                          1609
+#define SPECIES_BAXCALIBUR_MEGA                         1610
+//Cinna Megas
+#define SPECIES_LIEPARD_MEGA                            1611
+#define SPECIES_CLEFABLE_MEGA_Y                         1612
+#define SPECIES_TOGEKISS_MEGA                           1613
+#define SPECIES_DEWGONG_MEGA                            1614
+//Community Megas
+#define SPECIES_ARCANINE_HISUI_MEGA                     1615
+#define SPECIES_MISMAGIUS_MEGA                          1616
+#define SPECIES_SCRAFTY_MEGA_Y                          1617
+#define SPECIES_NOCTOWL_MEGA                            1618
+#define SPECIES_LEDIAN_MEGA                             1619
+#define SPECIES_FALINKS_MEGA_Y                          1620
+#define SPECIES_BARBARACLE_MEGA_Y                       1621
+#define SPECIES_CORSOLA_MEGA                            1622
+#define SPECIES_BEARTIC_MEGA                            1623
+#define SPECIES_HYPNO_MEGA                              1624
+
+//need to make
+#define SPECIES_LUGIA_PRIMAL                            1625
+#define SPECIES_HO_OH_PRIMAL                            1626
 #define SPECIES_EGG                                     (SPECIES_HO_OH_PRIMAL + 1)
 
 #define NUM_SPECIES SPECIES_EGG

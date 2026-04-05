@@ -1742,10 +1742,11 @@
 #define SPECIES_CORSOLA_MEGA                            1622
 #define SPECIES_BEARTIC_MEGA                            1623
 #define SPECIES_HYPNO_MEGA                              1624
+#define SPECIES_SUNFLORA_MEGA                           1625
 
 //need to make
-#define SPECIES_LUGIA_PRIMAL                            1625
-#define SPECIES_HO_OH_PRIMAL                            1626
+#define SPECIES_LUGIA_PRIMAL                            1626
+#define SPECIES_HO_OH_PRIMAL                            1627
 #define SPECIES_EGG                                     (SPECIES_HO_OH_PRIMAL + 1)
 
 #define NUM_SPECIES SPECIES_EGG

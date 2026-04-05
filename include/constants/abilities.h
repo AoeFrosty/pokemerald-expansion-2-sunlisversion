@@ -366,43 +366,43 @@
 
 //Stage 2
 #define ABILITY_VENOM_SURGE 334     //gale wings for poison moves
-//#define ABILITY_SOLAR_HYDRA 338     //grass moves chance to burn
-#define ABILITY_DRAGON_SONG 339    //Liquid voice for dragons                                              TEST
-#define ABILITY_DRAGONATE 342       //pixelate for dragons                                                      DONE
-#define ABILITY_VENGEFUL 343        //chance to ghost curse when hit with a contact move
-#define ABILITY_FRIGHTEN 344       //special intimidate                
-#define ABILITY_KICKBOXER 345
-#define ABILITY_SPINNER 346
-#define ABILITY_TRUE_POWER 347      //double special attack
-#define ABILITY_PRECISE_TACTICS 348 //look into battle util and battle script command lines
-#define ABILITY_FIRE_DRIFT 349   //prio to fire attacks like gale wings
-#define ABILITY_ROYAL_COAT 350   //shield dust for cats
+//#define ABILITY_SOLAR_HYDRA 335     //grass moves chance to burn
+#define ABILITY_DRAGON_SONG 336    //Liquid voice for dragons                                              TEST
+#define ABILITY_DRAGONATE 337       //pixelate for dragons                                                      DONE
+#define ABILITY_VENGEFUL 338        //chance to ghost curse when hit with a contact move
+#define ABILITY_FRIGHTEN 339       //special intimidate                
+#define ABILITY_KICKBOXER 340
+#define ABILITY_SPINNER 341
+#define ABILITY_TRUE_POWER 342      //double special attack
+#define ABILITY_PRECISE_TACTICS 343 //look into battle util and battle script command lines
+#define ABILITY_FIRE_DRIFT 344   //prio to fire attacks like gale wings
+#define ABILITY_ROYAL_COAT 345   //shield dust for cats
 
 //Stage 3 dont forget to check all descriptor defines
-// #define ABILITY_COZY_DREAMS 351  //heal at end of each turn
-// #define ABILITY_SOUL_BURN 352   //ghost moves chance to burn
-#define ABILITY_DIRT_DEVIL 353   //supersweet syrup for poison and ground types "messy"
-#define ABILITY_SPIKY_ARMOR 354  //toxic debris but spikes                 
-#define ABILITY_SKEPTIC 355         //thick fat versus ghost and dark types
-#define ABILITY_CLUTCH_UP 356    //when reduced by half omni boost but cannot retreat
-#define ABILITY_HELLFIRE 357     //iron barbs
-#define ABILITY_LAST_LINE 358    //beserk but defenses
-#define ABILITY_SURGE_HUNTER 359    //merciless on para targets for jolteon
-#define ABILITY_COLD_STEEL 360   //fighting damage halved, and fire damage halved for mega beartic called cold steel?
-#define ABILITY_SAND_SONG 361    //liquid voice for ground moves
-#define ABILITY_INFLATE 362      //raise defenses when hit by a wind move
-#define ABILITY_ANCIENT_IDOL 363 //raise special defense like defiant
-#define ABILITY_CHILL_SONG 364   //liquid voice but ice
-#define ABILITY_CYRO_SPIRIT 365  //Steely spirit but ice
-#define ABILITY_TRAINED_MIND 366 //scrappy but psychic v dark
-#define ABILITY_SNOW_STALKER 367  //solar power for snow
-#define ABILITY_SANDY_SOUL 368   //protosynthesis with sand
-#define ABILITY_FLOW_STATE 367      //download clone
-#define ABILITY_RAIN_VEIL 368       //sand veil for rain
-#define ABILITY_JETSCREAM 369       //sound moves have chance to confuse
+// #define ABILITY_COZY_DREAMS 346  //heal at end of each turn
+// #define ABILITY_SOUL_BURN 347   //ghost moves chance to burn
+#define ABILITY_DIRT_DEVIL 348   //supersweet syrup for poison and ground types "messy"
+#define ABILITY_SPIKY_ARMOR 349  //toxic debris but spikes                 
+#define ABILITY_SKEPTIC 350         //thick fat versus ghost and dark types
+#define ABILITY_CLUTCH_UP 351    //when reduced by half omni boost but cannot retreat
+#define ABILITY_HELLFIRE 352     //iron barbs
+#define ABILITY_LAST_LINE 353    //beserk but defenses
+#define ABILITY_SURGE_HUNTER 354    //merciless on para targets for jolteon
+#define ABILITY_COLD_STEEL 355   //fighting damage halved, and fire damage halved for mega beartic called cold steel?
+#define ABILITY_SAND_SONG 356    //liquid voice for ground moves
+#define ABILITY_INFLATE 357      //raise defenses when hit by a wind move
+#define ABILITY_ANCIENT_IDOL 358 //raise special defense like defiant
+#define ABILITY_CHILL_SONG 359   //liquid voice but ice
+#define ABILITY_CYRO_SPIRIT 360  //Steely spirit but ice
+#define ABILITY_TRAINED_MIND 361 //scrappy but psychic v dark
+#define ABILITY_SNOW_STALKER 362  //solar power for snow
+#define ABILITY_SANDY_SOUL 363   //protosynthesis with sand
+#define ABILITY_FLOW_STATE 364      //download clone
+#define ABILITY_RAIN_VEIL 365       //sand veil for rain
+#define ABILITY_JETSCREAM 366       //sound moves have chance to confuse
 //remember to build the description doc for 328+
 
-#define ABILITIES_COUNT_GEN9 371
+#define ABILITIES_COUNT_GEN9 367
 
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9
 

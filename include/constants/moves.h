@@ -946,8 +946,8 @@
 #define MOVE_SCALE_RAIN 883
 #define MOVE_DRAGON_DASH 884
 #define MOVE_BLIGHT 885
-#define MOVE_CYRO_FLARE 886 
-#define MOVE_BATTLE_CRY 887
+#define MOVE_CYRO_FLARE 886                         //remove?
+#define MOVE_BATTLE_CRY 887                         //Remove?
 #define MOVE_ROUNDHOUSE 888
 #define MOVE_ECHO_BURN 889
 #define MOVE_ADRENALINE 890 //TEST
@@ -958,7 +958,7 @@
 #define MOVE_ARC_STRIKE 895 
 #define MOVE_PUZZLE_PULSE 896
 #define MOVE_RIPOSTE 897 
-#define MOVE_ACID_RAIN 898
+#define MOVE_ACID_RAIN 898                          //remove?
 #define MOVE_TORRENT_WEB 899 
 #define MOVE_FIRESTORM 900
 #define MOVE_BLAZE_O_FURY 901
@@ -977,7 +977,7 @@
 #define MOVE_COMBUSTION 913
 #define MOVE_DARK_SURGE 914
 #define MOVE_FINAL_MIGHT 915
-#define MOVE_MERCURY_BEAM 916
+#define MOVE_MERCURY_BEAM 916               //remove?
 #define MOVE_TITANIUM_BLOW 917
 #define MOVE_TALON_STRIKE 918
 #define MOVE_AURA_BARRAGE 919
@@ -992,7 +992,7 @@
 #define MOVE_CHLOROSTRIKE 928
 #define MOVE_BRUTAL_BUZZ 929
 #define MOVE_SHADOW_STARE 930
-#define MOVE_CORROSHOT 931 
+#define MOVE_CORROSHOT 931                          //remove?
 #define MOVE_RUPTURE_PULSE 932 
 #define MOVE_VOLT_SPIN 933
 #define MOVE_STUN_BREAK 934
@@ -1004,7 +1004,7 @@
 #define MOVE_TORRENTIAL_RUSH 940
 #define MOVE_MYTHIC_CLAW 941 
 #define MOVE_RAPIDFIRE_BURST 942
-#define MOVE_SNOWSEAR_STORM 943
+#define MOVE_SNOWSEAR_STORM 943                     //remove?
 #define MOVE_GLACIAL_STING 944
 #define MOVE_RAPID_FREEZE 945
 #define MOVE_TURBULENT_DIVE 946
@@ -1026,7 +1026,7 @@
 #define MOVE_DARK_BOLTS 961     //D
 #define MOVE_MAGNET_PUNCH 962       //TEST
 #define MOVE_FLASH_FREEZE 963       //TEST
-#define MOVE_RESONANT_CRY 964               //WIP lapras
+#define MOVE_RESONANT_CRY 964               //WIP lapras                //remove?
 #define MOVE_FLURRY_STORM 965       //TEST
 #define MOVE_CHLORO_DIVE 966    //D
 #define MOVE_PRESSURE_POINT 967 //D       
@@ -1038,7 +1038,7 @@
 #define MOVE_POLLEN_BREEZE 973      //TEST
 #define MOVE_DRACONIC_BARRAGE 974   //TEST
 #define MOVE_DRACO_STREAM 975       //TEST
-#define MOVE_SPARKLY_SPRITZ 976     //TEST
+#define MOVE_SPARKLY_SPRITZ 976     //TEST                          //remove?
 #define MOVE_PLACEHOLDERA 977                                       //PLACEHOLDER   
 #define MOVE_INFERNAL_BLAST 978
 #define MOVE_WHIMSICAL_STORM 979
@@ -1070,8 +1070,8 @@
 #define MOVE_STEEL_SHOT 1004
 #define MOVE_GHASTLY_BURST 1005
 #define MOVE_NOSEDIVE 1006
-#define MOVE_FLURRY_O_BLOWS 1007
-#define MOVE_TRIPLE_SPIKE 1008        //dugtrio ground type triple dive or triple axel
+#define MOVE_FLURRY_O_BLOWS 1007                                //remove?
+#define MOVE_TRIPLE_SPIKE 1008        //dugtrio ground type triple axel
 #define MOVE_FRIGID_PUNCH 1009       //ice sucker punch
 #define MOVE_ANCIENT_WING 1010
 #define MOVE_SHELL_SLASH 1011
@@ -1100,9 +1100,8 @@
 #define MOVE_SNOWPLOW 1033          //ice fell stinger
 #define MOVE_TRIPLE_PECK 1034       //triple axel for dodrio
 #define MOVE_MOLTEN_BURST 1035      //65BP physical fire spread move with 95 acc and 10 burn flinch for flareon
-#define MOVE_HEAD_GAMES 1036        //confusion and taunt
-#define MOVE_FURY_SWEEP 1037        //always crits flying for fearow
-#define MOVE_TECTONIC_SLAM 1038     //120BP, 85 acc move that breaks screens ground for donphan and rhyperior
+#define MOVE_FURY_SWEEP 1036        //always crits flying for fearow
+#define MOVE_TECTONIC_SLAM 1037     //120BP, 85 acc move that breaks screens ground for donphan and rhyperior
 
 
 //potential fighting move to hit switching mons
@@ -1110,7 +1109,7 @@
 //fox fire confuse or burn or both
 
 
-#define MOVES_COUNT_GEN9 1039
+#define MOVES_COUNT_GEN9 1038
 
 #define MOVES_COUNT         MOVES_COUNT_GEN9
 

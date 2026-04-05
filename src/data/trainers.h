@@ -25482,7 +25482,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_RAICHU,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10119
-            .heldItem = ITEM_RAICHITE,
+            .heldItem = ITEM_LEFTOVERS,
 #line 10121
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 10120

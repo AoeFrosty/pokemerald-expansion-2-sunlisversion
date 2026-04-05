@@ -6626,23 +6626,6 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Metagrossite,
     },
 
-    [ITEM_RAICHITE] =
-    {
-        .name = _("Raichite"),
-        .price = 50000,
-        .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING(
-            "This stone enables\n"
-            "Raichu to Mega\n"
-            "Evolve in battle."),
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 80,
-        .iconPic = gItemIcon_Pidgeotite,
-        .iconPalette = gItemIconPalette_Pidgeotite,
-    },
-
     [ITEM_TROPIUSITE] =
     {
         .name = _("Tropiusite"),

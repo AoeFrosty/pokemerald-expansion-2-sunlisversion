@@ -366,17 +366,8 @@
 
 //Stage 2
 #define ABILITY_VENOM_SURGE 334     //gale wings for poison moves
-
-//DONT WORK RIGHT NOW DO WE KEEP?
-//#define ABILITY_GRAVITY_SURGE 335   //sets gravity on entry                                                     TEST
-//#define ABILITY_MAGICAL_SURGE 336   //sets magic room on entry                                                  TEST
-//#define ABILITY_WONDER_SURGE 337    //sets wonder room on entry                                                 TEST
 //#define ABILITY_SOLAR_HYDRA 338     //grass moves chance to burn
-#define ABILITY_DRAGON_SONG 339    //Liquid voice for dragons                                               TEST
-//#define ABILITY_FILTHY_FORM 340     //sets mud sport on entry                                                   TEST
-//#define ABILITY_ENDLESS_HUNGER 341  //as long as holdng a berry recover hp per turn UNSURE HOW TO MAKE
-
-
+#define ABILITY_DRAGON_SONG 339    //Liquid voice for dragons                                              TEST
 #define ABILITY_DRAGONATE 342       //pixelate for dragons                                                      DONE
 #define ABILITY_VENGEFUL 343        //chance to ghost curse when hit with a contact move
 #define ABILITY_FRIGHTEN 344       //special intimidate                

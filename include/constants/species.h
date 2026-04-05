@@ -1076,7 +1076,7 @@
 #define SPECIES_DECIDUEYE_HISUI                         1008
 
 // Misc Forms
-#define SPECIES_PIKACHU_COSPLAY                         1009
+#define SPECIES_PIKACHU_COSPLAY                         1009        //remove
 #define SPECIES_PIKACHU_ROCK_STAR                       1010
 #define SPECIES_PIKACHU_BELLE                           1011
 #define SPECIES_PIKACHU_POP_STAR                        1012
@@ -1089,7 +1089,7 @@
 #define SPECIES_PIKACHU_KALOS                           1019
 #define SPECIES_PIKACHU_ALOLA                           1020
 #define SPECIES_PIKACHU_PARTNER                         1021
-#define SPECIES_PIKACHU_WORLD                           1022
+#define SPECIES_PIKACHU_WORLD                           1022        //remove?
 #define SPECIES_PICHU_SPIKY_EARED                       1023
 #define SPECIES_UNOWN_B                                 1024
 #define SPECIES_UNOWN_C                                 1025
@@ -1584,7 +1584,7 @@
 #define SPECIES_SPEWPA_JUNGLE                           1473
 #define SPECIES_SPEWPA_FANCY                            1474
 #define SPECIES_SPEWPA_POKEBALL                         1475
-#define SPECIES_RATICATE_ALOLA_TOTEM                    1476
+#define SPECIES_RATICATE_ALOLA_TOTEM                    1476                                //remove until marked
 #define SPECIES_GUMSHOOS_TOTEM                          1477
 #define SPECIES_VIKAVOLT_TOTEM                          1478
 #define SPECIES_LURANTIS_TOTEM                          1479
@@ -1595,7 +1595,7 @@
 #define SPECIES_MAROWAK_ALOLA_TOTEM                     1483
 #define SPECIES_RIBOMBEE_TOTEM                          1484
 #define SPECIES_ARAQUANID_TOTEM                         1485
-#define SPECIES_TOGEDEMARU_TOTEM                        1486
+#define SPECIES_TOGEDEMARU_TOTEM                        1486                                //remove to here
 #define SPECIES_PIKACHU_STARTER                         1487
 #define SPECIES_EEVEE_STARTER                           1488
 #define SPECIES_VENUSAUR_GMAX                           1489
@@ -1744,10 +1744,7 @@
 #define SPECIES_HYPNO_MEGA                              1624
 #define SPECIES_SUNFLORA_MEGA                           1625
 
-//need to make
-#define SPECIES_LUGIA_PRIMAL                            1626
-#define SPECIES_HO_OH_PRIMAL                            1627
-#define SPECIES_EGG                                     (SPECIES_HO_OH_PRIMAL + 1)
+#define SPECIES_EGG                                     (SPECIES_SUNFLORA_MEGA + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

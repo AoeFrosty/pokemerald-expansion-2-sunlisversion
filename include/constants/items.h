@@ -443,7 +443,7 @@
 #define ITEM_STEEL_GEM 355
 #define ITEM_FAIRY_GEM 356
 
-// Z-Crystals
+// Z-Crystals                           remove all?
 #define ITEM_NORMALIUM_Z 357
 #define ITEM_FIRIUM_Z 358
 #define ITEM_WATERIUM_Z 359
@@ -878,7 +878,7 @@
 #define ITEM_TEACHY_TV 726
 
 // Story Key Items
-#define ITEM_SS_TICKET 727
+#define ITEM_SS_TICKET 727                                          
 #define ITEM_EON_TICKET 728
 #define ITEM_MYSTIC_TICKET 729
 #define ITEM_AURORA_TICKET 730
@@ -906,10 +906,10 @@
 #define ITEM_OAKS_PARCEL ITEM_PARCEL // Pre-Gen IV name
 #define ITEM_SECRET_KEY 747
 #define ITEM_BIKE_VOUCHER 748
-#define ITEM_GOLD_TEETH 749
+#define ITEM_GOLD_TEETH 749                                         //remove
 #define ITEM_CARD_KEY 750
 #define ITEM_LIFT_KEY 751
-#define ITEM_SILPH_SCOPE 752
+#define ITEM_SILPH_SCOPE 752                                        //remove
 #define ITEM_TRI_PASS 753
 #define ITEM_RAINBOW_PASS 754
 #define ITEM_TEA 755
@@ -924,7 +924,7 @@
 #define ITEM_LOADED_DICE 762
 #define ITEM_AUSPICIOUS_ARMOR 763
 #define ITEM_BOOSTER_ENERGY 764
-#define ITEM_BIG_BAMBOO_SHOOT 765
+#define ITEM_BIG_BAMBOO_SHOOT 765           //remove
 #define ITEM_GIMMIGHOUL_COIN 766
 #define ITEM_LEADERS_CREST 767
 #define ITEM_MALICIOUS_ARMOR 768
@@ -932,7 +932,7 @@
 #define ITEM_SCROLL_OF_DARKNESS 770
 #define ITEM_SCROLL_OF_WATERS 771
 #define ITEM_TERA_ORB 772
-#define ITEM_TINY_BAMBOO_SHOOT 773
+#define ITEM_TINY_BAMBOO_SHOOT 773          //remove
 
 #define ITEM_BUG_TERA_SHARD 774
 #define ITEM_DARK_TERA_SHARD 775
@@ -980,20 +980,20 @@
 #define ITEM_METAL_ALLOY 814
 #define ITEM_STELLAR_TERA_SHARD 815
 
-#define ITEM_JUBILIFE_MUFFIN 816
-#define ITEM_REMEDY 817
-#define ITEM_FINE_REMEDY 818
-#define ITEM_SUPERB_REMEDY 819
-#define ITEM_AUX_EVASION 820
-#define ITEM_AUX_GUARD 821
-#define ITEM_AUX_POWER 822
-#define ITEM_AUX_POWERGUARD 823
-#define ITEM_CHOICE_DUMPLING 824
-#define ITEM_SWAP_SNACK 825
-#define ITEM_TWICE_SPICED_RADISH 826
-#define ITEM_POKESHI_DOLL 827
+#define ITEM_JUBILIFE_MUFFIN 816            //remove
+#define ITEM_REMEDY 817                     //remove
+#define ITEM_FINE_REMEDY 818                //remove
+#define ITEM_SUPERB_REMEDY 819              //remove
+#define ITEM_AUX_EVASION 820                //remove
+#define ITEM_AUX_GUARD 821                  //remove
+#define ITEM_AUX_POWER 822                  //remove
+#define ITEM_AUX_POWERGUARD 823             //remove
+#define ITEM_CHOICE_DUMPLING 824            //remove
+#define ITEM_SWAP_SNACK 825                 //remove
+#define ITEM_TWICE_SPICED_RADISH 826        //remove
+#define ITEM_POKESHI_DOLL 827               //remove
 
-#define ITEM_STRANGE_BALL 828
+#define ITEM_STRANGE_BALL 828               //remove
 
 //Custom Items
 

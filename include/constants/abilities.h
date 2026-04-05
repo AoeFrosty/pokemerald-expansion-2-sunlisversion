@@ -373,12 +373,12 @@
 #define ABILITY_FRIGHTEN 344       //special intimidate                
 #define ABILITY_KICKBOXER 345
 #define ABILITY_SPINNER 346
-
-//Stage 3 dont forget to check all descriptor defines
 #define ABILITY_TRUE_POWER 347      //double special attack
 #define ABILITY_PRECISE_TACTICS 348 //look into battle util and battle script command lines
 #define ABILITY_FIRE_DRIFT 349   //prio to fire attacks like gale wings
 #define ABILITY_ROYAL_COAT 350   //shield dust for cats
+
+//Stage 3 dont forget to check all descriptor defines
 // #define ABILITY_COZY_DREAMS 351  //heal at end of each turn
 // #define ABILITY_SOUL_BURN 352   //ghost moves chance to burn
 #define ABILITY_DIRT_DEVIL 353   //supersweet syrup for poison and ground types "messy"
@@ -397,6 +397,9 @@
 #define ABILITY_TRAINED_MIND 366 //scrappy but psychic v dark
 #define ABILITY_SNOW_STALKER 367  //solar power for snow
 #define ABILITY_SANDY_SOUL 368   //protosynthesis with sand
+#define ABILITY_FLOW_STATE 367      //download clone
+#define ABILITY_RAIN_VEIL 368       //sand veil for rain
+#define ABILITY_JETSCREAM 369       //sound moves have chance to confuse
 //remember to build the description doc for 328+
 
 #define ABILITIES_COUNT_GEN9 371

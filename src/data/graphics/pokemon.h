@@ -13157,17 +13157,6 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_MEGA_EVOLUTIONS
-#if FROSTY_MEGAS >= SPECIES_CHIMECHO
-    const u32 gMonFrontPic_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/chimecho_mega_front.png");
-    const u32 gMonPalette_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chingling/normal.gbapal.lz");
-    const u32 gMonBackPic_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/chimecho_mega_back.png");
-    const u32 gMonShinyPalette_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chingling/shiny.gbapal.lz");
-    const u8 gMonIcon_ChimechoMega[] = INCBIN_U8("graphics/pokemon/chimecho/icon.4bpp");
-#endif //FROSTY_MEGAS >= SPECIES_Chimecho
-#endif //P_MEGA_EVOLUTIONS
-#endif //P_GEN_4_CROSS_EVOS
-
 #if !P_GBA_STYLE_SPECIES_GFX
     const u32 gMonFrontPic_Chimecho[] = INCBIN_U32("graphics/pokemon/chimecho/anim_front.4bpp.lz");
     const u32 gMonPalette_Chimecho[] = INCBIN_U32("graphics/pokemon/chimecho/normal.gbapal.lz");
@@ -13194,6 +13183,17 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Chimecho[] = INCBIN_U32("graphics/pokemon/chimecho/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+#if P_MEGA_EVOLUTIONS
+#if FROSTY_MEGAS >= SPECIES_CHIMECHO
+    const u32 gMonFrontPic_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/chimecho_mega_front.png");
+    const u32 gMonPalette_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chingling/normal.gbapal.lz");
+    const u32 gMonBackPic_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/chimecho_mega_back.png");
+    const u32 gMonShinyPalette_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chingling/shiny.gbapal.lz");
+    const u8 gMonIcon_ChimechoMega[] = INCBIN_U8("graphics/pokemon/chimecho/icon.4bpp");
+#endif //FROSTY_MEGAS >= SPECIES_Chimecho
+#endif //P_MEGA_EVOLUTIONS
+#endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CHIMECHO
 
 #if P_FAMILY_ABSOL

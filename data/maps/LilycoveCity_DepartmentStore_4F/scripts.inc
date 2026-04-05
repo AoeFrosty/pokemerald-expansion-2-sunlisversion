@@ -49,6 +49,8 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 	.2byte ITEM_EMPOLEONITE_X
 	.2byte ITEM_EMPOLEONITE_Y
+	.2byte ITEM_EMBOARITE
+	.2byte ITEM_MEGANIUMITE
 	.2byte ITEM_INFERNITE
 	.2byte ITEM_TORTERRITE
 	.2byte ITEM_GYARADOSITE
@@ -58,6 +60,9 @@ LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 	.2byte ITEM_INTELEONITE
 	.2byte ITEM_ROSERITE
 	.2byte ITEM_CINDERACITE
+	.2byte ITEM_LIEPARDITE
+	.2byte ITEM_MISMAGITE
+	.2byte ITEM_FERALIGITE
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:

@@ -23,7 +23,6 @@ FortreeCity_Mart_Pokemart:
 	.2byte ITEM_REVIVE
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_WOOD_MAIL
-	.2byte ITEM_RAICHITE
 	.2byte ITEM_BUTTERFRITE
 	.2byte ITEM_GLALITITE
 	.2byte ITEM_BEEDRILLITE
@@ -37,6 +36,10 @@ FortreeCity_Mart_Pokemart:
 	.2byte ITEM_ABSOLITE
 	.2byte ITEM_PIDGEOTITE
 	.2byte ITEM_ORBEETLITE
+	.2byte ITEM_CHIMECHITE
+	.2byte ITEM_LEDIANITE
+	.2byte ITEM_NOCTOWLITE
+	.2byte ITEM_SUNFLORITE
 	pokemartlistend
 
 FortreeCity_Mart_EventScript_Woman::

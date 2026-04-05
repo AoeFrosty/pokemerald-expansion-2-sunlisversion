@@ -35,6 +35,9 @@ SootopolisCity_Mart_Pokemart:
 	.2byte ITEM_ALTARIANITE
 	.2byte ITEM_GARBODORITE
 	.2byte ITEM_HOUNDOOMINITE
+	.2byte ITEM_MISMAGITE
+	.2byte ITEM_TOGEKISSITE
+	.2byte ITEM_ABSOLITE_Z
 	pokemartlistend
 
 SootopolisCity_Mart_EventScript_FatMan::

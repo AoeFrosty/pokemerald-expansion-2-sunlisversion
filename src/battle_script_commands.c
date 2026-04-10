@@ -3316,7 +3316,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                 && (primary == TRUE || certain == TRUE))
             {
                 BattleScriptPush(gBattlescriptCurrInstr + 1);
-                gBattlescriptCurrInstr = BattleScript_FlinchPrevention; //currently this will say whatever ability the rock type has prevented the flinch need new script
+                gBattlescriptCurrInstr = BattleScript_RockFlinchPrevention; //currently this will say whatever ability the rock type has prevented the flinch need new script
             }  
                 else if (battlerAbility == ABILITY_INNER_FOCUS)
                 {

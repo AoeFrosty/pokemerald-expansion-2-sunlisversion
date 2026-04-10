@@ -527,6 +527,7 @@ extern const u8 BattleScript_BoosterEnergyRet[];
 extern const u8 BattleScript_TeraShellDistortingTypeMatchups[];
 extern const u8 BattleScript_TeraFormChange[];
 extern const u8 BattleScript_SteelSurgeOnSwitchIn[];
+extern const u8 BattleScript_RockFlinchPrevention[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

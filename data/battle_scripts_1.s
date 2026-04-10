@@ -8662,7 +8662,7 @@ BattleScript_FlinchPrevention::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
-BattleScript_FlinchPrevention::
+BattleScript_RockFlinchPrevention::
 	pause B_WAIT_TIME_SHORT
 	printstring STRINGID_PKMNSROCKPREVENTSFLINCHING
 	waitmessage B_WAIT_TIME_LONG

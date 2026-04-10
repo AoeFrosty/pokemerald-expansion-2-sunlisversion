@@ -1176,8 +1176,9 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_SANDBAGIN]                            = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} is protected by its Sand Bag!"),
     [STRINGID_HARDHATPOP]                           = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}'s Hard Hat broke!"),
     [STRINGID_SANDBAGPOP]                           = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}'s Sand Bag broke!"),
-    [STRINGID_SUBBERRY]                            = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}'s Sub-Berry created a substitute!"), 
-    [STRINGID_STEELSURGESWITCHIN]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} was caught in the sharp shrapnel!"),
+    [STRINGID_SUBBERRY]                             = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}'s Sub-Berry created a substitute!"), 
+    [STRINGID_STEELSURGESWITCHIN]                   = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} was caught in the sharp shrapnel!"),
+    [STRINGID_PKMNSROCKPREVENTSFLINCHING]           = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}'s Rock-Type prevents flinching!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

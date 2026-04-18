@@ -13186,9 +13186,9 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
 #if P_MEGA_EVOLUTIONS
 #if FROSTY_MEGAS >= SPECIES_CHIMECHO
-    const u32 gMonFrontPic_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/chimecho_mega_front.png");
+    const u32 gMonFrontPic_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/chimecho_mega_front.4bpp.lz");
     const u32 gMonPalette_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/chimecho_base.gbapal");
-    const u32 gMonBackPic_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/chimecho_mega_back.png");
+    const u32 gMonBackPic_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/chimecho_mega_back.4bpp.lz");
     const u32 gMonShinyPalette_ChimechoMega[] = INCBIN_U32("graphics/pokemon/chimecho/mega/chimecho_shiny.gbapal");
     const u8 gMonIcon_ChimechoMega[] = INCBIN_U8("graphics/pokemon/chimecho/icon.4bpp");
 #endif //FROSTY_MEGAS >= SPECIES_Chimecho

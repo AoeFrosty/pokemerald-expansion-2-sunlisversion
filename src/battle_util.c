@@ -2907,9 +2907,9 @@ u8 DoBattlerEndTurnEffects(void)
             {
                 gBattlerTarget = battler;
                 if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_STEEL) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_WATER))
-                    gBattleMoveDamage = gBattleMons[gBattlerTarget].maxHP / 4;
-                else
                     gBattleMoveDamage = gBattleMons[gBattlerTarget].maxHP / 8;
+                else
+                    gBattleMoveDamage = gBattleMons[gBattlerTarget].maxHP / 16;
                 if (gBattleMoveDamage == 0)
                     gBattleMoveDamage = 1;
                 PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_SALT_CURE);

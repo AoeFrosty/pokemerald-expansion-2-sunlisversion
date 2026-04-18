@@ -8673,7 +8673,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_INSOMNIA, ABILITY_FRIGHTEN, ABILITY_VENGEFUL },
+        .abilities = { ABILITY_INSOMNIA, ABILITY_CURSED_BODY, ABILITY_VENGEFUL },
     #else
         .abilities = { ABILITY_INSOMNIA, ABILITY_NONE, ABILITY_CURSED_BODY },
     #endif
@@ -8742,7 +8742,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 35,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_FRIGHTEN, ABILITY_FRIGHTEN, ABILITY_FRIGHTEN },
+        .abilities = { ABILITY_STAKEOUT, ABILITY_STAKEOUT, ABILITY_STAKEOUT },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Banette"),
         .cryId = CRY_BANETTE_MEGA,
@@ -9444,7 +9444,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_FRIGHTEN, ABILITY_SUPER_LUCK, ABILITY_MIST_GLIDER },
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_SUPER_LUCK, ABILITY_MIST_GLIDER },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
         .speciesName = _("Absol"),

@@ -2023,7 +2023,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_IRON_FIST, ABILITY_MOLD_BREAKER, ABILITY_FRIGHTEN },
+        .abilities = { ABILITY_IRON_FIST, ABILITY_MOLD_BREAKER, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Pancham"),
         .cryId = CRY_PANCHAM,
@@ -2087,7 +2087,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_IRON_FIST, ABILITY_MOLD_BREAKER, ABILITY_FRIGHTEN },
+        .abilities = { ABILITY_IRON_FIST, ABILITY_MOLD_BREAKER, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Pangoro"),
         .cryId = CRY_PANGORO,
@@ -5312,7 +5312,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     #else
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
     #endif
-        .abilities = { ABILITY_WIND_RIDER, ABILITY_FRIGHTEN, ABILITY_TELEPATHY },
+        .abilities = { ABILITY_WIND_RIDER, ABILITY_AERILATE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Noivern"),
         .cryId = CRY_NOIVERN,

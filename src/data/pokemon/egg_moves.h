@@ -583,6 +583,8 @@ static const u16 sAbraEggMoveLearnset[] = {
     MOVE_PSYCHO_SHIFT,
     MOVE_ALLY_SWITCH,
     MOVE_PSYCHIC_TERRAIN,
+    MOVE_TRICK_ROOM,
+    MOVE_GRASS_KNOT,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ABRA
@@ -2725,6 +2727,8 @@ static const u16 sAronEggMoveLearnset[] = {
     MOVE_SUPERPOWER,
     MOVE_STEALTH_ROCK,
     MOVE_REVERSAL,
+    MOVE_HIGH_HORSEPOWER,
+    MOVE_STOMPING_TANTRUM,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_ARON

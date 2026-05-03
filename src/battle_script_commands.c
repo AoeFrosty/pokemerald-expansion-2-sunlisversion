@@ -1611,6 +1611,10 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
         if (gBattleMons[battlerDef].status2 & STATUS2_CONFUSION)
             calc = (calc * 50) / 100; // 1.5 tangled feet loss
         break;
+    case ABILITY_RAIN_VEIL:
+        if (WEATHER_HAS_EFFECT && gBattleWeather & B_WEATHER_RAIN)
+            calc = (calc * 80) / 100; // 1.2 rain veil loss
+        break;
     case ABILITY_DUCK_N_WEAVE:
         if (gLastMoves[battlerDef] != 0 && gLastMoves[battlerDef] != 0xFFFF && gMovesInfo[gLastMoves[battlerDef]].punchingMove && GetBattlerTurnOrderNum(battlerAtk) > GetBattlerTurnOrderNum(battlerDef))
             calc = (calc * 90) / 100; // 1.1 sand veil loss;

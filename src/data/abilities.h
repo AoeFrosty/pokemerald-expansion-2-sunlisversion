@@ -2772,5 +2772,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
 
+    [ABILITY_RAIN_VEIL] =
+    {
+        .name = _("Rain Veil"),
+        .description = COMPOUND_STRING("Ups evasion in rain."),
+        .aiRating = 3,
+        .breakable = TRUE,
+    },
 
 };

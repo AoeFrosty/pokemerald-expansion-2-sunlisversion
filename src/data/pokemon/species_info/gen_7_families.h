@@ -148,7 +148,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_OVERGROW, ABILITY_BULLY, ABILITY_WIND_RIDER },
+        .abilities = { ABILITY_OVERGROW, ABILITY_INFILTRATOR, ABILITY_WIND_RIDER },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Decidueye"),
         .cryId = CRY_DECIDUEYE,
@@ -765,11 +765,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_TOUCANNON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 120,
+        .baseHP        = 85,    //+5
+        .baseAttack    = 125,   //+5
         .baseDefense   = 75,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 75,
+        .baseSpeed     = 55,    //-5
+        .baseSpAttack  = 70,    //-5
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 45,

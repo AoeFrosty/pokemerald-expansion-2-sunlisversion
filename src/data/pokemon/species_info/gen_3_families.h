@@ -10343,11 +10343,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_RELICANTH
     [SPECIES_RELICANTH] =
     {
-        .baseHP        = 100,
+        .baseHP        = 120,       //+20
         .baseAttack    = 110,       //+20
         .baseDefense   = 140,       //+10
         .baseSpeed     = 25,        //-30
-        .baseSpAttack  = 45,
+        .baseSpAttack  = 35,        //-10
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
         .catchRate = 25,
@@ -10360,7 +10360,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_SAP_SIPPER },
+        .abilities = { ABILITY_SOLID_ROCK, ABILITY_ROCK_HEAD, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Relicanth"),
         .cryId = CRY_RELICANTH,

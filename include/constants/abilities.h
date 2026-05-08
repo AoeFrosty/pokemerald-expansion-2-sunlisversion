@@ -400,6 +400,7 @@
 #define ABILITY_FLOW_STATE 364      //download clone
 #define ABILITY_RAIN_VEIL 365       //sand veil for rain
 #define ABILITY_JETSCREAM 366       //sound moves have chance to confuse
+//define ABILITY_CURRENT_CUTTER 367   //slicing moves become water type and are boosted
 //remember to build the description doc for 328+
 
 #define ABILITIES_COUNT_GEN9 367

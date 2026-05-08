@@ -19702,10 +19702,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Fillet Away"),
         .description = COMPOUND_STRING(
             "Sharply boosts offenses and\n"
-            "Speed by using its own HP."),
-        .effect = EFFECT_FILLET_AWAY,
+            "Speed. No longer uses hp."),
+        .effect = EFFECT_VICTORY_DANCE,              //feels more viable if not sacrificing hp on a squishy target and now synergy with focus sash
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_WATER,                         //feels appropriate
         .accuracy = 0,
         .pp = 10,
         .target = MOVE_TARGET_USER,
@@ -24453,7 +24453,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .slicingMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FLINCH,
             .chance = 30,
@@ -24984,7 +24983,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
-        .battleAnimScript = gBattleAnimMove_Liquidation,
+        .battleAnimScript = gBattleAnimMove_ShadowClaw,
     },
 
     [MOVE_THUNDER_LARIAT] =
@@ -25052,7 +25051,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_FellStinger,
+        .battleAnimScript = gBattleAnimMove_IcicleCrash,
     },
 
     [MOVE_TRIPLE_PECK] =
@@ -25076,7 +25075,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_TripleAxel,
+        .battleAnimScript = gBattleAnimMove_Peck,
     },
 
     [MOVE_MOLTEN_BURST] =
@@ -25107,6 +25106,131 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
         .battleAnimScript = gBattleAnimMove_HeatWave,
+    },
+
+    [MOVE_SEED_SWAP] =
+    {
+        .name = COMPOUND_STRING("Seed Swap"),
+        .description = sUTurnDescription,
+        .effect = EFFECT_HIT_ESCAPE,
+        .power = 40,                            //not sure how to do a 0 damage status swap move afaik
+        .type = TYPE_GRASS,
+        .accuracy = 100,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .powderMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_AVOID_STARTLE,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .mirrorMoveBanned = B_UPDATED_MOVE_FLAGS < GEN_8,
+        .magicCoatAffected = TRUE,
+        .metronomeBanned = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_LEECH_SEED,
+            .chance = 100,
+            .sheerForceBoost = SHEER_FORCE_NO_BOOST,
+        }),
+        .battleAnimScript = gBattleAnimMove_SappySeed,
+    },
+
+    [MOVE_TRIPLE_TAKEDOWN] =
+    {
+        .name = COMPOUND_STRING("Triple Takedown"),
+        .description = COMPOUND_STRING(
+            "A 3-whip attack that gets\n"
+            "more powerful with each hit."),
+        .effect = EFFECT_TRIPLE_KICK,
+        .power = 20,
+        .type = TYPE_GRASS,
+        .accuracy = 90,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .strikeCount = 3,
+        .contestEffect = CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_PowerWhip,
+    },
+
+    [MOVE_LANTERN_SWING] =
+    {
+        .name = COMPOUND_STRING("Lantern Swing"),
+        .description = COMPOUND_STRING(
+            "A mystical attack that\n"
+            "may inflict a burn."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_GHOST,
+        .accuracy = 95,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .thawsUser = TRUE,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 50,
+        }),
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
+        .battleAnimScript = gBattleAnimMove_FlareBlitz,
+    },
+
+    [MOVE_JETSTREAM_RUSH] =
+    {
+        .name = COMPOUND_STRING("Jetstream Rush"),
+        .description = COMPOUND_STRING(
+            "Hits hard and first.\n"
+            "Only works first turn."),
+        .effect = EFFECT_FIRST_TURN_ONLY,
+        .power = 80,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 2,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .argument = MOVE_FIRST_IMPRESSION,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
+            .chance = 100,
+        }),
+        .contestEffect = CONTEST_EFFECT_BETTER_IF_FIRST,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_AquaJet,
+    },
+
+    [MOVE_ABYSSAL_DIVE] =
+    {
+        .name = COMPOUND_STRING("Abyssal Dive"),
+        .description = COMPOUND_STRING(
+            "A high pressured slam\n"
+            "bypasses a foe's Protect."),
+        .effect = EFFECT_HIT,
+        .power = 120,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .ignoresProtect = TRUE,
+        .metronomeBanned = TRUE,
+        .battleAnimScript = gBattleAnimMove_WaveCrash,
     },
 
     //bulag

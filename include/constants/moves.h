@@ -1039,7 +1039,7 @@
 #define MOVE_DRACONIC_BARRAGE 974   //TEST
 #define MOVE_DRACO_STREAM 975       //TEST
 #define MOVE_SPARKLY_SPRITZ 976     //TEST                          //remove?
-#define MOVE_PLACEHOLDERA 977                                       //PLACEHOLDER   
+#define MOVE_SEED_SWAP 977                                       
 #define MOVE_INFERNAL_BLAST 978
 #define MOVE_WHIMSICAL_STORM 979
 #define MOVE_SHELL_SWORD 980
@@ -1102,14 +1102,19 @@
 #define MOVE_MOLTEN_BURST 1035      //65BP physical fire spread move with 95 acc and 10 burn flinch for flareon
 #define MOVE_FURY_SWEEP 1036        //always crits flying for fearow
 #define MOVE_TECTONIC_SLAM 1037     //120BP, 85 acc move that breaks screens ground for donphan and rhyperior
+#define MOVE_FOXFIRE 1038           //fox fire confuse or burn or both
+#define MOVE_TRIPLE_TAKEDOWN 1039   //triple axel but grass
+#define MOVE_LANTERN_SWING 1040      //ghost attack may burn physical
+#define MOVE_JETSTREAM_RUSH 1041    //water first impression that lowers def of target hit
+#define MOVE_ABYSSAL_DIVE 1042      //water type hyper drill
 
 
 //potential fighting move to hit switching mons
 //do defensive growth in sand
-//fox fire confuse or burn or both
 
 
-#define MOVES_COUNT_GEN9 1038
+
+#define MOVES_COUNT_GEN9 1043
 
 #define MOVES_COUNT         MOVES_COUNT_GEN9
 

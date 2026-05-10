@@ -1726,12 +1726,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_NICKIT
     [SPECIES_NICKIT] =
     {
-        .baseHP        = 40,
+        .baseHP        = 45,    //+5
         .baseAttack    = 28,
         .baseDefense   = 28,
         .baseSpeed     = 50,
         .baseSpAttack  = 47,
-        .baseSpDefense = 52,
+        .baseSpDefense = 55,    //+5
         .types = MON_TYPES(TYPE_DARK),
         .catchRate = 255,
         .expYield = 49,

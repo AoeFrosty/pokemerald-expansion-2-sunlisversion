@@ -2916,11 +2916,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_MORELULL
     [SPECIES_MORELULL] =
     {
-        .baseHP        = 40,
+        .baseHP        = 45,    //+5
         .baseAttack    = 35,
         .baseDefense   = 55,
         .baseSpeed     = 15,
-        .baseSpAttack  = 65,
+        .baseSpAttack  = 70,    //+5
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
         .catchRate = 190,

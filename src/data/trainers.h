@@ -12447,25 +12447,26 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4968
-                MOVE_CHARGE,
                 MOVE_DEFENSE_CURL,
                 MOVE_SPARK,
                 MOVE_ROCK_TOMB,
             },
             },
             {
-#line 4973
+#line 4972
             .species = SPECIES_AMAURA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 4973
+#line 4972
             .heldItem = ITEM_BERRY_JUICE,
 #line 4976
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-#line 4974
+#line 4975
+            .ability = ABILITY_SNOW_WARNING,
+#line 4973
             .lvl = 14,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-#line 4975
+#line 4974
             .teraType = TYPE_GRASS,
             .moves = {
 #line 4977

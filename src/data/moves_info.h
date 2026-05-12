@@ -22010,7 +22010,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_BLAZE_O_FURY] =
     {
-        .name = COMPOUND_STRING("Blaze o' Fury"),
+        .name = COMPOUND_STRING("Blaze of Fury"),
         .description = COMPOUND_STRING(
             "Shoots 2 to 5 flames in a row\n"
             "to strike the foe."),
@@ -24975,6 +24975,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
+        .slicingMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
             .chance = 20,
@@ -25106,6 +25107,78 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
         .battleAnimScript = gBattleAnimMove_HeatWave,
+    },
+
+    [MOVE_FURY_SWEEP] =
+    {
+        .name = COMPOUND_STRING("Fury Sweep"),
+        .description = sStormThrowDescription,
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_FLYING,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .alwaysCriticalHit = TRUE,
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_StormThrow,
+    },
+
+    [MOVE_TECTONIC_SLAM] =
+    {
+        .name = COMPOUND_STRING("Tectonic Slam"),
+        .description = COMPOUND_STRING(
+            "Destroys barriers such as\n"
+            "REFLECT and causes damage."),
+        .effect = EFFECT_BRICK_BREAK,
+        .power = 120,
+        .type = TYPE_GROUND,
+        .accuracy = 85,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_FOCUS_ENERGY},
+        .battleAnimScript = gBattleAnimMove_BrickBreak,
+    },
+
+    [MOVE_FOXFIRE] =
+    {
+        .name = COMPOUND_STRING("Foxfire"),
+        .description = COMPOUND_STRING(
+            "A mystical fire attack that\n"
+            "may inflict a burn or confuse."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 10,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_CONFUSION,
+            .chance = 10,
+        }),
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
+        .battleAnimScript = gBattleAnimMove_WillOWisp,
     },
 
     [MOVE_SEED_SWAP] =

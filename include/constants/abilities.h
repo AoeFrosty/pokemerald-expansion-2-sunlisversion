@@ -400,7 +400,16 @@
 #define ABILITY_FLOW_STATE 364      //download clone
 #define ABILITY_RAIN_VEIL 365       //sand veil for rain
 #define ABILITY_JETSCREAM 366       //sound moves have chance to confuse
-//define ABILITY_CURRENT_CUTTER 367   //slicing moves become water type and are boosted
+//#define ABILITY_CURRENT_CUTTER 367   //slicing moves become water type and are boosted
+//#define ABILITY_BRAWLER 368       //fighting aerialate for dodrio
+//#define ABILITY_HIGH_VOLTAGE 369      //electric liquid voice
+//#define ABILITY_FIRESONG 370          //fire liquid voice
+//#define ABILITY_SPRING_KICK 371       //kicking moves has chance to para
+//#define ABILITY_FORAGER 372           //grassy terrain harvest
+//#define ABILITY_FAT_RESERVE 373       //unburden for defense
+//#define ABILITY_MONSOON_MIND 374      //rain flower gift for slowking 1.5 spa 1.5 def
+//#define ABILITY_HOLIDAY_CHEER 375     //snow flower gift delibird 1.5 atk 1.5 speed
+//#define ABILITY_CLAY_SIGIL 376        //sand flower gift ??? clawf?
 //remember to build the description doc for 328+
 
 #define ABILITIES_COUNT_GEN9 367

@@ -367,10 +367,10 @@
 //Stage 2
 #define ABILITY_VENOM_SURGE 334     //gale wings for poison moves
 //#define ABILITY_SOLAR_HYDRA 335     //grass moves chance to burn
-#define ABILITY_DRAGON_SONG 336    //Liquid voice for dragons                                              TEST
+#define ABILITY_DRAGON_SONG 336     //Liquid voice for dragons                                              TEST
 #define ABILITY_DRAGONATE 337       //pixelate for dragons                                                      DONE
 #define ABILITY_VENGEFUL 338        //chance to ghost curse when hit with a contact move
-#define ABILITY_FRIGHTEN 339       //special intimidate                
+#define ABILITY_FRIGHTEN 339        //special intimidate                
 #define ABILITY_KICKBOXER 340
 #define ABILITY_SPINNER 341
 #define ABILITY_TRUE_POWER 342      //double special attack
@@ -400,6 +400,7 @@
 #define ABILITY_FLOW_STATE 364      //download clone
 #define ABILITY_RAIN_VEIL 365       //sand veil for rain
 #define ABILITY_JETSCREAM 366       //sound moves have chance to confuse
+//Stage 4 last section
 //#define ABILITY_CURRENT_CUTTER 367   //slicing moves become water type and are boosted
 //#define ABILITY_BRAWLER 368       //fighting aerialate for dodrio
 //#define ABILITY_HIGH_VOLTAGE 369      //electric liquid voice
@@ -410,9 +411,11 @@
 //#define ABILITY_MONSOON_MIND 374      //rain flower gift for slowking 1.5 spa 1.5 def
 //#define ABILITY_HOLIDAY_CHEER 375     //snow flower gift delibird 1.5 atk 1.5 speed
 //#define ABILITY_CLAY_SIGIL 376        //sand flower gift ??? clawf?
+//#define ABILITY_MEGA_SOL 377      //mega meganiums ability
+#define ABILITY_SPICY_SPRAY 378       //mega scovillain ability
 //remember to build the description doc for 328+
 
-#define ABILITIES_COUNT_GEN9 367
+#define ABILITIES_COUNT_GEN9 379
 
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9
 

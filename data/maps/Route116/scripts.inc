@@ -490,7 +490,6 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "a BAG of their own.$"
 
 Route116_Text_BugsyReward::
-	.string "Wowo! Screencap this quick!\p"
-	.string "Thanks for such a electrifying\n"
-	.string "battle. Take this! Woo-hoo!$"
+	.string "Here's something for my\n"
+	.string "fellow researcher...$"
 

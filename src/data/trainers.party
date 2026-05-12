@@ -586,21 +586,6 @@ Mightyena
 Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-
-=== TRAINER_TEST_ARCHIE ===
-Name: ARCHIE
-Class: Aqua Leader
-Pic: Aqua Leader Archie
-Gender: Male
-Music: Aqua
-Items: Super Potion / Super Potion
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Poochyena
-Level: 3
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
 === TRAINER_ARCHIE ===
 Name: ARCHIE
 Class: Aqua Leader
@@ -4951,7 +4936,7 @@ Class: Leader
 Pic: Leader Roxanne
 Gender: Female
 Music: Female
-Items: Potion / Potion
+Items: Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -17521,6 +17506,57 @@ Double Battle: No
 Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_BUGSY ===
+Name: Bugsy
+Class: Leader
+Pic: Leaf
+Gender: Male
+Music: Male
+Items: Potion
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Butterfree @ Sitrus Berry
+Level: 13
+Ability: Compound Eyes
+Timid Nature
+IVs: 12 HP / 0 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+-Gust
+-Sleep Powder
+-Confusion
+-Attract
+
+Dustox @ Leftovers
+Level: 14
+Ability: Multiscale
+Bold Nature
+IVs: 24 HP / 0 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+-Protect
+-Struggle Bug
+-Acid
+-Light Screen
+
+Spidops @ Kings Rock
+Level: 13
+Ability: Stakeout
+Adamant Nature
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+-Silk Trap
+-Quick Sting
+-Bullet Seed
+
+Frosmoth @ 
+Level: 14
+Ability: Ice Scales
+Tera Type: Poison
+Modest Nature
+IVs: 24 HP / 0 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+-Icy Wind
+-Struggle Bug
+-Infestation
+-Attract
+
 
 === TRAINER_BRENDAN_PLACEHOLDER ===
 Name: BRENDAN

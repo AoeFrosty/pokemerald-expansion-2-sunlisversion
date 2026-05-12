@@ -229,6 +229,24 @@ Route116_Movement_GlassesManExitEast:
 	walk_left
 	step_end
 
+Route116_EventScript_Bugsy::
+	trainerbattle_single TRAINER_Bugsy, Route116_Text_BugsyIntro, Route116_Text_BugsyDefeated, Route116_EventScript_BugsyDefeated
+	msgbox Route116_Text_BugsyPostBattle, MSGBOX_AUTOCLOSE
+	release
+	end
+
+Route116_EventScript_BugsyDefeated::
+	msgbox Route116_Text_BugsyReward, MSGBOX_DEFAULT
+	goto Route116_EventScript_BugsyReward
+	end
+
+Route116_EventScript_BugsyReward::
+giveitem ITEM_TM_PROTECT
+giveitem ITEM_SITRUS_BERRY
+goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+release
+end
+
 Route116_EventScript_Joey::
 	trainerbattle_single TRAINER_JOEY, Route116_Text_JoeyIntro, Route116_Text_JoeyDefeat
 	msgbox Route116_Text_JoeyPostBattle, MSGBOX_AUTOCLOSE
@@ -470,4 +488,9 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "placed in the appropriate POCKETS.\p"
 	.string "No TRAINER can afford to be without\n"
 	.string "a BAG of their own.$"
+
+Route116_Text_BugsyReward::
+	.string "Wowo! Screencap this quick!\p"
+	.string "Thanks for such a electrifying\n"
+	.string "battle. Take this! Woo-hoo!$"
 

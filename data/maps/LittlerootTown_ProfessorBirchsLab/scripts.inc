@@ -712,7 +712,7 @@ LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
 	.string "My kid, {RIVAL}, is also studying\n"
 	.string "POKéMON while helping me out.\p"
 	.string "They are currently investigating\n"
-	.string "some considerable shifts that affect\n"
+	.string "some considerable shifts that affect\l"
 	.string "Pokémon battles in the region.\p"
 	.string "{PLAYER}{KUN}, don't you think it might be\n"
 	.string "a good idea to go see {RIVAL}?$"

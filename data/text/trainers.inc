@@ -4795,18 +4795,18 @@ VSSeeker_Text_TrainersNotReady::
 	.string "to be ready for battle.\p"
 	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
 
-Route102_Text_BugsyIntro::
+Route116_Text_BugsyIntro::
 	.string "I'm the bug POKéMON researcher Bugsy!\n"
 	.string "My Research is going to make me the\p"
 	.string "authority on Bug-Type POKéMON!\p"
 	.string "Did you know that FAIRY-types are\n"
 	.string "weak against BUG-types in these parts?$"
 
-Route102_Text_BugsyDefeated::
+Route116_Text_BugsyDefeated::
 	.string "I hate to say it, but I lost!\p"
 	.string "Even with Bugs being stronger\n"
 	.string "I still need to study more.$"
 
-Route102_Text_BugsyPostBattle::
+Route116_Text_BugsyPostBattle::
 	.string "I learned a lot during our fight\n"
 	.string "I'd love to fight again sometime!$"

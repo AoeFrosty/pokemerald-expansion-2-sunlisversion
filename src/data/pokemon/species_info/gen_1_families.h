@@ -2350,8 +2350,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_SPEAROW
     [SPECIES_SPEAROW] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 60,
+        .baseHP        = 45,    //+5
+        .baseAttack    = 65,    //+5
         .baseDefense   = 30,
         .baseSpeed     = 70,
         .baseSpAttack  = 31,

@@ -230,7 +230,7 @@ Route116_Movement_GlassesManExitEast:
 	step_end
 
 Route116_EventScript_Bugsy::
-	trainerbattle_single TRAINER_Bugsy, Route116_Text_BugsyIntro, Route116_Text_BugsyDefeated, Route116_EventScript_BugsyDefeated
+	trainerbattle_single TRAINER_BUGSY, Route116_Text_BugsyIntro, Route116_Text_BugsyDefeated, Route116_EventScript_BugsyDefeated
 	msgbox Route116_Text_BugsyPostBattle, MSGBOX_AUTOCLOSE
 	release
 	end

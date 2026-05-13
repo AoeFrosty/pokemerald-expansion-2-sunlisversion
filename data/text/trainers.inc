@@ -4799,7 +4799,7 @@ Route102_Text_BugsyIntro::
 	.string "I'm the bug POKéMON researcher Bugsy!\n"
 	.string "My Research is going to make me the\p"
 	.string "authority on Bug-Type POKéMON!\p"
-	.string "Did you know that FAIRY-types are\n
+	.string "Did you know that FAIRY-types are\n"
 	.string "weak against BUG-types in these parts?$"
 
 Route102_Text_BugsyDefeated::

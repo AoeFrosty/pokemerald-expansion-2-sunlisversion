@@ -17510,7 +17510,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BUGSY ===
 Name: Bugsy
 Class: Leader
-Pic: Leaf
+Pic: Leader Bugsy
 Gender: Male
 Music: Male
 Items: Potion
@@ -17546,7 +17546,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 -Quick Sting
 -Bullet Seed
 
-Frosmoth @ 
+Frosmoth @ Bright Powder
 Level: 14
 Ability: Ice Scales
 Tera Type: Poison

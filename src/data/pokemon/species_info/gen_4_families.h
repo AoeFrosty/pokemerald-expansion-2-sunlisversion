@@ -3450,11 +3450,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_LOPUNNY] =
     {
         .baseHP        = 70,    //+5
-        .baseAttack    = 84,    //+5
+        .baseAttack    = 86,    //+7
         .baseDefense   = 84,
         .baseSpeed     = 105,
         .baseSpAttack  = 54,
-        .baseSpDefense = 96,
+        .baseSpDefense = 106,    //+10
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 178,
@@ -3514,11 +3514,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_LOPUNNY_MEGA] =
     {
         .baseHP        = 70,
-        .baseAttack    = 146,   //+10
-        .baseDefense   = 104,   //+10
+        .baseAttack    = 146,   //+5
+        .baseDefense   = 99,    //+5
         .baseSpeed     = 135,
-        .baseSpAttack  = 34,    //-20
-        .baseSpDefense = 101,   //+5
+        .baseSpAttack  = 44,    //-10
+        .baseSpDefense = 111,   //+5
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FIGHTING),
         .catchRate = 60,
         .expYield = 203,

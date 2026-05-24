@@ -413,8 +413,8 @@
 //#define ABILITY_CLAY_SIGIL 376        //sand flower gift ??? clawf?
 //#define ABILITY_MEGA_SOL 377      //mega meganiums ability
 #define ABILITY_SPICY_SPRAY 378       //mega scovillain ability
-//remember to build the description doc for 328+
-
+//freeze spicy spray for abomasnow
+//using follow me lowers incoming damage for watchog
 #define ABILITIES_COUNT_GEN9 379
 
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9

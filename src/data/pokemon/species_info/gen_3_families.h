@@ -4878,9 +4878,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_MANECTRIC] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 75,
-        .baseDefense   = 60,
+        .baseHP        = 75,    //+5
+        .baseAttack    = 70,    //-5
+        .baseDefense   = 75,    //+15
         .baseSpeed     = 105,
         .baseSpAttack  = 105,
         .baseSpDefense = 60,
@@ -4942,11 +4942,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_MANECTRIC_MEGA] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 75,
+        .baseHP        = 75,
+        .baseAttack    = 70,    //-5
         .baseDefense   = 80,
-        .baseSpeed     = 135,
-        .baseSpAttack  = 135,
+        .baseSpeed     = 140,   //+5
+        .baseSpAttack  = 150,   //+15
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 45,

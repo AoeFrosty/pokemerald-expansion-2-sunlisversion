@@ -6081,6 +6081,18 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     {
         return TYPE_WATER;
     }
+    else if (gMovesInfo[move].slicingMove && ability == ABILITY_CURRENT_CUTTER)
+    {
+        return TYPE_WATER;
+    }
+    else if (gMovesInfo[move].soundMove && ability == ABILITY_HIGH_VOLTAGE)
+    {
+        return TYPE_ELECTRIC
+    }
+    else if (gMovesInfo[move].soundMove && ability == ABILITY_FIRESONG)
+    {
+        return TYPE_FIRE;
+    }
     else if (gMovesInfo[move].soundMove && ability == ABILITY_CHILL_SONG)
     {
         return TYPE_ICE;

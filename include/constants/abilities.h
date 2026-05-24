@@ -366,7 +366,7 @@
 
 //Stage 2
 #define ABILITY_VENOM_SURGE 334     //gale wings for poison moves
-//#define ABILITY_SOLAR_HYDRA 335     //grass moves chance to burn
+#define ABILITY_SOLAR_HYDRA 335     //grass moves chance to burn
 #define ABILITY_DRAGON_SONG 336     //Liquid voice for dragons                                              TEST
 #define ABILITY_DRAGONATE 337       //pixelate for dragons                                                      DONE
 #define ABILITY_VENGEFUL 338        //chance to ghost curse when hit with a contact move
@@ -380,7 +380,7 @@
 
 //Stage 3 dont forget to check all descriptor defines
 // #define ABILITY_COZY_DREAMS 346  //heal at end of each turn
-// #define ABILITY_SOUL_BURN 347   //ghost moves chance to burn
+#define ABILITY_SOUL_BURN 347   //ghost moves chance to burn
 #define ABILITY_DIRT_DEVIL 348   //supersweet syrup for poison and ground types "messy"
 #define ABILITY_SPIKY_ARMOR 349  //toxic debris but spikes                 
 #define ABILITY_SKEPTIC 350         //thick fat versus ghost and dark types
@@ -401,22 +401,20 @@
 #define ABILITY_RAIN_VEIL 365       //sand veil for rain
 #define ABILITY_JETSCREAM 366       //sound moves have chance to confuse
 //Stage 4 last section
-//#define ABILITY_CURRENT_CUTTER 367   //slicing moves become water type and are boosted
-//#define ABILITY_BRAWLER 368       //fighting aerialate for dodrio
-//#define ABILITY_HIGH_VOLTAGE 369      //electric liquid voice
-//#define ABILITY_FIRESONG 370          //fire liquid voice
-//#define ABILITY_SPRING_KICK 371       //kicking moves has chance to para
-//#define ABILITY_FORAGER 372           //grassy terrain harvest
-//#define ABILITY_FAT_RESERVE 373       //unburden for defense
-//#define ABILITY_MONSOON_MIND 374      //rain flower gift for slowking 1.5 spa 1.5 def
-//#define ABILITY_HOLIDAY_CHEER 375     //snow flower gift delibird 1.5 atk 1.5 speed
-//#define ABILITY_CLAY_SIGIL 376        //sand flower gift ??? clawf?
-//#define ABILITY_MEGA_SOL 377      //mega meganiums ability
-#define ABILITY_SPICY_SPRAY 378       //mega scovillain ability
-//freeze spicy spray for abomasnow
-//using follow me lowers incoming damage for watchog
+#define ABILITY_CURRENT_CUTTER 367      //slicing moves become water type and are boosted
+#define ABILITY_HIGH_VOLTAGE 368      //electric liquid voice
+#define ABILITY_FIRESONG 369          //fire liquid voice
+#define ABILITY_SPRING_KICK 370       //kicking moves has chance to para
+//#define ABILITY_FORAGER 371           //grassy terrain harvest
+#define ABILITY_MONSOON_MIND 372      //rain flower gift for slowking 1.5 spa 1.5 def
+#define ABILITY_HOLIDAY_CHEER 373     //snow flower gift delibird 1.5 atk 1.5 speed
+#define ABILITY_CLAY_SIGIL 374        //sand flower gift ??? clawf?
+#define ABILITY_NIGHTWATCH 375          //watchdogs friend guard that applies to himself
+//#define ABILITY_MEGA_SOL 376          //mega meganiums ability
+#define ABILITY_SPICY_SPRAY 377         //mega scovillain ability
+#define ABILITY_COLD_FRONT 378          //frostbite spicy spray 
 #define ABILITIES_COUNT_GEN9 379
-
+//REMINDER TO PUT IN WHAT NEW ABILITIES CANNOT BE ALTERED WITH SKILLSWAP OR COPIED ETC!!! Looking at monsoon mind trio specifically
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

@@ -6117,6 +6117,23 @@ gBattleScripting.savedBattler = gBattlerAttacker;
             }
             break;
 
+        case ABILITY_COLD_FRONT:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && IsBattlerAlive(gBattlerAttacker)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && GetBattlerHoldEffect(gBattlerAttacker, TRUE) != HOLD_EFFECT_PROTECTIVE_PADS
+             && TARGET_TURN_DAMAGED
+             && CanBeBurned(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker)))
+            {
+                gBattleScripting.moveEffect = MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_FROSTBITE;
+                PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_AbilityStatusEffect;
+                gHitMarker |= HITMARKER_STATUS_ABILITY_EFFECT;
+                effect++;
+            }
+            break;
+
         case ABILITY_COLD_HEART:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && IsBattlerAlive(gBattlerAttacker)
@@ -6441,12 +6458,76 @@ gBattleScripting.savedBattler = gBattlerAttacker;
                 effect++;
             }
             break;
+        case ABILITY_SOUL_BURN:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && IsBattlerAlive(gBattlerTarget)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && moveType == TYPE_GHOST
+             && RandomChance(RNG_STENCH, 1, 4)
+             && TARGET_TURN_DAMAGED
+             && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_BURN))
+            {
+                gBattleScripting.moveEffect = MOVE_EFFECT_BURN;
+                BattleScriptPushCursor();
+                SetMoveEffect(FALSE, FALSE);
+                BattleScriptPop();
+                effect++;
+            }
+            break;
+        case ABILITY_SOLAR_HYDRA:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && IsBattlerAlive(gBattlerTarget)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && moveType == TYPE_GRASS
+             && RandomChance(RNG_STENCH, 1, 4)
+             && TARGET_TURN_DAMAGED
+             && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_BURN))
+            {
+                gBattleScripting.moveEffect = MOVE_EFFECT_BURN;
+                BattleScriptPushCursor();
+                SetMoveEffect(FALSE, FALSE);
+                BattleScriptPop();
+                effect++;
+            }
+            break;
+        case ABILITY_JETSCREAM:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && IsBattlerAlive(gBattlerTarget)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && (gMovesInfo[gCurrentMove].soundMove)
+             && RandomChance(RNG_STENCH, 1, 5)
+             && TARGET_TURN_DAMAGED
+             && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_CONFUSION))
+            {
+                gBattleScripting.moveEffect = MOVE_EFFECT_CONFUSION;
+                BattleScriptPushCursor();
+                SetMoveEffect(FALSE, FALSE);
+                BattleScriptPop();
+                effect++;
+            }
+            break;
+        case ABILITY_SPRING_KICK:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && IsBattlerAlive(gBattlerTarget)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && (gMovesInfo[gCurrentMove].kickmove)
+             && RandomChance(RNG_STENCH, 1, 5)
+             && TARGET_TURN_DAMAGED
+             && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_PARALYSIS))
+            {
+                gBattleScripting.moveEffect = MOVE_EFFECT_PARALYSIS;
+                BattleScriptPushCursor();
+                SetMoveEffect(FALSE, FALSE);
+                BattleScriptPop();
+                effect++;
+            }
+            break;
         case ABILITY_BULLY:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && gBattleMons[gBattlerTarget].hp != 0
              && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
              && IsMoveMakingContact(move, gBattlerAttacker)
-             && RandomWeighted(RNG_STENCH, 4, 1)
+             && RandomWeighted(RNG_STENCH, 1, 4)
              && TARGET_TURN_DAMAGED
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_DEF_MINUS_1))
             {
@@ -9900,6 +9981,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (gMovesInfo[move].slicingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_CURRENT_CUTTER:
+        if (gMovesInfo[move].slicingMove)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+        break;
     case ABILITY_SUPREME_OVERLORD:
         modifier = uq4_12_multiply(modifier, GetSupremeOverlordModifier(battlerAtk));
         break;
@@ -10259,6 +10344,18 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
         if (gBattleMons[battlerAtk].species == SPECIES_CHERRIM_SUNSHINE && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SUN) && IS_MOVE_SPECIAL(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_MONSOON_MIND:
+        if (gBattleMons[battlerAtk].species == SPECIES_LUMINEON && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_RAIN) && IS_MOVE_SPECIAL(move))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_HOLIDAY_CHEER:
+        if (gBattleMons[battlerAtk].species == SPECIES_DELIBIRD && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SNOW) && IS_MOVE_PHYSICAL(move))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_CLAY_SIGIL:
+        if (gBattleMons[battlerAtk].species == SPECIES_KLAWF && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SANDSTORM) && IS_MOVE_PHYSICAL(move))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
     case ABILITY_HUSTLE:
         if (IS_MOVE_PHYSICAL(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
@@ -10416,14 +10513,20 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
             if (gBattleMons[BATTLE_PARTNER(battlerAtk)].species == SPECIES_CHERRIM_SUNSHINE && IsBattlerWeatherAffected(BATTLE_PARTNER(battlerAtk), B_WEATHER_SUN) && IS_MOVE_SPECIAL(move))
                 modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
             break;
+        case ABILITY_MONSOON_MIND:
+            if (gBattleMons[BATTLE_PARTNER(battlerAtk)].species == SPECIES_LUMINEON && IsBattlerWeatherAffected(BATTLE_PARTNER(battlerAtk), B_WEATHER_RAIN) && IS_MOVE_SPECIAL(move))
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            break;
+        case ABILITY_HOLIDAY_CHEER:
+            if (gBattleMons[BATTLE_PARTNER(battlerAtk)].species == SPECIES_DELIBIRD && IsBattlerWeatherAffected(BATTLE_PARTNER(battlerAtk), B_WEATHER_SNOW) && IS_MOVE_PHYSICAL(move))
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            break;
+        case ABILITY_CLAY_SIGIL:
+            if (gBattleMons[BATTLE_PARTNER(battlerAtk)].species == SPECIES_KLAWF && IsBattlerWeatherAffected(BATTLE_PARTNER(battlerAtk), B_WEATHER_SANDSTORM) && IS_MOVE_PHYSICAL(move))
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            break;
         }
-        // switch (holdEffectAtk)
-        // {
-        // case HOLD_EFFECT_HOENN_SEACAKE:
-        //     if ((gBattleMons[BATTLE_PARTNER(battlerAtk)].species == SPECIES_CORSOLA || gBattleMons[BATTLE_PARTNER(battlerAtk)].species == SPECIES_LUVDISC))
-        //          modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
-        //     break;
-        // }
+     
     }
 
     // field abilities
@@ -10569,6 +10672,11 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
                 RecordAbilityBattle(battlerDef, ABILITY_FUR_COAT);
         }
         break;
+    case ABILITY_NIGHTWATCH:
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));
+            if (damageCalcData->updateFlags)
+                RecordAbilityBattle(battlerDef, ABILITY_NIGHTWATCH);
+        break;
     case ABILITY_GRASS_PELT:
         if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN && usesDefStat)
         {
@@ -10579,6 +10687,18 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
         break;
     case ABILITY_FLOWER_GIFT:
         if (gBattleMons[battlerDef].species == SPECIES_CHERRIM_SUNSHINE && IsBattlerWeatherAffected(battlerDef, B_WEATHER_SUN) && !usesDefStat)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_MONSOON_MIND:
+        if (gBattleMons[battlerDef].species == SPECIES_LUMINEON && IsBattlerWeatherAffected(battlerDef, B_WEATHER_RAIN) && usesDefStat)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_HOLIDAY_CHEER:
+        if (gBattleMons[battlerDef].species == SPECIES_DELIBIRD && IsBattlerWeatherAffected(battlerDef, B_WEATHER_RAIN) && usesDefStat)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_CLAY_SIGIL:
+        if (gBattleMons[battlerDef].species == SPECIES_KLAWF && IsBattlerWeatherAffected(battlerDef, B_WEATHER_SANDSTORM) && !usesDefStat)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_ABSOLUTE_ZERO:
@@ -10606,6 +10726,18 @@ static inline u32 CalcDefenseStat(struct DamageCalculationData *damageCalcData, 
         {
         case ABILITY_FLOWER_GIFT:
             if (gBattleMons[BATTLE_PARTNER(battlerDef)].species == SPECIES_CHERRIM_SUNSHINE && IsBattlerWeatherAffected(BATTLE_PARTNER(battlerDef), B_WEATHER_SUN) && !usesDefStat)
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            break;
+        case ABILITY_MONSOON_MIND:
+            if (gBattleMons[BATTLE_PARTNER(battlerDef)].species == SPECIES_LUMINEON && IsBattlerWeatherAffected(BATTLE_PARTNER(battlerDef), B_WEATHER_RAIN) && usesDefStat)
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            break;
+        case ABILITY_HOLIDAY_CHEER:
+            if (gBattleMons[BATTLE_PARTNER(battlerDef)].species == SPECIES_DELIBIRD && IsBattlerWeatherAffected(BATTLE_PARTNER(battlerDef), B_WEATHER_SNOW) && usesDefStat)
+                modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            break;
+        case ABILITY_CLAY_SIGIL:
+            if (gBattleMons[BATTLE_PARTNER(battlerDef)].species == SPECIES_KLAWF && IsBattlerWeatherAffected(BATTLE_PARTNER(battlerDef), B_WEATHER_SUN) && !usesDefStat)
                 modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
             break;
         }
@@ -10916,6 +11048,7 @@ static inline uq4_12_t GetDefenderPartnerAbilitiesModifier(u32 battlerPartnerDef
     switch (GetBattlerAbility(battlerPartnerDef))
     {
     case ABILITY_FRIEND_GUARD:
+    case ABILITY_NIGHTWATCH:
         return UQ_4_12(0.7);
         break;
     }

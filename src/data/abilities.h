@@ -2565,6 +2565,19 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Poison moves go first."),
         .aiRating = 6,
     },
+    [ABILITY_SOLAR_HYDRA] =
+    {
+        .name = _("Solar Hydra"),
+        .description = COMPOUND_STRING("Grass moves 20 percent chance to burn."),
+        .aiRating = 4,
+        .breakable = TRUE,
+    },
+    [ABILITY_DRAGON_SONG] =
+    {
+        .name = _("Dragon Song"),
+        .description = COMPOUND_STRING("Makes sound moves Dragon."),
+        .aiRating = 5,
+    },
     // [ABILITY_GRAVITY_SURGE] =
     // {
     //     .name = _("Gravity Surge"),
@@ -2661,6 +2674,20 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Fire moves go first."),
         .aiRating = 6,
     },
+    [ABILITY_ROYAL_COAT] =
+    {
+        .name = _("Royal Coat"),
+        .description = COMPOUND_STRING("Prevents added effects."),
+        .aiRating = 5,
+        .breakable = TRUE,
+    },
+    [ABILITY_SOUL_BURN] =
+    {
+        .name = _("Soul Burn"),
+        .description = COMPOUND_STRING("Ghost moves 20 percent chance to burn."),
+        .aiRating = 4,
+        .breakable = TRUE,
+    },
     [ABILITY_DIRT_DEVIL] =
     {
         .name = _("Dirt Devil"),
@@ -2680,17 +2707,36 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
         .breakable = TRUE,
     },
+    [ABILITY_CLUTCH_UP] =
+    {
+        .name = _("Clutch Up"),
+        .description = COMPOUND_STRING("Boosts stats at low HP, can't escape."),
+        .aiRating = 6,
+    },
     [ABILITY_HELLFIRE] =
     {
         .name = _("Hellfire"),
         .description = COMPOUND_STRING("Hurts to touch."),
-        .aiRating = 6,
+        .aiRating = 4,
     },
     [ABILITY_LAST_LINE] =
     {
         .name = _("Last Line"),
         .description = COMPOUND_STRING("Boosts both defenses at low HP."),
         .aiRating = 5,
+    },
+    [ABILITY_SURGE_HUNTER] =
+    {
+        .name = _("Surge Hunter"),
+        .description = COMPOUND_STRING("Criticals paralyzed foes."),
+        .aiRating = 4,
+    },
+    [ABILITY_COLD_STEEL] =
+    {
+        .name = _("Cold Steel"),
+        .description = COMPOUND_STRING("Heat-and-fight protection."),
+        .aiRating = 7,
+        .breakable = TRUE,
     },
     [ABILITY_SAND_SONG] =
     {
@@ -2745,33 +2791,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .failsOnImposter = TRUE,
     },
-    [ABILITY_DRAGON_SONG] =
+    [ABILITY_FLOW_STATE] =
     {
-        .name = _("Dragon Song"),
-        .description = COMPOUND_STRING("Makes sound moves Dragon."),
-        .aiRating = 5,
-    },
-    [ABILITY_SURGE_HUNTER] =
-    {
-        .name = _("Surge Hunter"),
-        .description = COMPOUND_STRING("Criticals paralyzed foes."),
-        .aiRating = 4,
-    },
-    [ABILITY_ROYAL_COAT] =
-    {
-        .name = _("Royal Coat"),
-        .description = COMPOUND_STRING("Prevents added effects."),
-        .aiRating = 5,
-        .breakable = TRUE,
-    },
-[ABILITY_COLD_STEEL] =
-    {
-        .name = _("Cold Steel"),
-        .description = COMPOUND_STRING("Heat-and-fight protection."),
+        .name = _("Flow State"),
+        .description = COMPOUND_STRING("Adjusts power favorably."),
         .aiRating = 7,
-        .breakable = TRUE,
     },
-
     [ABILITY_RAIN_VEIL] =
     {
         .name = _("Rain Veil"),
@@ -2779,12 +2804,84 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 3,
         .breakable = TRUE,
     },
-
+    [ABILITY_JETSCREAM] =
+    {
+        .name = _("Jetscream"),
+        .description = COMPOUND_STRING("Sound moves 20 chance to confuse."),
+        .aiRating = 3,
+    },
+    [ABILITY_CURRENT_CUTTER] =
+    {
+        .name = _("Current Cutter"),
+        .description = COMPOUND_STRING("Makes slicing moves water, boosts by 1.2."),
+        .aiRating = 7,
+    },
+    [ABILITY_HIGH_VOLTAGE] =
+    {
+        .name = _("High Voltage"),
+        .description = COMPOUND_STRING("Makes sound moves Electric."),
+        .aiRating = 5,
+    },
+    [ABILITY_FIRESONG] =
+    {
+        .name = _("Firesong"),
+        .description = COMPOUND_STRING("Makes sound moves Fire."),
+        .aiRating = 5,
+    },
+    [ABILITY_SPRING_KICK] =
+    {
+        .name = _("Spring Kick"),
+        .description = COMPOUND_STRING("Kick moves 20 percent chance to para."),
+        .aiRating = 4,
+        .breakable = TRUE,
+    },
+    //forager
+    [ABILITY_MONSOON_MIND] =
+    {
+        .name = _("Monsoon Mind"),
+        .description = COMPOUND_STRING("Self/Allies power SpA/Def in rain."),
+        .aiRating = 4,
+        .cantBeCopied = TRUE,
+        .cantBeTraced = TRUE,
+        .breakable = TRUE,
+    },
+    [ABILITY_HOLIDAY_CHEER] =
+    {
+        .name = _("Holiday Cheer"),
+        .description = COMPOUND_STRING("Self/Allies power Atk/Def in snow."),
+        .aiRating = 4,
+        .cantBeCopied = TRUE,
+        .cantBeTraced = TRUE,
+        .breakable = TRUE,
+    },
+    [ABILITY_CLAY_SIGIL] =
+    {
+        .name = _("Clay Sigil"),
+        .description = COMPOUND_STRING("Self/Allies power Atk/SpD in sand."),
+        .aiRating = 4,
+        .cantBeCopied = TRUE,
+        .cantBeTraced = TRUE,
+        .breakable = TRUE,
+    },
+    [ABILITY_NIGHTWATCH] =
+    {
+        .name = _("Nightwatch"),
+        .description = COMPOUND_STRING("Lowers damage to partner/self."),
+        .aiRating = 0,
+        .breakable = TRUE,
+    },
+    //mega sol
     [ABILITY_SPICY_SPRAY] =
     {
         .name = _("Spicy Spray"),
         .description = COMPOUND_STRING("Burns the foe when hit."),
         .aiRating = 4,
     },
-
+    [ABILITY_COLD_FRONT] =
+    {
+        .name = _("Cold Front"),
+        .description = COMPOUND_STRING("Frostbites the foe when hit."),
+        .aiRating = 4,
+    },
+    //piercing drill
 };

@@ -407,12 +407,13 @@
 #define ABILITY_SPRING_KICK 370       //kicking moves has chance to para
 //#define ABILITY_FORAGER 371           //grassy terrain harvest
 #define ABILITY_MONSOON_MIND 372      //rain flower gift for slowking 1.5 spa 1.5 def
-#define ABILITY_HOLIDAY_CHEER 373     //snow flower gift delibird 1.5 atk 1.5 speed
+#define ABILITY_HOLIDAY_CHEER 373     //snow flower gift delibird 1.5 atk 1.5 def
 #define ABILITY_CLAY_SIGIL 374        //sand flower gift ??? clawf?
 #define ABILITY_NIGHTWATCH 375          //watchdogs friend guard that applies to himself
 //#define ABILITY_MEGA_SOL 376          //mega meganiums ability
 #define ABILITY_SPICY_SPRAY 377         //mega scovillain ability
 #define ABILITY_COLD_FRONT 378          //frostbite spicy spray 
+//#define ABILITY_PIERCING_DRILL 379    //unseen fist for mega excadrill
 #define ABILITIES_COUNT_GEN9 379
 //REMINDER TO PUT IN WHAT NEW ABILITIES CANNOT BE ALTERED WITH SKILLSWAP OR COPIED ETC!!! Looking at monsoon mind trio specifically
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9

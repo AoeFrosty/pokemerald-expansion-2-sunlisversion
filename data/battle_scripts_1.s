@@ -7956,7 +7956,7 @@ BattleScript_HarvestActivates::
 BattleScript_HarvestActivatesEnd:
 	end3
 
-BattleScript_CozyDreams:
+BattleScript_CozyDreams::
 	pause 5
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_COZYDREAMS

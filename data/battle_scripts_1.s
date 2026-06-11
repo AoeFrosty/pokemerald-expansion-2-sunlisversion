@@ -7956,6 +7956,13 @@ BattleScript_HarvestActivates::
 BattleScript_HarvestActivatesEnd:
 	end3
 
+BattleScript_CozyDreams:
+	pause 5
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_COZYDREAMS
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
 BattleScript_SolarPowerActivates::
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
 	call BattleScript_AbilityPopUp

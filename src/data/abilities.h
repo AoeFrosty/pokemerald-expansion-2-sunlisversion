@@ -2883,5 +2883,10 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Frostbites the foe when hit."),
         .aiRating = 4,
     },
-    //piercing drill
+    [ABILITY_PIERCING_DRILL] =
+    {
+        .name = _("Piercing Drill"),
+        .description = COMPOUND_STRING("Contact evades protection."),
+        .aiRating = 6,
+    },
 };

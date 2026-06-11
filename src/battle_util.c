@@ -4723,6 +4723,7 @@ gFieldStatuses |= STATUS_FIELD_PSYCHIC_TERRAIN;
             }
             break;
         case ABILITY_DOWNLOAD:
+        case ABILITY_FLOW_STATE:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
                 u32 statId, opposingBattler;
@@ -5020,7 +5021,7 @@ case ABILITY_DIRT_DEVIL:
             if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN)
                  && !(gBattleStruct->intrepidSwordBoost[GetBattlerSide(battler)] & (1u << gBattlerPartyIndexes[battler])))
             {
-gBattleScripting.savedBattler = gBattlerAttacker;
+                gBattleScripting.savedBattler = gBattlerAttacker;
                 gBattlerAttacker = battler;
                 if (B_INTREPID_SWORD == GEN_9)
                     gBattleStruct->intrepidSwordBoost[GetBattlerSide(battler)] |= 1u << gBattlerPartyIndexes[battler];
@@ -5034,7 +5035,7 @@ gBattleScripting.savedBattler = gBattlerAttacker;
             if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_DEF, MAX_STAT_STAGE, CMP_LESS_THAN)
                  && !(gBattleStruct->dauntlessShieldBoost[GetBattlerSide(battler)] & (1u << gBattlerPartyIndexes[battler])))
             {
-gBattleScripting.savedBattler = gBattlerAttacker;
+                gBattleScripting.savedBattler = gBattlerAttacker;
                 gBattlerAttacker = battler;
                 if (B_DAUNTLESS_SHIELD == GEN_9)
                     gBattleStruct->dauntlessShieldBoost[GetBattlerSide(battler)] |= 1u << gBattlerPartyIndexes[battler];
@@ -5282,6 +5283,17 @@ gBattleScripting.savedBattler = gBattlerAttacker;
                     gLastUsedItem = GetUsedHeldItem(gBattlerTarget);
                     BattleScriptPushCursorAndCallback(BattleScript_PickupActivates);
                     effect++;
+                }
+                break;
+            case ABILITY_COZY_DREAMS:
+                if (!BATTLER_MAX_HP(battler) && (B_HEAL_BLOCKING < GEN_5 || !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)))
+                {
+                    gBattleMoveDamage = GetNonDynamaxMaxHP(battler) / 16;
+                    if (gBattleMoveDamage == 0)
+                        gBattleMoveDamage = 1;
+                    gBattleMoveDamage *= -1;
+                    gBattleMoveDamage = MaybeLowerHealingForPoison(battler, gBattleMoveDamage);
+                    BattleScriptPushCursorAndCallback(BattleScript_CozyDreams);
                 }
                 break;
             case ABILITY_HARVEST:
@@ -9223,7 +9235,7 @@ bool32 IsBattlerProtected(u32 battlerAtk, u32 battlerDef, u32 move)
 
     if (!gProtectStructs[battlerDef].maxGuarded // Max Guard cannot be bypassed by Unseen Fist
      && IsMoveMakingContact(move, gBattlerAttacker)
-     && GetBattlerAbility(gBattlerAttacker) == ABILITY_UNSEEN_FIST)
+     && (GetBattlerAbility(gBattlerAttacker) == ABILITY_UNSEEN_FIST || GetBattlerAbility(gBattlerAttacker) == ABILITY_PIERCING_DRILL))
         return FALSE;
     else if ((gSideStatuses[GetBattlerSide(battlerDef)] & SIDE_STATUS_CRAFTY_SHIELD)
              && IS_MOVE_STATUS(move) && gMovesInfo[move].effect != EFFECT_COACHING)
@@ -11306,6 +11318,7 @@ static u32 GetWeather(void)
     else
         return gBattleWeather;
 }
+
 
 static inline bool32 IsFutureSightAttackerInParty(struct DamageCalculationData *damageCalcData)
 {

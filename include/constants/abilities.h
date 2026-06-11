@@ -379,43 +379,61 @@
 #define ABILITY_ROYAL_COAT 345   //shield dust for cats
 
 //Stage 3 dont forget to check all descriptor defines
-// #define ABILITY_COZY_DREAMS 346  //heal at end of each turn
-#define ABILITY_SOUL_BURN 347   //ghost moves chance to burn
-#define ABILITY_DIRT_DEVIL 348   //supersweet syrup for poison and ground types "messy"
-#define ABILITY_SPIKY_ARMOR 349  //toxic debris but spikes                 
-#define ABILITY_SKEPTIC 350         //thick fat versus ghost and dark types
-#define ABILITY_CLUTCH_UP 351    //when reduced by half omni boost but cannot retreat
-#define ABILITY_HELLFIRE 352     //iron barbs
-#define ABILITY_LAST_LINE 353    //beserk but defenses
-#define ABILITY_SURGE_HUNTER 354    //merciless on para targets for jolteon
-#define ABILITY_COLD_STEEL 355   //fighting damage halved, and fire damage halved for mega beartic called cold steel?
-#define ABILITY_SAND_SONG 356    //liquid voice for ground moves
-#define ABILITY_INFLATE 357      //raise defenses when hit by a wind move
-#define ABILITY_ANCIENT_IDOL 358 //raise special defense like defiant
-#define ABILITY_CHILL_SONG 359   //liquid voice but ice
-#define ABILITY_CYRO_SPIRIT 360  //Steely spirit but ice
-#define ABILITY_TRAINED_MIND 361 //scrappy but psychic v dark
-#define ABILITY_SNOW_STALKER 362  //solar power for snow
-#define ABILITY_SANDY_SOUL 363   //protosynthesis with sand
-#define ABILITY_FLOW_STATE 364      //download clone
-#define ABILITY_RAIN_VEIL 365       //sand veil for rain
-#define ABILITY_JETSCREAM 366       //sound moves have chance to confuse
+#define ABILITY_COZY_DREAMS 346      //heal at end of each turn
+#define ABILITY_SOUL_BURN 347           //ghost moves chance to burn
+#define ABILITY_DIRT_DEVIL 348          //supersweet syrup for poison and ground types "messy"
+#define ABILITY_SPIKY_ARMOR 349         //toxic debris but spikes                 
+#define ABILITY_SKEPTIC 350             //thick fat versus ghost and dark types
+#define ABILITY_CLUTCH_UP 351           //when reduced by half omni boost but cannot retreat
+#define ABILITY_HELLFIRE 352            //iron barbs
+#define ABILITY_LAST_LINE 353           //beserk but defenses
+#define ABILITY_SURGE_HUNTER 354        //merciless on para targets for jolteon
+#define ABILITY_COLD_STEEL 355          //fighting damage halved, and fire damage halved for mega beartic called cold steel?
+#define ABILITY_SAND_SONG 356           //liquid voice for ground moves
+#define ABILITY_INFLATE 357             //raise defenses when hit by a wind move
+#define ABILITY_ANCIENT_IDOL 358        //raise special defense like defiant
+#define ABILITY_CHILL_SONG 359          //liquid voice but ice
+#define ABILITY_CYRO_SPIRIT 360         //Steely spirit but ice
+#define ABILITY_TRAINED_MIND 361        //scrappy but psychic v dark
+#define ABILITY_SNOW_STALKER 362        //solar power for snow
+#define ABILITY_SANDY_SOUL 363          //protosynthesis with sand
+#define ABILITY_FLOW_STATE 364          //download clone
+#define ABILITY_RAIN_VEIL 365           //sand veil for rain
+#define ABILITY_JETSCREAM 366           //sound moves have chance to confuse
 //Stage 4 last section
 #define ABILITY_CURRENT_CUTTER 367      //slicing moves become water type and are boosted
-#define ABILITY_HIGH_VOLTAGE 368      //electric liquid voice
-#define ABILITY_FIRESONG 369          //fire liquid voice
-#define ABILITY_SPRING_KICK 370       //kicking moves has chance to para
-//#define ABILITY_FORAGER 371           //grassy terrain harvest
-#define ABILITY_MONSOON_MIND 372      //rain flower gift for slowking 1.5 spa 1.5 def
-#define ABILITY_HOLIDAY_CHEER 373     //snow flower gift delibird 1.5 atk 1.5 def
-#define ABILITY_CLAY_SIGIL 374        //sand flower gift ??? clawf?
+#define ABILITY_HIGH_VOLTAGE 368        //electric liquid voice
+#define ABILITY_FIRESONG 369            //fire liquid voice
+#define ABILITY_SPRING_KICK 370         //kicking moves has chance to para
+//#define ABILITY_PLACEHOLDER 371
+#define ABILITY_MONSOON_MIND 372        //rain flower gift for slowking 1.5 spa 1.5 def
+#define ABILITY_HOLIDAY_CHEER 373       //snow flower gift delibird 1.5 atk 1.5 def
+#define ABILITY_CLAY_SIGIL 374          //sand flower gift ??? clawf?
 #define ABILITY_NIGHTWATCH 375          //watchdogs friend guard that applies to himself
 //#define ABILITY_MEGA_SOL 376          //mega meganiums ability
 #define ABILITY_SPICY_SPRAY 377         //mega scovillain ability
 #define ABILITY_COLD_FRONT 378          //frostbite spicy spray 
-//#define ABILITY_PIERCING_DRILL 379    //unseen fist for mega excadrill
-#define ABILITIES_COUNT_GEN9 379
-//REMINDER TO PUT IN WHAT NEW ABILITIES CANNOT BE ALTERED WITH SKILLSWAP OR COPIED ETC!!! Looking at monsoon mind trio specifically
+#define ABILITY_PIERCING_DRILL 379      //unseen fist for mega excadrill
+//#define ABILITY_MEGA_FRER 380         //mega sol but snow (always have def boost and blizzard acc check)
+//#define ABILITY_MEGA_DUST 381         //mega sol but sand
+//#define ABILITY_MEGA_STORM 382        //mega sol but rain
+//#define ABILITY_                      
+//summon weather or terrain on hit
+//power up wind moves                   galeforce
+//solar power in snow
+//turn class of moves into special moves
+//turn class of moves into physical moves
+//resorption from tarc2?
+//crippling venom from tarc2?
+//boost "drain moves" power
+//priority moves increase power haste from tarc2
+//electric terrain when hit
+//psychic terrain when hit
+//misty terrain when hit
+//guardian of the sea ability for lugia give water like attributes like water bubble
+//Requiem of shadow ability for giratina that gives ghost immunity and boost damage like kingambit
+//good as gold copy but only when full hp
+#define ABILITIES_COUNT_GEN9 380
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

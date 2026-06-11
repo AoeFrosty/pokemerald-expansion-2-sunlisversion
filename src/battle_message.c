@@ -1179,6 +1179,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_SUBBERRY]                             = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}'s Sub-Berry created a substitute!"), 
     [STRINGID_STEELSURGESWITCHIN]                   = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} was caught in the sharp shrapnel!"),
     [STRINGID_PKMNSROCKPREVENTSFLINCHING]           = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}'s Rock-Type prevents flinching!"),
+    [STRINGID_COZYDREAMS]                           = COMPOUND_STRING("Cozy Dreams have a healing effect!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

@@ -6087,7 +6087,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     }
     else if (gMovesInfo[move].soundMove && ability == ABILITY_HIGH_VOLTAGE)
     {
-        return TYPE_ELECTRIC
+        return TYPE_ELECTRIC;
     }
     else if (gMovesInfo[move].soundMove && ability == ABILITY_FIRESONG)
     {

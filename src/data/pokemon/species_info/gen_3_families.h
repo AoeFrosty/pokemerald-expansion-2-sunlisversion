@@ -9418,7 +9418,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 //         .isMegaEvolution = TRUE,
 //         .levelUpLearnset = sChimechoLevelUpLearnset,
 //         .teachableLearnset = sChimechoTeachableLearnset,
-//         .eggMoveLearnset = sChimechoEggMoveLearnset,
+//         .formSpeciesIdTable = sChimechoFormSpeciesIdTable,
 //         .formChangeTable = sChimechoFormChangeTable,
 //     },
 // #endif //FROSTY_MEGAS >= SPECIES_CHIMECHO

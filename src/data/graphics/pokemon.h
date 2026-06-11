@@ -6965,6 +6965,21 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_LedianF[] = INCBIN_COMP("graphics/pokemon/ledian/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
+
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_LedianMega[] = INCBIN_U32("graphics/pokemon/ledian/mega/front.4bpp.lz");
+    const u32 gMonPalette_LedianMega[] = INCBIN_U32("graphics/pokemon/ledian/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_LedianMega[] = INCBIN_U32("graphics/pokemon/ledian/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_LedianMega[] = INCBIN_U32("graphics/pokemon/ledian/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_LedianMega[] = INCBIN_U8("graphics/pokemon/ledian/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    // const u32 gObjectEventPic_LedianMega[] = INCBIN_COMP("graphics/pokemon/ledian/mega/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    // const u32 gOverworldPalette_LedianMega[] = INCBIN_U32("graphics/pokemon/ledian/mega/overworld_normal.gbapal.lz");
+    // const u32 gShinyOverworldPalette_LedianMega[] = INCBIN_U32("graphics/pokemon/Ledian/mega/overworld_shiny.gbapal.lz");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_LEDYBA
 
 #if P_FAMILY_SPINARAK

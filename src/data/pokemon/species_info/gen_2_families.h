@@ -293,6 +293,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sMeganiumLevelUpLearnset,
         .teachableLearnset = sMeganiumTeachableLearnset,
+        .formSpeciesIdTable = sMeganiumFormSpeciesIdTable,
         .formChangeTable = sMeganiumFormChangeTable,
     },
 #endif //FROSTYS MEGAS    
@@ -834,6 +835,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sFeraligatrLevelUpLearnset,
         .teachableLearnset = sFeraligatrTeachableLearnset,
+        .formSpeciesIdTable = sFeraligatrFormSpeciesIdTable,
         .formChangeTable = sFeraligatrFormChangeTable,
     },
 #endif //MEGAS
@@ -1167,11 +1169,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sNoctowlLevelUpLearnset,
         .teachableLearnset = sNoctowlTeachableLearnset,
+        .formSpeciesIdTable = sNoctowlFormSpeciesIdTable,
         .formChangeTable = sNoctowlFormChangeTable,
     },
 #endif //MEGAS
 #endif //Frosty megas
-
 #endif //P_FAMILY_HOOTHOOT
 
 #if P_FAMILY_LEDYBA
@@ -1401,6 +1403,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sLedianLevelUpLearnset,
         .teachableLearnset = sLedianTeachableLearnset,
+        .formSpeciesIdTable = sLedianFormSpeciesIdTable,
         .formChangeTable = sLedianFormChangeTable,
     },
 #endif //MEGAS
@@ -4008,6 +4011,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sMismagiusLevelUpLearnset,
         .teachableLearnset = sMismagiusTeachableLearnset,
+        .formSpeciesIdTable = sMismagiusFormSpeciesIdTable,
         .formChangeTable = sMismagiusFormChangeTable,
     },
 #endif //MEGAS

@@ -4274,6 +4274,10 @@ u32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 mov
         if (moveType == TYPE_FIRE)
             effect = MOVE_ABSORBED_BY_STAT_INCREASE_ABILITY;
         break;
+    case ABILITY_WATER_COMPACTION:
+        if (moveType == TYPE_WATER)
+            effect = MOVE_ABSORBED_BY_STAT_INCREASE_ABILITY;
+        break;
     case ABILITY_WIND_RIDER:
         if (gMovesInfo[move].windMove && !(GetBattlerMoveTargetType(battlerAtk, move) & MOVE_TARGET_USER))
             effect = MOVE_ABSORBED_BY_STAT_INCREASE_ABILITY;
@@ -5294,6 +5298,7 @@ case ABILITY_DIRT_DEVIL:
                     gBattleMoveDamage *= -1;
                     gBattleMoveDamage = MaybeLowerHealingForPoison(battler, gBattleMoveDamage);
                     BattleScriptPushCursorAndCallback(BattleScript_CozyDreams);
+                    effect++;
                 }
                 break;
             case ABILITY_HARVEST:
@@ -5580,6 +5585,7 @@ case ABILITY_DIRT_DEVIL:
                     break;
                 case ABILITY_WELL_BAKED_BODY:
                 case ABILITY_INFLATE:
+                case ABILITY_WATER_COMPACTION:
                     statAmount = 2;
                     statId = STAT_DEF;
                     break;
@@ -5688,20 +5694,20 @@ case ABILITY_DIRT_DEVIL:
                 effect++;
             }
             break;
-        case ABILITY_WATER_COMPACTION:
-            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
-             && TARGET_TURN_DAMAGED
-             && IsBattlerAlive(battler)
-             && moveType == TYPE_WATER
-             && CompareStat(battler, STAT_DEF, MAX_STAT_STAGE, CMP_LESS_THAN))
-            {
-                gEffectBattler = battler;
-                SET_STATCHANGER(STAT_DEF, 2, FALSE);
-                BattleScriptPushCursor();
-                gBattlescriptCurrInstr = BattleScript_TargetAbilityStatRaiseRet;
-                effect++;
-            }
-            break;
+        // case ABILITY_WATER_COMPACTION:
+        //     if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+        //      && TARGET_TURN_DAMAGED
+        //      && IsBattlerAlive(battler)
+        //      && moveType == TYPE_WATER
+        //      && CompareStat(battler, STAT_DEF, MAX_STAT_STAGE, CMP_LESS_THAN))
+        //     {
+        //         gEffectBattler = battler;
+        //         SET_STATCHANGER(STAT_DEF, 2, FALSE);
+        //         BattleScriptPushCursor();
+        //         gBattlescriptCurrInstr = BattleScript_TargetAbilityStatRaiseRet;
+        //         effect++;
+        //     }
+        //     break;
         case ABILITY_STAMINA:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && gBattlerAttacker != gBattlerTarget
@@ -6342,6 +6348,42 @@ case ABILITY_DIRT_DEVIL:
                 effect++;
             }
             break;
+        case ABILITY_OVERCHARGE:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && TARGET_TURN_DAMAGED
+             && IsBattlerAlive(gBattlerTarget)
+             && TryChangeBattleTerrain(gBattlerTarget, STATUS_FIELD_ELECTRIC_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_SeedSowerActivates;
+                effect++;
+            }
+            break;
+        case ABILITY_MIGRAINE:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && TARGET_TURN_DAMAGED
+             && IsBattlerAlive(gBattlerTarget)
+             && TryChangeBattleTerrain(gBattlerTarget, STATUS_FIELD_PSYCHIC_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_SeedSowerActivates;
+                effect++;
+            }
+            break;
+        case ABILITY_FEY_SKIN:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && TARGET_TURN_DAMAGED
+             && IsBattlerAlive(gBattlerTarget)
+             && TryChangeBattleTerrain(gBattlerTarget, STATUS_FIELD_MISTY_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_SeedSowerActivates;
+                effect++;
+            }
+            break;    
         case ABILITY_THERMAL_EXCHANGE:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && TARGET_TURN_DAMAGED
@@ -6522,7 +6564,7 @@ case ABILITY_DIRT_DEVIL:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && IsBattlerAlive(gBattlerTarget)
              && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
-             && (gMovesInfo[gCurrentMove].kickmove)
+             && (gMovesInfo[gCurrentMove].kickMove)
              && RandomChance(RNG_STENCH, 1, 5)
              && TARGET_TURN_DAMAGED
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_PARALYSIS))
@@ -9888,7 +9930,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         break;
 
     case ABILITY_KICKBOXER:
-        if (gMovesInfo[move].kickmove)
+        if (gMovesInfo[move].kickMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
     
@@ -9991,6 +10033,14 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         break;
     case ABILITY_SHARPNESS:
         if (gMovesInfo[move].slicingMove)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_GALEFORCE:
+        if (gMovesInfo[move].windMove)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_QUICK_STRIKE:
+        if (gMovesInfo[move].prioMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_CURRENT_CUTTER:

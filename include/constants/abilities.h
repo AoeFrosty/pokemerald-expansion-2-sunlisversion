@@ -405,7 +405,7 @@
 #define ABILITY_HIGH_VOLTAGE 368        //electric liquid voice
 #define ABILITY_FIRESONG 369            //fire liquid voice
 #define ABILITY_SPRING_KICK 370         //kicking moves has chance to para
-//#define ABILITY_PLACEHOLDER 371
+#define ABILITY_GALEFORCE 371           //empower wind moves 30%
 #define ABILITY_MONSOON_MIND 372        //rain flower gift for slowking 1.5 spa 1.5 def
 #define ABILITY_HOLIDAY_CHEER 373       //snow flower gift delibird 1.5 atk 1.5 def
 #define ABILITY_CLAY_SIGIL 374          //sand flower gift ??? clawf?
@@ -417,9 +417,11 @@
 //#define ABILITY_MEGA_FRER 380         //mega sol but snow (always have def boost and blizzard acc check)
 //#define ABILITY_MEGA_DUST 381         //mega sol but sand
 //#define ABILITY_MEGA_STORM 382        //mega sol but rain
-//#define ABILITY_                      
-//summon weather or terrain on hit
-//power up wind moves                   galeforce
+#define ABILITY_OVERCHARGE 383          //electric terrain when hit
+#define ABILITY_MIGRAINE 384            //psychic terrain when hit
+#define ABILITY_FEY_SKIN 385            //misty terrain when hit
+#define ABILITY_QUICK_STRIKE 386        //powers up priority moves 
+//summon weather
 //solar power in snow
 //turn class of moves into special moves
 //turn class of moves into physical moves
@@ -427,13 +429,10 @@
 //crippling venom from tarc2?
 //boost "drain moves" power
 //priority moves increase power haste from tarc2
-//electric terrain when hit
-//psychic terrain when hit
-//misty terrain when hit
 //guardian of the sea ability for lugia give water like attributes like water bubble
 //Requiem of shadow ability for giratina that gives ghost immunity and boost damage like kingambit
 //good as gold copy but only when full hp
-#define ABILITIES_COUNT_GEN9 380
+#define ABILITIES_COUNT_GEN9 387
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

@@ -2835,7 +2835,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 4,
         .breakable = TRUE,
     },
-    //forager
+    [ABILITY_GALEFORCE] =
+    {
+        .name = _("Galeforce"),
+        .description = COMPOUND_STRING("Strengthens wind-based moves."),
+        .aiRating = 7,
+    },
     [ABILITY_MONSOON_MIND] =
     {
         .name = _("Monsoon Mind"),
@@ -2888,5 +2893,23 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Piercing Drill"),
         .description = COMPOUND_STRING("Contact evades protection."),
         .aiRating = 6,
+    },
+    [ABILITY_OVERCHARGE] =
+    {
+        .name = _("Overcharge"),
+        .description = COMPOUND_STRING("Affects terrain when hit."),
+        .aiRating = 5,
+    },
+    [ABILITY_MIGRAINE] =
+    {
+        .name = _("Migraine"),
+        .description = COMPOUND_STRING("Affects terrain when hit."),
+        .aiRating = 5,
+    },
+    [ABILITY_FEY_SKIN] =
+    {
+        .name = _("Fey Skin"),
+        .description = COMPOUND_STRING("Affects terrain when hit."),
+        .aiRating = 5,
     },
 };

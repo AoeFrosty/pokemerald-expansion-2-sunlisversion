@@ -44069,7 +44069,7 @@ F_TRAINER_FEMALE |
     [TRAINER_BUGSY] =
     {
 #line 17511
-        .trainerName = _("Bugsy"),
+        .trainerName = _("BUGSY"),
 #line 17512
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 17513

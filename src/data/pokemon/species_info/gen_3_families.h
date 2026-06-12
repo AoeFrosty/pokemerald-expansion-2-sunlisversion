@@ -9347,82 +9347,82 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sChimechoFormChangeTable,
     },
 
-// #if P_MEGA_EVOLUTIONS
-// #if FROSTY_MEGAS >= SPECIES_
-//     [SPECIES_CHIMECHO_MEGA] =
-//     {
-//         .baseHP        = 75,
-//         .baseAttack    = 50,
-//         .baseDefense   = 110,
-//         .baseSpeed     = 65,
-//         .baseSpAttack  = 135,
-//         .baseSpDefense = 120,
-//         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_STEEL),
-//         .catchRate = 45,
-//     #if P_UPDATED_EXP_YIELDS >= GEN_7
-//         .expYield = 159,
-//     #elif P_UPDATED_EXP_YIELDS >= GEN_5
-//         .expYield = 149,
-//     #else
-//         .expYield = 147,
-//     #endif
-//         .evYield_SpAttack = 1,
-//         .evYield_SpDefense = 1,
-//         .itemRare = ITEM_CLEANSE_TAG,
-//         .genderRatio = PERCENT_FEMALE(50),
-//         .eggCycles = 25,
-//         .friendship = STANDARD_FRIENDSHIP,
-//         .growthRate = GROWTH_FAST,
-//         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-//         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
-//         .bodyColor = BODY_COLOR_BLUE,
-//         .speciesName = _("Chimecho"),
-//         .cryId = CRY_CHIMECHO,
-//         .natDexNum = NATIONAL_DEX_CHIMECHO,
-//         .categoryName = _("Wind Chime"),
-//         .height = 6,
-//         .weight = 10,
-//         .description = COMPOUND_STRING(
-//             "They fly about very actively when the hot\n"
-//             "season arrives. They communicate among\n"
-//             "themselves using seven different and\n"
-//             "distinguishing cries."),
-//         .pokemonScale = 505,
-//         .pokemonOffset = 0,
-//         .trainerScale = 256,
-//         .trainerOffset = 0,
-//         .frontPic = gMonFrontPic_ChimechoMega,
-//         .frontPicSize = MON_COORDS_SIZE(48, 48),
-//         .frontPicYOffset = 11,
-//         .frontAnimFrames = sAnims_Chimecho,
-//         .frontAnimId = ANIM_H_SLIDE_WOBBLE,
-//         .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 12 : 16,
-//         .backPic = gMonBackPic_ChimechoMega,
-//         .backPicSize = MON_COORDS_SIZE(64, 56),
-//         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 9,
-//         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-//         .palette = gMonPalette_ChimechoMega,
-//         .shinyPalette = gMonShinyPalette_ChimechoMega,
-//         .iconSprite = gMonIcon_ChimechoMega,
-//         .iconPalIndex = 0,
-//         SHADOW(-3, 16, SHADOW_SIZE_S)
-//         FOOTPRINT(Chimecho)
-//         OVERWORLD(
-//             sPicTable_Chimecho,
-//             SIZE_32x32,
-//             SHADOW_SIZE_M,
-//             TRACKS_NONE,
-//             gOverworldPalette_Chimecho,
-//             gShinyOverworldPalette_Chimecho
-//         )
-//         .isMegaEvolution = TRUE,
-//         .levelUpLearnset = sChimechoLevelUpLearnset,
-//         .teachableLearnset = sChimechoTeachableLearnset,
-//         .formSpeciesIdTable = sChimechoFormSpeciesIdTable,
-//         .formChangeTable = sChimechoFormChangeTable,
-//     },
-// #endif //FROSTY_MEGAS >= SPECIES_CHIMECHO
-// #endif //P_MEGA_EVOLUTIONS
+ #if P_MEGA_EVOLUTIONS
+ #if FROSTY_MEGAS >= SPECIES_
+     [SPECIES_CHIMECHO_MEGA] =
+     {
+         .baseHP        = 90,
+         .baseAttack    = 50,
+         .baseDefense   = 115,  //+5
+         .baseSpeed     = 50,   //-15
+         .baseSpAttack  = 145,  //+10
+         .baseSpDefense = 120,
+         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_STEEL),
+         .catchRate = 45,
+     #if P_UPDATED_EXP_YIELDS >= GEN_7
+         .expYield = 159,
+     #elif P_UPDATED_EXP_YIELDS >= GEN_5
+         .expYield = 149,
+     #else
+         .expYield = 147,
+     #endif
+         .evYield_SpAttack = 1,
+         .evYield_SpDefense = 1,
+         .itemRare = ITEM_CLEANSE_TAG,
+         .genderRatio = PERCENT_FEMALE(50),
+         .eggCycles = 25,
+         .friendship = STANDARD_FRIENDSHIP,
+         .growthRate = GROWTH_FAST,
+         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+         .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
+         .bodyColor = BODY_COLOR_BLUE,
+         .speciesName = _("Chimecho"),
+         .cryId = CRY_CHIMECHO,
+         .natDexNum = NATIONAL_DEX_CHIMECHO,
+         .categoryName = _("Wind Chime"),
+         .height = 6,
+         .weight = 10,
+         .description = COMPOUND_STRING(
+             "They fly about very actively when the hot\n"
+             "season arrives. They communicate among\n"
+             "themselves using seven different and\n"
+             "distinguishing cries."),
+         .pokemonScale = 505,
+         .pokemonOffset = 0,
+         .trainerScale = 256,
+         .trainerOffset = 0,
+         .frontPic = gMonFrontPic_ChimechoMega,
+         .frontPicSize = MON_COORDS_SIZE(48, 48),
+         .frontPicYOffset = 11,
+         .frontAnimFrames = sAnims_Chimecho,
+         .frontAnimId = ANIM_H_SLIDE_WOBBLE,
+         .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 12 : 16,
+         .backPic = gMonBackPic_ChimechoMega,
+         .backPicSize = MON_COORDS_SIZE(64, 56),
+         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 9,
+         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+         .palette = gMonPalette_ChimechoMega,
+         .shinyPalette = gMonShinyPalette_ChimechoMega,
+         .iconSprite = gMonIcon_ChimechoMega,
+         .iconPalIndex = 0,
+         SHADOW(-3, 16, SHADOW_SIZE_S)
+         FOOTPRINT(Chimecho)
+         OVERWORLD(
+             sPicTable_Chimecho,
+             SIZE_32x32,
+             SHADOW_SIZE_M,
+             TRACKS_NONE,
+             gOverworldPalette_Chimecho,
+             gShinyOverworldPalette_Chimecho
+         )
+         .isMegaEvolution = TRUE,
+         .levelUpLearnset = sChimechoLevelUpLearnset,
+         .teachableLearnset = sChimechoTeachableLearnset,
+         .formSpeciesIdTable = sChimechoFormSpeciesIdTable,
+         .formChangeTable = sChimechoFormChangeTable,
+     },
+ #endif //FROSTY_MEGAS >= SPECIES_CHIMECHO
+ #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHIMECHO
 
 
@@ -9558,7 +9558,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseAttack    = 154,   
         .baseDefense   = 60,
         .baseSpeed     = 151,   
-        .baseSpAttack  = 75,    
+        .baseSpAttack  = 85,    //+10  
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_DARK, TYPE_GHOST), 
         .catchRate = 30,
@@ -9876,10 +9876,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 [SPECIES_FROSLASS_MEGA] =
     {
         .baseHP        = 70,
-        .baseAttack    = 80,
-        .baseDefense   = 80,    //+10
+        .baseAttack    = 85,     //+5
+        .baseDefense   = 80,     //+10
         .baseSpeed     = 120,       
-        .baseSpAttack  = 150,    //+10    
+        .baseSpAttack  = 145,    //+5    
         .baseSpDefense = 115,    //+15      
         .types = MON_TYPES(TYPE_ICE, TYPE_GHOST),
         .catchRate = 75,
@@ -9907,19 +9907,19 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Froslass,
+        .frontPic = gMonFrontPic_FroslassMega,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 8,
         .frontAnimFrames = sAnims_Froslass,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_Froslass,
+        .backPic = gMonBackPic_FroslassMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Froslass,
-        .shinyPalette = gMonShinyPalette_Froslass,
-        .iconSprite = gMonIcon_Froslass,
+        .palette = gMonPalette_FroslassMega,
+        .shinyPalette = gMonShinyPalette_FroslassMega,
+        .iconSprite = gMonIcon_FroslassMega,
         .iconPalIndex = 0,
         SHADOW(-1, 10, SHADOW_SIZE_S)
         FOOTPRINT(Froslass)

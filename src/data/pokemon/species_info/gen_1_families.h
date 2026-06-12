@@ -3725,10 +3725,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         .baseHP        = 60,    
         .baseAttack    = 90,
-        .baseDefense   = 65,    //+10
+        .baseDefense   = 55,    
         .baseSpeed     = RAICHU_SPEED,
-        .baseSpAttack  = 95,    //+5
-        .baseSpDefense = 85,    //+5
+        .baseSpAttack  = 90,    
+        .baseSpDefense = 80,    
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 75,
         .expYield = RAICHU_EXP_YIELD,
@@ -3795,15 +3795,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_MEGA_EVOLUTIONS
-#if FROSTY_MEGAS >= SPECIES_RAICHU
-    [SPECIES_RAICHU_MEGA] =
+    [SPECIES_RAICHU_MEGA_X] =
     {
         .baseHP        = 60,    
-        .baseAttack    = 90,
-        .baseDefense   = 65,    
-        .baseSpeed     = 170,   //+60
-        .baseSpAttack  = 115,   //+20  
-        .baseSpDefense = 105,   //+20
+        .baseAttack    = 135,
+        .baseDefense   = 95,     
+        .baseSpeed     = 110,   
+        .baseSpAttack  = 90,       
+        .baseSpDefense = 95,     
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 75,
         .expYield = RAICHU_EXP_YIELD,
@@ -3813,7 +3812,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_BATTERY, ABILITY_BATTERY, ABILITY_BATTERY },
+        .abilities = { ABILITY_ELECTRIC_SURGE, ABILITY_ELECTRIC_SURGE, ABILITY_ELECTRIC_SURGE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Raichu"),
         .cryId = CRY_RAICHU,
@@ -3830,18 +3829,18 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_RaichuMega,
+        .frontPic = gMonFrontPic_RaichuMegaX,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 3,
         .frontAnimFrames = sAnims_Raichu,
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_STRETCH : ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_RaichuMega,
+        .backPic = gMonBackPic_RaichuMegaX,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 6,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_RaichuMega,
-        .shinyPalette = gMonShinyPalette_RaichuMega,
-        .iconSprite = gMonIcon_RaichuMega,
+        .palette = gMonPalette_RaichuMegaX,
+        .shinyPalette = gMonShinyPalette_RaichuMegaX,
+        .iconSprite = gMonIcon_RaichuMegaX,
         .iconPalIndex = 0,
         SHADOW(2, 10, SHADOW_SIZE_M)
         FOOTPRINT(Raichu)
@@ -3865,7 +3864,77 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sRaichuFormSpeciesIdTable,
         .formChangeTable = sRaichuFormChangeTable,
     },
-#endif //FROSTY_MEGAS >= SPECIES_RAICHU
+
+    [SPECIES_RAICHU_MEGA_Y] =
+    {
+        .baseHP        = 60,    
+        .baseAttack    = 100,
+        .baseDefense   = 55,    
+        .baseSpeed     = 130,  
+        .baseSpAttack  = 160,   
+        .baseSpDefense = 80,   
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 75,
+        .expYield = RAICHU_EXP_YIELD,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_NO_GUARD, ABILITY_NO_GUARD, ABILITY_NO_GUARD },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Raichu"),
+        .cryId = CRY_RAICHU,
+        .natDexNum = NATIONAL_DEX_RAICHU,
+        .categoryName = _("Mouse"),
+        .height = 8,
+        .weight = 300,
+        .description = COMPOUND_STRING(
+            "If it stores too much electricity, it\n"
+            "reaches speeds that are legendary,\n"
+            "it occasionally discharges excess energy\n"
+            "aiding allies."),
+        .pokemonScale = 426,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_RaichuMegaY,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 3,
+        .frontAnimFrames = sAnims_Raichu,
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_STRETCH : ANIM_GROW_VIBRATE,
+        .backPic = gMonBackPic_RaichuMegaY,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 6,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+        .palette = gMonPalette_RaichuMegaY,
+        .shinyPalette = gMonShinyPalette_RaichuMegaY,
+        .iconSprite = gMonIcon_RaichuMegaY,
+        .iconPalIndex = 0,
+        SHADOW(2, 10, SHADOW_SIZE_M)
+        FOOTPRINT(Raichu)
+        OVERWORLD(
+            sPicTable_Raichu,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Raichu,
+            gShinyOverworldPalette_Raichu
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_RaichuF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sRaichuLevelUpLearnset,
+        .teachableLearnset = sRaichuTeachableLearnset,
+        .formSpeciesIdTable = sRaichuFormSpeciesIdTable,
+        .formChangeTable = sRaichuFormChangeTable,
+    },
+
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_ALOLAN_FORMS
@@ -4823,9 +4892,87 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Clefable,
             gShinyOverworldPalette_Clefable
         )
+        .levelUpLearnset = sClefairyLevelUpLearnset,
+        .teachableLearnset = sClefairyTeachableLearnset,
+        .formSpeciesIdTable = sClefairyFormSpeciesIdTable,
+        .formChangeTable = sClefairyFormChangeTable,
+    },
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_CLEFABLE] =
+    {
+        .baseHP        = 95,
+        .baseAttack    = 80,
+        .baseDefense   = 93,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 140,   //+5
+        .baseSpDefense = 110,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_FLYING),
+        .catchRate = 25,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 242,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 217,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 213,
+    #else
+        .expYield = 129,
+    #endif
+        .evYield_HP = 3,
+        .itemRare = ITEM_MOON_STONE,
+        .genderRatio = PERCENT_FEMALE(75),
+        .eggCycles = 10,
+        .friendship = 140,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
+        .bodyColor = BODY_COLOR_PINK,
+        .noFlip = TRUE,
+        .speciesName = _("Clefable"),
+        .cryId = CRY_CLEFABLE,
+        .natDexNum = NATIONAL_DEX_CLEFABLE,
+        .categoryName = _("Fairy"),
+        .height = 13,
+        .weight = 400,
+        .description = COMPOUND_STRING(
+            "A Clefable uses its wings to skip lightly \n"
+            "as if it were flying. Its bouncy step\n"
+            "lets it even walk on water. On quiet,\n"
+            "moonlit nights, it strolls on lakes."),
+        .pokemonScale = 256,
+        .pokemonOffset = 5,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Clefable_Mega,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 6,
+        .frontAnimFrames = sAnims_Clefable,
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL_SLOW : ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Clefable_Mega,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 48),
+        .backPicYOffset = 10,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Clefable_Mega,
+        .shinyPalette = gMonShinyPalette_Clefable_Mega,
+        .iconSprite = gMonIcon_Clefable_Mega,
+        .iconPalIndex = 0,
+        SHADOW(0, 7, SHADOW_SIZE_M)
+        FOOTPRINT(Clefable)
+        OVERWORLD(
+            sPicTable_Clefable,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Clefable,
+            gShinyOverworldPalette_Clefable
+        )
+        .isMegaEvolution = TRUE,
         .levelUpLearnset = sClefableLevelUpLearnset,
         .teachableLearnset = sClefableTeachableLearnset,
+        .formSpeciesIdTable = sClefableFormSpeciesIdTable,
+        .formChangeTable = sClefableFormChangeTable,
+
     },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CLEFAIRY
 
 #if P_FAMILY_VULPIX

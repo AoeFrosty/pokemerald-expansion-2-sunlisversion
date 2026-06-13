@@ -39,7 +39,12 @@ MossdeepCity_Mart_Pokemart:
 	.2byte ITEM_CAMERUPTITE
 	.2byte ITEM_SHARPEDONITE
 	.2byte ITEM_FROSLASSITE
-	.2byte ITEM_LIEPARDITE
+	.2byte ITEM_STARAPTITE
+	.2byte ITEM_EXCADRITE
+	.2byte ITEM_EELEKTROSSITE
+	.2byte ITEM_MALAMARITE
+	.2byte ITEM_DRAGALGITE
+	.2byte ITEM_SCOLIPITE
 	pokemartlistend
 
 MossdeepCity_Mart_EventScript_Woman::

@@ -40,6 +40,11 @@ FortreeCity_Mart_Pokemart:
 	.2byte ITEM_LEDIANITE
 	.2byte ITEM_NOCTOWLITE
 	.2byte ITEM_SUNFLORITE
+	.2byte ITEM_VICTREEBELITE
+	.2byte ITEM_SCOLIPITE
+	.2byte ITEM_PYROARITE
+	.2byte ITEM_CRABOMINITE
+	.2byte ITEM_FALINKSITE_X
 	pokemartlistend
 
 FortreeCity_Mart_EventScript_Woman::

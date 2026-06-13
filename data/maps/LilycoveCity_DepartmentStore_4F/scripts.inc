@@ -60,9 +60,12 @@ LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
 	.2byte ITEM_INTELEONITE
 	.2byte ITEM_ROSERITE
 	.2byte ITEM_CINDERACITE
-	.2byte ITEM_LIEPARDITE
-	.2byte ITEM_MISMAGITE
 	.2byte ITEM_FERALIGITE
+	.2byte ITEM_CLEFABLITE_X
+	.2byte ITEM_GOLURKITE
+	.2byte ITEM_MEOWSTICITE
+	.2byte ITEM_HAWLUCHANITE
+	.2byte ITEM_CHANDELURITE
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:

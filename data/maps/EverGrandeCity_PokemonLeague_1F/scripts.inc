@@ -59,7 +59,18 @@ EverGrandeCity_PokemonLeague_1F_Pokemart:
 	.2byte ITEM_DURALUDONITE
 	.2byte ITEM_TOXTRICITE
 	.2byte ITEM_HATTERITE
-	.2byte ITEM_CHANDELURITE
+	.2byte ITEM_RAICHUNITE_X
+	.2byte ITEM_RAICHUNITE_Y
+	.2byte ITEM_DRAGONINITE
+	.2byte ITEM_ABSOLITE_Z
+	.2byte ITEM_GARCHOMPITE_Z
+	.2byte ITEM_LUCARIONITE_Z
+	.2byte ITEM_TATSUGIRINITE
+	.2byte ITEM_DRAMPANITE
+	.2byte ITEM_GOLISOPITE
+	.2byte ITEM_STARMINITE
+	.2byte ITEM_FROSLASSITE
+	.2byte ITEM_BAXCALIBRITE
 	pokemartlistend
 
 @ The door guards only check for FLAG_BADGE06_GET because Winonas badge is the only one that can be skipped

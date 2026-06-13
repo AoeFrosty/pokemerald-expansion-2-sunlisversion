@@ -1057,6 +1057,36 @@ BattleScript_CoachingBoostDef:
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectAromaticMist::
+	attackcanceler
+	attackstring
+	ppreduce
+	jumpifnoally BS_ATTACKER, BattleScript_ButItFailed
+	copybyte gBattlerTarget, gBattlerAttacker
+	setallytonexttarget EffectAromaticMist_CheckAllyStats
+	goto BattleScript_ButItFailed
+EffectAromaticMist_CheckAllyStats:
+	jumpifstat BS_TARGET, CMP_NOT_EQUAL, STAT_SPATK, MAX_STAT_STAGE, BattleScript_AromaticMistWorks
+	jumpifstat BS_TARGET, CMP_NOT_EQUAL, STAT_SPDEF, MAX_STAT_STAGE, BattleScript_AromaticMistWorks
+	goto BattleScript_ButItFailed   @ ally at max spatk, spdef
+BattleScript_AromaticMistWorks:
+	attackanimation
+	waitanimation
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_TARGET, BIT_SPATK | BIT_SPDEF, 0x0
+	setstatchanger STAT_SPATK, 1, FALSE
+	statbuffchange STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_NOT_PROTECT_AFFECTED, BattleScript_AromaticMistBoostSpDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_AromaticMistBoostSpDef
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AromaticMistBoostSpDef:
+	setstatchanger STAT_SPDEF, 1, FALSE
+	statbuffchange STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_NOT_PROTECT_AFFECTED, BattleScript_MoveEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 0x2, BattleScript_MoveEnd
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectJungleHealing::
 	attackcanceler
 	attackstring
@@ -1366,31 +1396,6 @@ BattleScript_EffectPowder::
 	waitanimation
 	printstring STRINGID_COVEREDINPOWDER
 	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
-
-BattleScript_EffectAromaticMist::
-	attackcanceler
-	attackstring
-	ppreduce
-	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_ButItFailed
-	jumpiftargetally BattleScript_EffectAromaticMistWorks
-	goto BattleScript_ButItFailed
-BattleScript_EffectAromaticMistWorks:
-	setstatchanger STAT_SPDEF, 1, FALSE
-	statbuffchange STAT_CHANGE_ALLOW_PTR, BattleScript_EffectAromaticMistEnd
-	jumpifbyte CMP_NOT_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_AromaticMistAnim
-	pause B_WAIT_TIME_SHORTEST
-	printstring STRINGID_TARGETSTATWONTGOHIGHER
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_EffectAromaticMistEnd
-BattleScript_AromaticMistAnim:
-	attackanimation
-	waitanimation
-	setgraphicalstatchangevalues
-	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
-	printfromtable gStatUpStringIds
-	waitmessage B_WAIT_TIME_LONG
-BattleScript_EffectAromaticMistEnd:
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectMagneticFlux::

@@ -14930,8 +14930,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Aromatic Mist"),
         .description = COMPOUND_STRING(
-            "Raises the Sp. Def of a\n"
-            "partner Pokémon."),
+            "Properly soothes allies to\n"
+            "up their Sp.Atk and Sp.Def."),
         .effect = EFFECT_AROMATIC_MIST,
         .power = 0,
         .type = TYPE_FAIRY,
@@ -21772,7 +21772,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_TRI_STRIKE] =
     {
-        .name = COMPOUND_STRING("Tri Attack"),
+        .name = COMPOUND_STRING("Tri Strike"),
         .description = COMPOUND_STRING(
             "Slashes with three types of\n"
             "elements at the same time."),

@@ -369,7 +369,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_EARLY_BIRD] =
     {
         .name = _("Early Bird"),
-        .description = COMPOUND_STRING("Awakens quickly from sleep."),
+        .description = COMPOUND_STRING("Wake early and prevent -sp."),
         .aiRating = 4,
     },
 
@@ -2911,5 +2911,17 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Fey Skin"),
         .description = COMPOUND_STRING("Affects terrain when hit."),
         .aiRating = 5,
+    },
+    [ABILITY_EROSION] =
+    {
+        .name = _("Erosion"),
+        .description = COMPOUND_STRING("Cures status in sand."),
+        .aiRating = 4,
+    },
+    [ABILITY_CHILL_OUT] =
+    {
+        .name = _("Chill Out"),
+        .description = COMPOUND_STRING("Cures status in snow."),
+        .aiRating = 4,
     },
 };

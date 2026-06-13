@@ -5350,6 +5350,20 @@ case ABILITY_DIRT_DEVIL:
                     goto ABILITY_HEAL_MON_STATUS;
                 }
                 break;
+            case ABILITY_EROSION:
+                if (IsBattlerWeatherAffected(battler, B_WEATHER_SANDSTORM)
+                 && gBattleMons[battler].status1 & STATUS1_ANY)
+                {
+                    goto ABILITY_HEAL_MON_STATUS;
+                }
+                break;
+            case ABILITY_CHILL_OUT:
+                if (IsBattlerWeatherAffected(battler, B_WEATHER_SNOW)
+                 && gBattleMons[battler].status1 & STATUS1_ANY)
+                {
+                    goto ABILITY_HEAL_MON_STATUS;
+                }
+                break;
             case ABILITY_SHED_SKIN:
                 if ((gBattleMons[battler].status1 & STATUS1_ANY)
                  && (B_ABILITY_TRIGGER_CHANCE == GEN_4 ? RandomPercentage(RNG_SHED_SKIN, 30) : RandomChance(RNG_SHED_SKIN, 1, 3)))
@@ -10035,6 +10049,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (gMovesInfo[move].slicingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_DANCER:
+        if (gMovesInfo[move].danceMove)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+        break;
     case ABILITY_GALEFORCE:
         if (gMovesInfo[move].windMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
@@ -11437,6 +11455,16 @@ u32 abilityAtk = GetBattlerAbility(battlerAtk);
         if (recordAbilities)
             RecordAbilityBattle(battlerAtk, abilityAtk);
     }
+
+    if ((moveType == TYPE_POISON) && defType == TYPE_STEEL
+        && (abilityAtk == ABILITY_CORROSION)
+        && mod == UQ_4_12(0.0))
+    {
+        mod = UQ_4_12(1.0);
+        if (recordAbilities)
+            RecordAbilityBattle(battlerAtk, abilityAtk);
+    }
+
     if (gMovesInfo[move].effect == EFFECT_SUPER_EFFECTIVE_ON_ARG && defType == gMovesInfo[move].argument)
         mod = UQ_4_12(2.0);
     if (moveType == TYPE_GROUND && defType == TYPE_FLYING && IsBattlerGrounded(battlerDef) && mod == UQ_4_12(0.0))

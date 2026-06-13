@@ -1464,11 +1464,11 @@ static const u16 sDarmanitanFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_DARUMAKA
 
-#if P_FAMILY_SRAGGY
+#if P_FAMILY_SCRAGGY
 static const u16 sScraftyFormSpeciesIdTable[] = {
     SPECIES_SCRAFTY,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_SCRAFTY_MEGA,
+    SPECIES_SCRAFTY_MEGA_X,
 #endif
     FORM_SPECIES_END,
 };
@@ -1642,7 +1642,7 @@ static const u16 sGenesectFormSpeciesIdTable[] = {
 
 #if P_FAMILY_CHESPIN
 static const u16 sChesnaughtFormSpeciesIdTable[] = {
-    SPECIES_CHESNNAUGHT,
+    SPECIES_CHESNAUGHT,
 #if P_MEGA_EVOLUTIONS
     SPECIES_CHESNAUGHT_MEGA,
 #endif
@@ -1810,7 +1810,8 @@ static const u16 sMeowsticFormSpeciesIdTable[] = {
     SPECIES_MEOWSTIC_M,
     SPECIES_MEOWSTIC_F,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_MEOWSTIC_MEGA,
+    SPECIES_MEOWSTIC_M_MEGA,
+    SPECIES_MEOWSTIC_F_MEGA,
 #endif //P_MEGA_EVOLUTIONS
     FORM_SPECIES_END,
 };

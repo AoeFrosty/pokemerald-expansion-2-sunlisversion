@@ -17145,6 +17145,13 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Scolipede[] = INCBIN_U32("graphics/pokemon/scolipede/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+#if P_MEGA_EVOLUTIONS
+    const u32 gMonFrontPic_ScolipedeMega[] = INCBIN_U32("graphics/pokemon/scolipede/mega/front.4bpp.lz");
+    const u32 gMonPalette_ScolipedeMega[] = INCBIN_U32("graphics/pokemon/scolipede/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_ScolipedeMega[] = INCBIN_U32("graphics/pokemon/scolipede/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_ScolipedeMega[] = INCBIN_U32("graphics/pokemon/scolipede/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_ScolipedeMega[] = INCBIN_U8("graphics/pokemon/scolipede/mega/icon.4bpp");
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_VENIPEDE
 
 #if P_FAMILY_COTTONEE
@@ -17506,7 +17513,6 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gShinyOverworldPalette_Scraggy[] = INCBIN_U32("graphics/pokemon/scraggy/overworld_shiny.gbapal.lz");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-
     const u32 gMonFrontPic_Scrafty[] = INCBIN_U32("graphics/pokemon/scrafty/anim_front.4bpp.lz");
     const u32 gMonPalette_Scrafty[] = INCBIN_U32("graphics/pokemon/scrafty/normal.gbapal.lz");
     const u32 gMonBackPic_Scrafty[] = INCBIN_U32("graphics/pokemon/scrafty/back.4bpp.lz");
@@ -17523,11 +17529,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_ScraftyMega[] = INCBIN_U32("graphics/pokemon/scrafty/mega/front.4bpp.lz");
-    const u16 gMonPalette_ScraftyMega[] = INCBIN_U16("graphics/pokemon/scrafty/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_ScraftyMega[] = INCBIN_U32("graphics/pokemon/scrafty/mega/back.4bpp.lz");
-    const u16 gMonShinyPalette_ScraftyMega[] = INCBIN_U16("graphics/pokemon/scrafty/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_ScraftyMega[] = INCBIN_U8("graphics/pokemon/scrafty/mega/icon.4bpp");
+    const u32 gMonFrontPic_ScraftyMegaX[] = INCBIN_U32("graphics/pokemon/scrafty/mega/front.4bpp.lz");
+    const u16 gMonPalette_ScraftyMegaX[] = INCBIN_U16("graphics/pokemon/scrafty/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_ScraftyMegaX[] = INCBIN_U32("graphics/pokemon/scrafty/mega/back.4bpp.lz");
+    const u16 gMonShinyPalette_ScraftyMegaX[] = INCBIN_U16("graphics/pokemon/scrafty/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_ScraftyMegaX[] = INCBIN_U8("graphics/pokemon/scrafty/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SCRAGGY
 
@@ -20508,7 +20514,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #if P_MEGA_EVOLUTIONS
-    onst u32 gMonFrontPic_MalamarMega[] = INCBIN_U32("graphics/pokemon/malamar/mega/front.4bpp.lz");
+    const u32 gMonFrontPic_MalamarMega[] = INCBIN_U32("graphics/pokemon/malamar/mega/front.4bpp.lz");
     const u16 gMonPalette_MalamarMega[] = INCBIN_U16("graphics/pokemon/malamar/mega/normal.gbapal.lz");
     const u32 gMonBackPic_MalamarMega[] = INCBIN_U32("graphics/pokemon/malamar/mega/back.4bpp.lz");
     const u16 gMonShinyPalette_MalamarMega[] = INCBIN_U16("graphics/pokemon/malamar/mega/shiny.gbapal.lz");
@@ -20549,11 +20555,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_BarbaracleMega[] = INCBIN_U32("graphics/pokemon/barbaracle/mega/front.4bpp.lz");
-    const u16 gMonPalette_BarbaracleMega[] = INCBIN_U16("graphics/pokemon/barbaracle/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_BarbaracleMega[] = INCBIN_U32("graphics/pokemon/barbaracle/mega/back.4bpp.lz");
-    const u16 gMonShinyPalette_BarbaracleMega[] = INCBIN_U16("graphics/pokemon/barbaracle/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_BarbaracleMega[] = INCBIN_U8("graphics/pokemon/barbaracle/mega/icon.4bpp");
+    const u32 gMonFrontPic_BarbaracleMegaX[] = INCBIN_U32("graphics/pokemon/barbaracle/mega/front.4bpp.lz");
+    const u16 gMonPalette_BarbaracleMegaX[] = INCBIN_U16("graphics/pokemon/barbaracle/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_BarbaracleMegaX[] = INCBIN_U32("graphics/pokemon/barbaracle/mega/back.4bpp.lz");
+    const u16 gMonShinyPalette_BarbaracleMegaX[] = INCBIN_U16("graphics/pokemon/barbaracle/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_BarbaracleMegaX[] = INCBIN_U8("graphics/pokemon/barbaracle/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BINACLE
 

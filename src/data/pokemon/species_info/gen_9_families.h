@@ -3345,7 +3345,76 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sScovillainLevelUpLearnset,
         .teachableLearnset = sScovillainTeachableLearnset,
+        .formSpeciesIdTable = sScovillainFormSpeciesIdTable,
+        .formChangeTable = sScovillainFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_SCOVILLAIN_MEGA] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 138,
+        .baseDefense   = 85,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 138,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
+        .catchRate = 75,
+        .expYield = 170,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_SPICY_SPRAY, ABILITY_SPICY_SPRAY, ABILITY_SPICY_SPRAY },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Scovillain"),
+        .cryId = CRY_SCOVILLAIN,
+        .natDexNum = NATIONAL_DEX_SCOVILLAIN,
+        .categoryName = _("Spicy Pepper"),
+        .height = 9,
+        .weight = 150,
+        .description = COMPOUND_STRING(
+            "The green head has turned vicious\n"
+            "due to the spicy chemicals\n"
+            "stimulating its brain. Once it goes on a\n"
+            "rampage, there is no stopping it."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ScovillainMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_Scovillain,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_ScovillainMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 8,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_ScovillainMega,
+        .shinyPalette = gMonShinyPalette_ScovillainMega,
+        .iconSprite = gMonIcon_ScovillainMega,
+        .iconPalIndex = 1,
+        SHADOW(6, 11, SHADOW_SIZE_M)
+        FOOTPRINT(Scovillain)
+        OVERWORLD_SET_ANIM(
+            sPicTable_Scovillain,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following_Asym,
+            gOverworldPalette_Scovillain,
+            gShinyOverworldPalette_Scovillain
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sScovillainLevelUpLearnset,
+        .teachableLearnset = sScovillainTeachableLearnset,
+        .formSpeciesIdTable = sScovillainFormSpeciesIdTable,
+        .formChangeTable = sScovillainFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CAPSAKID
 
 #if P_FAMILY_RELLOR
@@ -4549,7 +4618,76 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sGlimmoraLevelUpLearnset,
         .teachableLearnset = sGlimmoraTeachableLearnset,
+        .formSpeciesIdTable = sGlimmoraFormSpeciesIdTable,
+        .formChangeTable = sGlimmoraFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_GLIMMORA_MEGA] =
+    {
+        .baseHP        = 83,
+        .baseAttack    = 90,
+        .baseDefense   = 105,
+        .baseSpeed     = 101,
+        .baseSpAttack  = 150,
+        .baseSpDefense = 96,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_POISON),
+        .catchRate = 25,
+        .expYield = 184,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 30,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Glimmora"),
+        .cryId = CRY_GLIMMORA,
+        .natDexNum = NATIONAL_DEX_GLIMMORA,
+        .categoryName = _("Ore"),
+        .height = 15,
+        .weight = 450,
+        .description = COMPOUND_STRING(
+            "Glimmora's petals are made of\n"
+            "crystallized poison energy. It has\n"
+            "recently become evident that these\n"
+            "petals resemble Tera Jewels."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_GlimmoraMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_Glimmora,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .enemyMonElevation = 8,
+        .backPic = gMonBackPic_GlimmoraMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 11,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_GlimmoraMega,
+        .shinyPalette = gMonShinyPalette_GlimmoraMega,
+        .iconSprite = gMonIcon_GlimmoraMega,
+        .iconPalIndex = 0,
+        SHADOW(-3, 17, SHADOW_SIZE_M)
+        FOOTPRINT(Glimmora)
+        OVERWORLD(
+            sPicTable_Glimmora,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            gOverworldPalette_Glimmora,
+            gShinyOverworldPalette_Glimmora
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sGlimmoraLevelUpLearnset,
+        .teachableLearnset = sGlimmoraTeachableLearnset,
+        .formSpeciesIdTable = sGlimmoraFormSpeciesIdTable,
+        .formChangeTable = sGlimmoraFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GLIMMET
 
 #if P_FAMILY_GREAVARD
@@ -5185,6 +5323,198 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .eggMoveLearnset = sTatsugiriEggMoveLearnset,
         .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_TATSUGIRI_CURLY_MEGA] =
+    {
+        .baseHP        = 68,
+        .baseAttack    = 65,
+        .baseDefense   = 90,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 125,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
+        .catchRate = 100,
+        .expYield = 166,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 35,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
+        .abilities = { ABILITY_STORM_DRAIN, ABILITY_STORM_DRAIN, ABILITY_STORM_DRAIN },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Tatsugiri"),
+        .cryId = CRY_TATSUGIRI_CURLY,
+        .natDexNum = NATIONAL_DEX_TATSUGIRI,
+        .categoryName = _("Mimicry"),
+        .height = 3,
+        .weight = 80,
+        .description = COMPOUND_STRING(
+            "This is a small dragon Pokémon. It\n"
+            "lives inside the mouth of Dondozo to\n"
+            "protect itself from enemies on the\n"
+            "outside."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_TatsugiriCurlyMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 14,
+        .frontAnimFrames = sAnims_Tatsugiri,
+        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        .backPic = gMonBackPic_TatsugiriCurlyMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 17,
+        /*.backAnimId = BACK_ANIM_NONE,*/
+        .palette = gMonPalette_TatsugiriMega,
+        .shinyPalette = gMonShinyPalette_TatsugiriMega,
+        .iconSprite = gMonIcon_TatsugiriCurlyMega,
+        .iconPalIndex = 0,
+        SHADOW(-2, -1, SHADOW_SIZE_S)
+        FOOTPRINT(Tatsugiri)
+        OVERWORLD(
+            sPicTable_TatsugiriCurly,
+            SIZE_32x32,
+            SHADOW_SIZE_S,
+            TRACKS_SLITHER,
+            gOverworldPalette_TatsugiriCurly,
+            gShinyOverworldPalette_TatsugiriCurly
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sTatsugiriLevelUpLearnset,
+        .teachableLearnset = sTatsugiriTeachableLearnset,
+        .eggMoveLearnset = sTatsugiriEggMoveLearnset,
+        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
+    },
+
+    [SPECIES_TATSUGIRI_DROOPY_MEGA] =
+    {
+        .baseHP        = 68,
+        .baseAttack    = 65,
+        .baseDefense   = 90,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 125,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
+        .catchRate = 100,
+        .expYield = 166,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 35,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
+        .abilities = { ABILITY_STORM_DRAIN, ABILITY_STORM_DRAIN, ABILITY_STORM_DRAIN },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Tatsugiri"),
+        .cryId = CRY_TATSUGIRI_DROOPY,
+        .natDexNum = NATIONAL_DEX_TATSUGIRI,
+        .categoryName = _("Mimicry"),
+        .height = 3,
+        .weight = 80,
+        .description = COMPOUND_STRING(
+            "This Pokémon tricks its opponents\n"
+            "by playing dead. It is small and\n"
+            "weak, but it uses its smarts to survive."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_TatsugiriDroopyMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 14,
+        .frontAnimFrames = sAnims_Tatsugiri,
+        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        .backPic = gMonBackPic_TatsugiriDroopyMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 17,
+        /*.backAnimId = BACK_ANIM_NONE,*/
+        .palette = gMonPalette_TatsugiriMega,
+        .shinyPalette = gMonShinyPalette_TatsugiriMega,
+        .iconSprite = gMonIcon_TatsugiriDroopyMega,
+        .iconPalIndex = 0,
+        SHADOW(-2, -1, SHADOW_SIZE_S)
+        FOOTPRINT(Tatsugiri)
+        OVERWORLD(
+            sPicTable_TatsugiriDroopy,
+            SIZE_32x32,
+            SHADOW_SIZE_S,
+            TRACKS_SLITHER,
+            gOverworldPalette_TatsugiriDroopy,
+            gShinyOverworldPalette_TatsugiriDroopy
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sTatsugiriLevelUpLearnset,
+        .teachableLearnset = sTatsugiriTeachableLearnset,
+        .eggMoveLearnset = sTatsugiriEggMoveLearnset,
+        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
+    },
+
+    [SPECIES_TATSUGIRI_STRETCHY_MEGA] =
+    {
+        .baseHP        = 68,
+        .baseAttack    = 65,
+        .baseDefense   = 90,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 125,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
+        .catchRate = 100,
+        .expYield = 166,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 35,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
+        .abilities = { ABILITY_STORM_DRAIN, ABILITY_STORM_DRAIN, ABILITY_STORM_DRAIN },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Tatsugiri"),
+        .cryId = CRY_TATSUGIRI_STRETCHY,
+        .natDexNum = NATIONAL_DEX_TATSUGIRI,
+        .categoryName = _("Mimicry"),
+        .height = 3,
+        .weight = 80,
+        .description = COMPOUND_STRING(
+            "It's one of the most intelligent\n"
+            "dragon Pokémon. It camouflages itself\n"
+            "by inflating its throat sac."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_TatsugiriStretchyMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 14,
+        .frontAnimFrames = sAnims_Tatsugiri,
+        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        .backPic = gMonBackPic_TatsugiriStretchyMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 17,
+        /*.backAnimId = BACK_ANIM_NONE,*/
+        .palette = gMonPalette_TatsugiriMega,
+        .shinyPalette = gMonShinyPalette_TatsugiriMega,
+        .iconSprite = gMonIcon_TatsugiriStretchyMega,
+        .iconPalIndex = 0,
+        SHADOW(-2, -1, SHADOW_SIZE_S)
+        FOOTPRINT(Tatsugiri)
+        OVERWORLD(
+            sPicTable_TatsugiriStretchy,
+            SIZE_32x32,
+            SHADOW_SIZE_S,
+            TRACKS_SLITHER,
+            gOverworldPalette_TatsugiriStretchy,
+            gShinyOverworldPalette_TatsugiriStretchy
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sTatsugiriLevelUpLearnset,
+        .teachableLearnset = sTatsugiriTeachableLearnset,
+        .eggMoveLearnset = sTatsugiriEggMoveLearnset,
+        .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TATSUGIRI
 
 #if P_FAMILY_GREAT_TUSK
@@ -6157,6 +6487,72 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sBaxcaliburLevelUpLearnset,
         .teachableLearnset = sBaxcaliburTeachableLearnset,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_BAXCALIBUR_MEGA] =
+    {
+        .baseHP        = 115,
+        .baseAttack    = 175,
+        .baseDefense   = 117,
+        .baseSpeed     = 87,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 101,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_ICE),
+        .catchRate = 10,
+        .expYield = 300,
+        .evYield_Attack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 40,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON, EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_SNOW_STALKER, ABILITY_SNOW_STALKER, ABILITY_SNOW_STALKER },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Baxcalibur"),
+        .cryId = CRY_BAXCALIBUR,
+        .natDexNum = NATIONAL_DEX_BAXCALIBUR,
+        .categoryName = _("Ice Dragon"),
+        .height = 21,
+        .weight = 2100,
+        .description = COMPOUND_STRING(
+            "It launches itself into battle by\n"
+            "flipping upside down and spewing\n"
+            "frigid air from its mouth. It finishes\n"
+            "opponents off with its dorsal blade."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BaxcaliburMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = sAnims_Baxcalibur,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_BaxcaliburMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 5,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_BaxcaliburMega,
+        .shinyPalette = gMonShinyPalette_BaxcaliburMega,
+        .iconSprite = gMonIcon_BaxcaliburMega,
+        .iconPalIndex = 0,
+        SHADOW(5, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Baxcalibur)
+        OVERWORLD(
+            sPicTable_Baxcalibur,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Baxcalibur,
+            gShinyOverworldPalette_Baxcalibur
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sBaxcaliburLevelUpLearnset,
+        .teachableLearnset = sBaxcaliburTeachableLearnset,
+        .formSpeciesIdTable = sBaxcaliburFormSpeciesIdTable,
+        .formChangeTable = sBaxcaliburFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FRIGIBAX
 
 #if P_FAMILY_GIMMIGHOUL

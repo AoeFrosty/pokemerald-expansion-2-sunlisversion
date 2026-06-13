@@ -422,7 +422,6 @@
 #define ABILITY_FEY_SKIN 385            //misty terrain when hit
 #define ABILITY_QUICK_STRIKE 386        //powers up priority moves 
 //summon weather
-//solar power in snow
 //turn class of moves into special moves
 //turn class of moves into physical moves
 //resorption from tarc2?

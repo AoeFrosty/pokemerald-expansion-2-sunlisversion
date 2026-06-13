@@ -1710,7 +1710,7 @@
 #define SPECIES_GRENINJA_MEGA                           1592
 #define SPECIES_PYROAR_MEGA                             1593
 #define SPECIES_FLOETTE_MEGA                            1594
-#define SPECIES_MEOWSTIC_MEGA                           1595
+#define SPECIES_MEOWSTIC_M_MEGA                         1595
 #define SPECIES_MALAMAR_MEGA                            1596
 #define SPECIES_BARBARACLE_MEGA_X                       1597
 #define SPECIES_DRAGALGE_MEGA                           1598
@@ -1729,23 +1729,24 @@
 #define SPECIES_TATSUGIRI_STRETCHY_MEGA                 1611
 #define SPECIES_BAXCALIBUR_MEGA                         1612
 #define SPECIES_MAGEARNA_ORIGINAL_MEGA                  1613
+#define SPECIES_MEOWSTIC_F_MEGA                         1614
 //Cinna Megas
-#define SPECIES_LIEPARD_MEGA                            1614
-#define SPECIES_CLEFABLE_MEGA_Y                         1615
-#define SPECIES_TOGEKISS_MEGA                           1616
-#define SPECIES_DEWGONG_MEGA                            1617
+#define SPECIES_LIEPARD_MEGA                            1615
+#define SPECIES_CLEFABLE_MEGA_Y                         1616
+#define SPECIES_TOGEKISS_MEGA                           1617
+#define SPECIES_DEWGONG_MEGA                            1618
 //Community Megas
-#define SPECIES_ARCANINE_HISUI_MEGA                     1618
-#define SPECIES_MISMAGIUS_MEGA                          1619
-#define SPECIES_SCRAFTY_MEGA_Y                          1620
-#define SPECIES_NOCTOWL_MEGA                            1621
-#define SPECIES_LEDIAN_MEGA                             1622
-#define SPECIES_FALINKS_MEGA_Y                          1623
-#define SPECIES_BARBARACLE_MEGA_Y                       1624
-#define SPECIES_CORSOLA_MEGA                            1625
-#define SPECIES_BEARTIC_MEGA                            1626
-#define SPECIES_HYPNO_MEGA                              1627
-#define SPECIES_SUNFLORA_MEGA                           1628
+#define SPECIES_ARCANINE_HISUI_MEGA                     1619
+#define SPECIES_MISMAGIUS_MEGA                          1620
+#define SPECIES_SCRAFTY_MEGA_Y                          1621
+#define SPECIES_NOCTOWL_MEGA                            1622
+#define SPECIES_LEDIAN_MEGA                             1623
+#define SPECIES_FALINKS_MEGA_Y                          1624
+#define SPECIES_BARBARACLE_MEGA_Y                       1625
+#define SPECIES_CORSOLA_MEGA                            1626
+#define SPECIES_BEARTIC_MEGA                            1627
+#define SPECIES_HYPNO_MEGA                              1628
+#define SPECIES_SUNFLORA_MEGA                           1629
 
 #define SPECIES_EGG                                     (SPECIES_SUNFLORA_MEGA + 1)
 

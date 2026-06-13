@@ -1133,7 +1133,89 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sStaraptorLevelUpLearnset,
         .teachableLearnset = sStaraptorTeachableLearnset,
+        .formSpeciesIdTable = sStaraptorFormSpeciesIdTable,
+        .formChangeTable = sStaraptorFormChangeTable,
     },
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_STARAPTOR] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 140,
+        .baseDefense   = 100,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_FLYING),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 243,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 218,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 214,
+    #else
+        .expYield = 172,
+    #endif
+        .evYield_Attack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_RECKLESS, ABILITY_RECKLESS, ABILITY_RECKLESS },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Staraptor"),
+        .cryId = CRY_STARAPTOR,
+        .natDexNum = NATIONAL_DEX_STARAPTOR,
+        .categoryName = _("Predator"),
+        .height = 12,
+        .weight = 249,
+        .description = COMPOUND_STRING(
+            "When Staravia evolve into Staraptor,\n"
+            "they leave the flock to live alone. It has\n"
+            "a savage nature. It will courageously\n"
+            "challenge foes that are much larger."),
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_StaraptorMega,
+        .frontPicSize = MON_COORDS_SIZE(56, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_Staraptor,
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_StaraptorMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 3,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_StaraptorMega,
+        .shinyPalette = gMonShinyPalette_StaraptorMega,
+        .iconSprite = gMonIcon_StaraptorMega,
+        .iconPalIndex = 0,
+        SHADOW(1, 10, SHADOW_SIZE_M)
+        FOOTPRINT(Staraptor)
+        OVERWORLD(
+            sPicTable_Staraptor,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Staraptor,
+            gShinyOverworldPalette_Staraptor
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_StaraptorF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sStaraptorLevelUpLearnset,
+        .teachableLearnset = sStaraptorTeachableLearnset,
+        .formSpeciesIdTable = sStaraptorFormSpeciesIdTable,
+        .formChangeTable = sStaraptorFormChangeTable,
+
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_STARLY
 
 #if P_FAMILY_BIDOOF
@@ -4366,6 +4448,61 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formSpeciesIdTable = sGarchompFormSpeciesIdTable,
         .formChangeTable = sGarchompFormChangeTable,
     },
+    [SPECIES_GARCHOMP_MEGA_Z] =
+    {
+        .baseHP        = 108,
+        .baseAttack    = 130,
+        .baseDefense   = 85,   
+        .baseSpeed     = 151,   
+        .baseSpAttack  = 141,   
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 350 : 315,
+        .evYield_Attack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 40,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
+        .abilities = { ABILITY_SHARPNESS, ABILITY_SHARPNESS, ABILITY_SHARPNESS },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Garchomp"),
+        .cryId = CRY_GARCHOMP_MEGA,
+        .natDexNum = NATIONAL_DEX_GARCHOMP,
+        .categoryName = _("Mach"),
+        .height = 19,
+        .weight = 950,
+        .description = COMPOUND_STRING(
+            "Excess energy melted its arms and wings\n"
+            "into giant scythes, sending it mad with\n"
+            "rage. It swings its scythes wildly and\n"
+            "slices the ground to pieces."),
+        .pokemonScale = 256,
+        .pokemonOffset = 1,
+        .trainerScale = 326,
+        .trainerOffset = 4,
+        .frontPic = gMonFrontPic_GarchompMegaZ,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_GarchompMega,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_GarchompMegaZ,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 4,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_GarchompMegaZ,
+        .shinyPalette = gMonShinyPalette_GarchompMegaZ,
+        .iconSprite = gMonIcon_GarchompMegaZ,
+        .iconPalIndex = 0,
+        SHADOW(1, 12, SHADOW_SIZE_L)
+        FOOTPRINT(Garchomp)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sGarchompLevelUpLearnset,
+        .teachableLearnset = sGarchompTeachableLearnset,
+        .formSpeciesIdTable = sGarchompFormSpeciesIdTable,
+        .formChangeTable = sGarchompFormChangeTable,
+    },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GIBLE
 
@@ -4545,6 +4682,62 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .palette = gMonPalette_LucarioMega,
         .shinyPalette = gMonShinyPalette_LucarioMega,
         .iconSprite = gMonIcon_LucarioMega,
+        .iconPalIndex = 2,
+        SHADOW(-1, 11, SHADOW_SIZE_M)
+        FOOTPRINT(Lucario)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sLucarioLevelUpLearnset,
+        .teachableLearnset = sLucarioTeachableLearnset,
+        .formSpeciesIdTable = sLucarioFormSpeciesIdTable,
+        .formChangeTable = sLucarioFormChangeTable,
+    },
+    [SPECIES_LUCARIO_MEGA_Z] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 100,
+        .baseDefense   = 70,
+        .baseSpeed     = 151,
+        .baseSpAttack  = 164,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
+        .catchRate = 45,
+        .expYield = 219,
+        .evYield_Attack = 1,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(12.5),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
+        .abilities = { ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Lucario"),
+        .cryId = CRY_LUCARIO_MEGA,
+        .natDexNum = NATIONAL_DEX_LUCARIO,
+        .categoryName = _("Aura"),
+        .height = 13,
+        .weight = 575,
+        .description = COMPOUND_STRING(
+            "It readies itself to face its enemies by\n"
+            "focusing its mental energies. Its fighting\n"
+            "style can be summed up in a single word:\n"
+            "heartless."),
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_LucarioMegaZ,
+        .frontPicSize = MON_COORDS_SIZE(48, 64),
+        .frontPicYOffset = 2,
+        .frontAnimFrames = sAnims_LucarioMega,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_LucarioMegaZ,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .palette = gMonPalette_LucarioMegaZ,
+        .shinyPalette = gMonShinyPalette_LucarioMegaZ,
+        .iconSprite = gMonIcon_LucarioMegaZ,
         .iconPalIndex = 2,
         SHADOW(-1, 11, SHADOW_SIZE_M)
         FOOTPRINT(Lucario)
@@ -6391,7 +6584,83 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sHeatranLevelUpLearnset,
         .teachableLearnset = sHeatranTeachableLearnset,
+        .formSpeciesIdTable = sHeatranFormSpeciesIdTable,
+        .formChangeTable = sHeatranFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_HEATRAN_MEGA] =
+    {
+        .baseHP        = 91,
+        .baseAttack    = 120,
+        .baseDefense   = 106,
+        .baseSpeed     = 67,
+        .baseSpAttack  = 175,
+        .baseSpDefense = 141,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_STEEL),
+        .catchRate = 3,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 300,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 270,
+    #else
+        .expYield = 215,
+    #endif
+        .evYield_SpAttack = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = 100,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_EARTH_EATER, ABILITY_EARTH_EATER, ABILITY_EARTH_EATER },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Heatran"),
+        .cryId = CRY_HEATRAN,
+        .natDexNum = NATIONAL_DEX_HEATRAN,
+        .categoryName = _("Lava Dome"),
+        .height = 17,
+        .weight = 4300,
+        .description = COMPOUND_STRING(
+            "Boiling blood, like magma, circulates\n"
+            "through its body. It dwells in volcanic\n"
+            "caves, using its cross-shaped feet\n"
+            "to crawl on ceilings and walls."),
+        .pokemonScale = 259,
+        .pokemonOffset = 1,
+        .trainerScale = 290,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_HeatranMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 56),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_Heatran,
+        .frontAnimId = ANIM_GLOW_ORANGE,
+        .backPic = gMonBackPic_HeatranMega,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 13,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        .palette = gMonPalette_HeatranMega,
+        .shinyPalette = gMonShinyPalette_HeatranMega,
+        .iconSprite = gMonIcon_HeatranMega,
+        .iconPalIndex = 0,
+        SHADOW(2, 2, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Heatran)
+        OVERWORLD(
+            sPicTable_Heatran,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Heatran,
+            gShinyOverworldPalette_Heatran
+        )
+        .isLegendary = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sHeatranLevelUpLearnset,
+        .teachableLearnset = sHeatranTeachableLearnset,
+        .formSpeciesIdTable = sHeatranFormSpeciesIdTable,
+        .formChangeTable = sHeatranFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HEATRAN
 
 #if P_FAMILY_REGIGIGAS
@@ -6895,7 +7164,86 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sDarkraiLevelUpLearnset,
         .teachableLearnset = sDarkraiTeachableLearnset,
+        .formSpeciesIdTable = sHeatranFormSpeciesIdTable,
+        .formChangeTable = sHeatranFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_DARKRAI_MEGA] =
+    {
+        .baseHP        = 70,
+        .baseAttack    = 120,
+        .baseDefense   = 130,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 165,
+        .baseSpDefense = 130,
+        .types = MON_TYPES(TYPE_DARK),
+        .catchRate = 3,
+    #if P_UPDATED_EXP_YIELDS >= GEN_8
+        .expYield = 300,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 270,
+    #else
+        .expYield = 210,
+    #endif
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_BAD_DREAMS, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Darkrai"),
+        .cryId = CRY_DARKRAI,
+        .natDexNum = NATIONAL_DEX_DARKRAI,
+        .categoryName = _("Pitch-Black"),
+        .height = 15,
+        .weight = 505,
+        .description = COMPOUND_STRING(
+            "It chases people and Pokémon from its\n"
+            "territory by causing them to experience\n"
+            "deep, nightmarish slumbers. However,\n"
+            "it means no harm."),
+        .pokemonScale = 268,
+        .pokemonOffset = 2,
+        .trainerScale = 271,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_DarkraiMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 3,
+        .frontAnimFrames = sAnims_Darkrai,
+        .frontAnimId = ANIM_GLOW_BLACK,
+        .enemyMonElevation = 4,
+        .backPic = gMonBackPic_DarkraiMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .palette = gMonPalette_DarkraiMega,
+        .shinyPalette = gMonShinyPalette_DarkraiMega,
+        .iconSprite = gMonIcon_DarkraiMega,
+        .iconPalIndex = 0,
+        SHADOW(4, 12, SHADOW_SIZE_M)
+        FOOTPRINT(Darkrai)
+        OVERWORLD(
+            sPicTable_Darkrai,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Darkrai,
+            gShinyOverworldPalette_Darkrai
+        )
+        .isMythical = TRUE,
+        .isFrontierBanned = TRUE,
+        .isMegaEvolution
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sDarkraiLevelUpLearnset,
+        .teachableLearnset = sDarkraiTeachableLearnset,
+        .formSpeciesIdTable = sDarkraiFormSpeciesIdTable,
+        .formChangeTable = sDarkraiFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DARKRAI
 
 #if P_FAMILY_SHAYMIN

@@ -5713,7 +5713,74 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sFalinksLevelUpLearnset,
         .teachableLearnset = sFalinksTeachableLearnset,
+        .formSpeciesIdTable = sFalinksFormSpeciesIdTable,
+        .formChangeTable = sFalinksFormChangeTable,
     },
+
+#if P_MEGA_EVOLUTIONS
+    [SPECIES_FALINKS_MEGA_X] =
+    {
+        .baseHP        = 70,    //+5
+        .baseAttack    = 140,   //+5  
+        .baseDefense   = 140,   //+5 
+        .baseSpeed     = 100,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .catchRate = 45,
+        .expYield = 165,
+        .evYield_Attack = 2,
+        .evYield_SpDefense = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
+        .abilities = { ABILITY_STAKEOUT, ABILITY_STAKEOUT, ABILITY_STAKEOUT },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Falinks"),
+        .cryId = CRY_FALINKS,
+        .natDexNum = NATIONAL_DEX_FALINKS,
+        .categoryName = _("Formation"),
+        .height = 30,
+        .weight = 620,
+        .description = COMPOUND_STRING(
+            "Five of them are troopers, and one is the\n"
+            "brass. The brass's orders are absolute."),
+        .pokemonScale = 275,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_FalinksMega,
+        .frontPicSize = MON_COORDS_SIZE(56, 48),
+        .frontPicYOffset = 8,
+        .frontAnimFrames = sAnims_Falinks,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_FalinksMega,
+        .backPicSize = MON_COORDS_SIZE(64, 40),
+        .backPicYOffset = 15,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_FalinksMega,
+        .shinyPalette = gMonShinyPalette_FalinksMega,
+        .iconSprite = gMonIcon_FalinksMega,
+        .iconPalIndex = 0,
+        SHADOW(-7, 5, SHADOW_SIZE_S)
+        FOOTPRINT(Falinks)
+        OVERWORLD(
+            sPicTable_Falinks,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Falinks,
+            gShinyOverworldPalette_Falinks
+        )
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sFalinksLevelUpLearnset,
+        .teachableLearnset = sFalinksTeachableLearnset,
+        .formSpeciesIdTable = sFalinksFormSpeciesIdTable,
+        .formChangeTable = sFalinksFormChangeTable,
+    },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FALINKS
 
 #if P_FAMILY_PINCURCHIN

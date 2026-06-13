@@ -6994,6 +6994,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sMagearnaTeachableLearnset,
         .formSpeciesIdTable = sMagearnaFormSpeciesIdTable,
     },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_MAGEARNA
 
 #if P_FAMILY_MARSHADOW
@@ -7456,6 +7457,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .formChangeTable = sZeraoraFormChangeTable,
 
     },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ZERAORA
 
 #if P_FAMILY_MELTAN

@@ -7066,9 +7066,9 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Sceptilite,
     },
 
-    [ITEM_CLEFABLITE] =
+    [ITEM_CLEFABLITE_X] =
     {
-        .name = _("Clefablite"),
+        .name = _("Clefablite X"),
         .price = 50000,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(

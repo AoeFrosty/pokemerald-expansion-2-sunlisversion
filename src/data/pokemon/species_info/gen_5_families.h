@@ -5413,7 +5413,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_SCRAFTY] =
+    [SPECIES_SCRAFTY_MEGA_X] =
     {
         .baseHP        = 65,
         .baseAttack    = 130,
@@ -9119,7 +9119,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_EELEKTROSS] =
+    [SPECIES_EELEKTROSS_MEGA] =
     {
         .baseHP        = 85,
         .baseAttack    = 145,

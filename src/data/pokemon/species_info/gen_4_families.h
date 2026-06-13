@@ -1136,8 +1136,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formSpeciesIdTable = sStaraptorFormSpeciesIdTable,
         .formChangeTable = sStaraptorFormChangeTable,
     },
+
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_STARAPTOR] =
+    [SPECIES_STARAPTOR_MEGA] =
     {
         .baseHP        = 85,
         .baseAttack    = 140,
@@ -1213,7 +1214,6 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sStaraptorTeachableLearnset,
         .formSpeciesIdTable = sStaraptorFormSpeciesIdTable,
         .formChangeTable = sStaraptorFormChangeTable,
-
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_STARLY
@@ -7236,7 +7236,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .isMythical = TRUE,
         .isFrontierBanned = TRUE,
-        .isMegaEvolution
+        .isMegaEvolution = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sDarkraiLevelUpLearnset,
         .teachableLearnset = sDarkraiTeachableLearnset,

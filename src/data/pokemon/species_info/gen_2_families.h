@@ -1378,12 +1378,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .shinyPalette = gMonShinyPalette_Ledian,
         .iconSprite = gMonIcon_Ledian,
         .iconPalIndex = 0,
-#if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_LedianF,
-        .frontPicSizeFemale = MON_COORDS_SIZE(48, 56),
-        .backPicFemale = gMonBackPic_LedianF,
-        .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
-#endif //P_GENDER_DIFFERENCES
         SHADOW(0, 15, SHADOW_SIZE_S)
         FOOTPRINT(Ledian)
         OVERWORLD(
@@ -7025,6 +7019,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .formChangeTable = sSkarmoryFormChangeTable,
 
     },
+#endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SKARMORY
 
 #if P_FAMILY_HOUNDOUR

@@ -2053,7 +2053,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .backPicYOffset = 2,
         .levelUpLearnset = sFloetteEternalLevelUpLearnset,
         .teachableLearnset = sFloetteEternalTeachableLearnset,
-        .formSpeciesIdTable = sFloetteFormSpeciesIdTable,
         .formChangeTable = sFloetteEternalFormChangeTable,
     },
 
@@ -2086,10 +2085,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 2,
         .weight = 9,
         .description = COMPOUND_STRING(
-            "The flower it's holding can no\n"
-            "longer be found blooming anywhere. It's\n"
-            "also thought to contain terrifying\n"
-            "power."),
+            "The Eternal Flower has absorbed\n"
+            "all the energy from Mega\n"
+            "Evolution. The flower now attacks\n"
+            "enemies on its own."),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,

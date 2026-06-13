@@ -4894,8 +4894,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sClefairyLevelUpLearnset,
         .teachableLearnset = sClefairyTeachableLearnset,
-        .formSpeciesIdTable = sClefairyFormSpeciesIdTable,
-        .formChangeTable = sClefairyFormChangeTable,
+        .formSpeciesIdTable = sClefableFormSpeciesIdTable,
+        .formChangeTable = sClefableFormChangeTable,
     },
 #if P_MEGA_EVOLUTIONS
     [SPECIES_CLEFABLE_MEGA_X] =
@@ -8699,7 +8699,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseDefense   = 85,
         .baseSpeed     = 70,    
         .baseSpAttack  = 135,
-        .baseSpDefense = 95
+        .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -8739,7 +8739,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 6,
         .frontAnimFrames = sAnims_Victreebel,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Victreebel_Mega,
+        .backPic = gMonBackPic_VictreebelMega,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_STRETCH,

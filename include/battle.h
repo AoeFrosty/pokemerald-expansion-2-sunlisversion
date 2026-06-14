@@ -235,6 +235,7 @@ struct SpecialStatus
     u8 switchInItemDone:1;
     u8 instructedChosenTarget:3;
     u8 berryReduced:1;
+    u8 shortFuseRedirected:1;
     // End of byte
     u8 gemParam;
     // End of byte

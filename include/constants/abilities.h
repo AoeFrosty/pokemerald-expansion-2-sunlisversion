@@ -422,7 +422,8 @@
 #define ABILITY_FEY_SKIN 385            //misty terrain when hit
 #define ABILITY_QUICK_STRIKE 386        //powers up priority moves
 #define ABILITY_EROSION 387             //sand hydration
-#define ABILITY_CHILL_OUT 388           //snow hydration 
+#define ABILITY_CHILL_OUT 388           //snow hydration
+#define ABILITY_SHORT_FUSE 389          //physical lightning rod
 //summon weather
 //turn class of moves into special moves
 //turn class of moves into physical moves
@@ -433,7 +434,7 @@
 //guardian of the sea ability for lugia give water like attributes like water bubble
 //Requiem of shadow ability for giratina that gives ghost immunity and boost damage like kingambit
 //good as gold copy but only when full hp
-#define ABILITIES_COUNT_GEN9 389
+#define ABILITIES_COUNT_GEN9 390
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

@@ -627,7 +627,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ANGER_POINT] =
     {
         .name = _("Anger Point"),
-        .description = COMPOUND_STRING("Critical hits raise Attack."),
+        .description = COMPOUND_STRING("Boosts Atk at low HP."),
         .aiRating = 4,
     },
 
@@ -2923,5 +2923,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Chill Out"),
         .description = COMPOUND_STRING("Cures status in snow."),
         .aiRating = 4,
+    },
+    [ABILITY_SHORT_FUSE] =
+    {
+        .name = _("Short Fuse"),
+        .description = COMPOUND_STRING("Draws electrical moves."),
+        .aiRating = 7,
+        .breakable = TRUE,
     },
 };

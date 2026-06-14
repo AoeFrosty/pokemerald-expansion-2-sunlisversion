@@ -10481,6 +10481,10 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
         if (gBattleMons[battlerAtk].status1 & STATUS1_ANY && IS_MOVE_PHYSICAL(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_UNSEEN_FIST:
+    case ABILITY_PIERCING_DRILL:
+        if (IsMoveMakingContact(move, battlerAtk) && gProtectStructs[battlerDef].protected)
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.25));
     case ABILITY_TRANSISTOR:
         if (moveType == TYPE_ELECTRIC)
         {

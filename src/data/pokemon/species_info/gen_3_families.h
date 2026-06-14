@@ -8517,6 +8517,65 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formSpeciesIdTable = sCastformFormSpeciesIdTable,
         .formChangeTable = sCastformFormChangeTable,
     },
+
+    [SPECIES_CASTFORM_SANDY] =
+    {
+        .baseHP        = 80,
+        .baseAttack    = 90, //+
+        .baseDefense   = 90, //+
+        .baseSpeed     = 90, //+
+        .baseSpAttack  = 80, 
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_ROCK),
+        .catchRate = 45,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 147 : 145,
+        .evYield_HP = 1,
+        .itemCommon = ITEM_MYSTIC_WATER,
+        .itemRare = ITEM_MYSTIC_WATER,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_FORECAST, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Castform"),
+        .cryId = CRY_CASTFORM,
+        .natDexNum = NATIONAL_DEX_CASTFORM,
+        .categoryName = _("Weather"),
+        .height = 3,
+        .weight = 8,
+        .description = COMPOUND_STRING(
+            "Castform takes this form in sandy deserts.\n"
+            "In an experiment where is was placed in\n"
+            "a pail of sand, it didn't change to this\n"
+            "form. Its body is soft and granular."),
+        .pokemonScale = 435,
+        .pokemonOffset = -5,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CastformSandy,
+        .frontPicSize = MON_COORDS_SIZE(40, 48),
+        .frontPicYOffset = 9,
+        .frontAnimFrames = sAnims_CastformNormal,
+        .frontAnimId = ANIM_GROW_VIBRATE,
+        .enemyMonElevation = 5,
+        .backPic = gMonBackPic_CastformSandy,
+        .backPicSize = MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        .palette = gMonPalette_CastformSandy,
+        .shinyPalette = gMonShinyPalette_CastformSandy,
+        .iconSprite = gMonIcon_CastformSandy,
+        .iconPalIndex = 0,
+        SHADOW(0, 7, SHADOW_SIZE_S)
+        FOOTPRINT(Castform)
+        .levelUpLearnset = sCastformLevelUpLearnset,
+        .teachableLearnset = sCastformTeachableLearnset,
+        .eggMoveLearnset = sCastformEggMoveLearnset,
+        .formSpeciesIdTable = sCastformFormSpeciesIdTable,
+        .formChangeTable = sCastformFormChangeTable,
+    },
 #endif //P_FAMILY_CASTFORM
 
 #if P_FAMILY_KECLEON

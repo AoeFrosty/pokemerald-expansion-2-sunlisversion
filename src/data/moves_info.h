@@ -24762,7 +24762,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_LEER, COMBO_STARTER_SCARY_FACE},
-        .battleAnimScript = gBattleAnimMove_Bite,
+        .battleAnimScript = gBattleAnimMove_Crunch,
     },
 
     [MOVE_EMPERORS_DIVE] =
@@ -24863,7 +24863,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_PlayRough,
+        .battleAnimScript = gBattleAnimMove_FoulPlay,
     },
 
     [MOVE_SNEAKY_SCAM] =
@@ -25007,7 +25007,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_DarkestLariat,
+        .battleAnimScript = gBattleAnimMove_VoltTackle,
     },
 
     [MOVE_VENOM_REND] =
@@ -25127,7 +25127,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_StormThrow,
+        .battleAnimScript = gBattleAnimMove_BraveBird,
     },
 
     [MOVE_TECTONIC_SLAM] =

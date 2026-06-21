@@ -1180,6 +1180,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_STEELSURGESWITCHIN]                   = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} was caught in the sharp shrapnel!"),
     [STRINGID_PKMNSROCKPREVENTSFLINCHING]           = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}'s Rock-Type prevents flinching!"),
     [STRINGID_COZYDREAMS]                           = COMPOUND_STRING("Cozy Dreams have a healing effect!"),
+    [STRINGID_SOULDRAINTRIGGERS]                    = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} drained hp from the poisoned target!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

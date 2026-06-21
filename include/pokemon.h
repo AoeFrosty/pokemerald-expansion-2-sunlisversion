@@ -534,6 +534,8 @@ struct MoveInfo
     u32 kickMove:1;
     u32 spinMove:1;
     u32 prioMove:1;
+    u32 drainMove:1;
+    u32 lightMove:1;
 
     // Ban flags
     u32 gravityBanned:1;

@@ -6520,6 +6520,30 @@ case ABILITY_DIRT_DEVIL:
                 effect++;
             }
             break;
+        case ABILITY_SOUL_DRAIN:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+            && gSpecialStatuses[gBattlerTarget].shellBellDmg != 0
+            && (gBattleMons[gBattlerTarget].status1 & STATUS1_PSN_ANY)
+            && gBattleMons[battler].hp != gBattleMons[battler].maxHP
+            && IsBattlerAlive(battler))
+            {
+            gLastUsedAbility = ABILITY_SOUL_DRAIN;
+            PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
+
+            // Heal 20% of damage dealt
+            gBattleMoveDamage = -(gSpecialStatuses[gBattlerTarget].shellBellDmg / 5);
+
+            // Ensure at least 1 HP is restored
+            if (gBattleMoveDamage == 0)
+                gBattleMoveDamage = -1;
+
+            // Apply poison healing reduction mechanic
+            gBattleMoveDamage = MaybeLowerHealingForPoison(battler, gBattleMoveDamage);
+            BattleScriptPushCursor();
+            gBattlescriptCurrInstr = BattleScript_SoulDrainTriggers;
+            effect++;
+            }
+            break;
         case ABILITY_TOXIC_CHAIN:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && IsBattlerAlive(gBattlerTarget)
@@ -9974,6 +9998,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
     case ABILITY_IRON_FIST:
         if (gMovesInfo[move].punchingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        break;
+    case ABILITY_HYPER_DRAIN:
+        if (gMovesInfo[move].drainMove)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
 
     case ABILITY_KICKBOXER:

@@ -529,6 +529,7 @@ extern const u8 BattleScript_TeraFormChange[];
 extern const u8 BattleScript_SteelSurgeOnSwitchIn[];
 extern const u8 BattleScript_RockFlinchPrevention[];
 extern const u8 BattleScript_CozyDreams[];
+extern const u8 BattleScript_SoulDrainTriggers[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

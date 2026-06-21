@@ -9065,6 +9065,12 @@ BattleScript_DancerActivates::
 	orword gHitMarker, HITMARKER_ALLOW_NO_PP
 	jumptocalledmove TRUE
 
+BattleScript_SoulDrainTriggers::
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_SOULDRAINTRIGGERS
+	waitmessage B_WAIT_TIME_SHORT
+	return
+
 BattleScript_SynchronizeActivates::
 	waitstate
 	call BattleScript_AbilityPopUp

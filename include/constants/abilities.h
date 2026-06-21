@@ -424,7 +424,9 @@
 #define ABILITY_EROSION 387             //sand hydration
 #define ABILITY_CHILL_OUT 388           //snow hydration
 #define ABILITY_SHORT_FUSE 389          //physical lightning rod
-//summon weather
+#define ABILITY_HYPER_DRAIN 390         //boosts draining moves 1.5x
+#define ABILITY_SOUL_DRAIN 391          //hitting a poisoned target heals hp
+//make illuminate boost light moves
 //turn class of moves into special moves
 //turn class of moves into physical moves
 //resorption from tarc2?

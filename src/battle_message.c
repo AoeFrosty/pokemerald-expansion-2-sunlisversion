@@ -1181,6 +1181,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNSROCKPREVENTSFLINCHING]           = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}'s Rock-Type prevents flinching!"),
     [STRINGID_COZYDREAMS]                           = COMPOUND_STRING("Cozy Dreams have a healing effect!"),
     [STRINGID_SOULDRAINTRIGGERS]                    = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} drained hp from the poisoned target!"),
+    [STRINGID_TOXICSWAMP]                           = COMPOUND_STRING("A swamp has covered the opposing side! Opposing speed has lowered!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

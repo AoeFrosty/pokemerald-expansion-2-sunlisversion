@@ -3608,8 +3608,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_CLODSIRE] =
     {
         .baseHP        = 135,   //+5
-        .baseAttack    = 85,    //+10
-        .baseDefense   = 60,
+        .baseAttack    = 75,    
+        .baseDefense   = 70,    //+10
         .baseSpeed     = 20,
         .baseSpAttack  = 45,
         .baseSpDefense = 100,

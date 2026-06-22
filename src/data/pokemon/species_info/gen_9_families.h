@@ -2842,9 +2842,9 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     [SPECIES_GRAFAIAI] =
     {
         .baseHP        = 68,    //+5
-        .baseAttack    = 95,
+        .baseAttack    = 98,    //+3
         .baseDefense   = 65,
-        .baseSpeed     = 110,
+        .baseSpeed     = 112,   //+2
         .baseSpAttack  = 80,
         .baseSpDefense = 72,
         .types = MON_TYPES(TYPE_POISON, TYPE_NORMAL),

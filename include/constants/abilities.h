@@ -426,10 +426,10 @@
 #define ABILITY_SHORT_FUSE 389          //physical lightning rod
 #define ABILITY_HYPER_DRAIN 390         //boosts draining moves 1.5x
 #define ABILITY_SOUL_DRAIN 391          //hitting a poisoned target heals hp
+#define ABILITY_MEGA_HUNTER 392         //deals extra damage vs mega pokemon
 //make illuminate boost light moves
 //turn class of moves into special moves
 //turn class of moves into physical moves
-//resorption from tarc2?
 //crippling venom from tarc2?
 //boost "drain moves" power
 //priority moves increase power haste from tarc2

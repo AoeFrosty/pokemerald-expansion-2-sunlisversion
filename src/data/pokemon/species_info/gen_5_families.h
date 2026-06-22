@@ -3739,7 +3739,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_POISON_POINT, ABILITY_ZEAL, ABILITY_SPEED_BOOST },
+        .abilities = { ABILITY_VENOM_SURGE, ABILITY_ZEAL, ABILITY_SPEED_BOOST },
     #else
         .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_QUICK_FEET },
     #endif
@@ -6143,7 +6143,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_STENCH, ABILITY_TOXIC_DEBRIS, ABILITY_POISON_PUPPETEER },
+        .abilities = { ABILITY_STENCH, ABILITY_TOXIC_DEBRIS, ABILITY_CORROSION },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("Garbodor"),
@@ -6211,7 +6211,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_CORROSION, ABILITY_CORROSION, ABILITY_CORROSION },
+        .abilities = { ABILITY_POISON_PUPPETEER, ABILITY_POISON_PUPPETEER, ABILITY_POISON_PUPPETEER },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("Garbodor"),

@@ -9656,6 +9656,14 @@ static inline u32 CalcMoveBasePower(struct DamageCalculationData *damageCalcData
         if (gBattleStruct->pledgeMove)
             basePower = 150;
         break;
+    case EFFECT_TOXIC_SWAMP:
+        gBattleScripting.battler = gBattlerTarget;
+        gSideStatuses[GetBattlerSide(gBattlerTarget)] |= SIDE_STATUS_SWAMP;
+        gSideTimers[GetBattlerSide(gBattlerTarget)].swampTimer = 4;
+
+        BattleScriptPushCursor();
+        gBattlescriptCurrInstr = BattleScript_ToxicSwamp;
+        break;
     case EFFECT_FLING:
         basePower = GetFlingPowerFromItemId(gBattleMons[battlerAtk].item);
         break;
@@ -11132,6 +11140,12 @@ static inline uq4_12_t GetAttackerAbilitiesModifier(u32 battlerAtk, uq4_12_t typ
         if (typeEffectivenessModifier >= UQ_4_12(2.0))
             return UQ_4_12(1.25);
         break;
+    case ABILITY_MEGA_HUNTER:
+    if (IsBattlerMegaEvolved(gBattlerTarget))
+        return UQ_4_12(1.5);
+    // if (gSpeciesInfo[gBattleMons[gBattlerTarget].species].isMegaEvolution)
+    //     return UQ_4_12(1.5);
+    break;
     case ABILITY_SNIPER:
         if (isCrit)
             return UQ_4_12(1.5);

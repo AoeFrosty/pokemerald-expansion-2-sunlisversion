@@ -530,6 +530,7 @@ extern const u8 BattleScript_SteelSurgeOnSwitchIn[];
 extern const u8 BattleScript_RockFlinchPrevention[];
 extern const u8 BattleScript_CozyDreams[];
 extern const u8 BattleScript_SoulDrainTriggers[];
+extern const u8 BattleScript_ToxicSwamp[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

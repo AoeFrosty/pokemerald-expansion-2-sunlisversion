@@ -8450,6 +8450,11 @@ BattleScript_SnowWarningActivatesSnow::
 	call BattleScript_ActivateWeatherAbilities
 	end3
 
+BattleScript_ToxicSwamp::
+    printstring STRINGID_TOXICSWAMP
+    waitmessage 0x40
+    goto BattleScript_MoveEnd
+
 BattleScript_ActivateTerrainEffects:
 	savetarget
 	setbyte gBattlerTarget, 0

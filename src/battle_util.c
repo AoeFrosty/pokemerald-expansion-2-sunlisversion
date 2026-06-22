@@ -5148,6 +5148,7 @@ case ABILITY_DIRT_DEVIL:
             }
             break;
         case ABILITY_SUPREME_OVERLORD:
+        case ABILITY_SHADOW_REQUIEM:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
@@ -6792,6 +6793,7 @@ case ABILITY_DIRT_DEVIL:
                 }
                 break;
             case ABILITY_MAGMA_ARMOR:
+            case ABILITY_SEA_GUARDIAN:
                 if (gBattleMons[battler].status1 & (STATUS1_FREEZE | STATUS1_FROSTBITE))
                 {
                     StringCopy(gBattleTextBuff1, gStatusConditionString_IceJpn);
@@ -7320,6 +7322,7 @@ bool32 CanBeFrozen(u32 battler)
      || ability == ABILITY_MAGMA_ARMOR
      || ability == ABILITY_COMATOSE
      || ability == ABILITY_PURIFYING_SALT
+     || ability == ABILITY_SEA_GUARDIAN
      || gBattleMons[battler].status1 & STATUS1_ANY
      || IsAbilityStatusProtected(battler)
      || IsBattlerTerrainAffected(battler, STATUS_FIELD_MISTY_TERRAIN))
@@ -7335,6 +7338,7 @@ bool32 CanGetFrostbite(u32 battler)
       || ability == ABILITY_MAGMA_ARMOR
       || ability == ABILITY_COMATOSE
       || ability == ABILITY_PURIFYING_SALT
+      || ability == ABILITY_SEA_GUARDIAN
       || gBattleMons[battler].status1 & STATUS1_ANY
       || IsAbilityStatusProtected(battler)
       || IsBattlerTerrainAffected(battler, STATUS_FIELD_MISTY_TERRAIN))
@@ -10066,6 +10070,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (moveType == TYPE_WATER)
            modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
         break;
+    case ABILITY_SEA_GUARDIAN:
+        if (moveType == TYPE_WATER)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
 		case ABILITY_MAGMA_ARMOR:
         if (moveType == TYPE_FIRE)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
@@ -10118,6 +10126,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (gMovesInfo[move].slicingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_ILLUMINATE:
+        if (gMovesInfo[move].lightMove)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        break;
     case ABILITY_DANCER:
         if (gMovesInfo[move].danceMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
@@ -10135,6 +10147,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
     case ABILITY_SUPREME_OVERLORD:
+    case ABILITY_SHADOW_REQUIEM:
         modifier = uq4_12_multiply(modifier, GetSupremeOverlordModifier(battlerAtk));
         break;
     }
@@ -10177,6 +10190,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
     {
     case ABILITY_HEATPROOF:
     case ABILITY_WATER_BUBBLE:
+    case ABILITY_SEA_GUARDIAN:
         if (moveType == TYPE_FIRE)
         {
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
@@ -11776,6 +11790,7 @@ uq4_12_t GetOverworldTypeEffectiveness(struct Pokemon *mon, u8 moveType)
          || (moveType == TYPE_GRASS    &&  abilityDef == ABILITY_SAP_SIPPER)
          || (moveType == TYPE_GROUND   && (abilityDef == ABILITY_LEVITATE
                                        ||  abilityDef == ABILITY_EARTH_EATER))
+         || (moveType == TYPE_GHOST    &&  abilityDef == ABILITY_SHADOW_REQUIEM)
          || (moveType == TYPE_WATER    && (abilityDef == ABILITY_WATER_ABSORB
                                        || abilityDef == ABILITY_DRY_SKIN
                                        || abilityDef == ABILITY_STORM_DRAIN))

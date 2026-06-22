@@ -25388,6 +25388,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = gBattleAnimMove_WaveCrash,
     },
 
+    [MOVE_BOG_DOWN] =
+    {
+        .name = COMPOUND_STRING("Bog Down"),
+        .description = COMPOUND_STRING(
+            "Summons a swamp on the enemy\n"
+            "field for 4 turns, x.25 slow."),
+        .effect = EFFECT_TOXIC_SWAMP,
+        .power = 0,
+        .type = TYPE_GROUND,
+        .accuracy = 0,
+        .pp = 5,
+        .target = MOVE_TARGET_ALL_BATTLERS,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_SPD_UP_1 },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = COMBO_STARTER_RAIN_DANCE,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Defog,
+    },
+
     //bulag
 
     // Z-Moves

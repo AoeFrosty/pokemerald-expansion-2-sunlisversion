@@ -427,16 +427,15 @@
 #define ABILITY_HYPER_DRAIN 390         //boosts draining moves 1.5x
 #define ABILITY_SOUL_DRAIN 391          //hitting a poisoned target heals hp
 #define ABILITY_MEGA_HUNTER 392         //deals extra damage vs mega pokemon
-//make illuminate boost light moves
+#define ABILITY_SEA_GUARDIAN 393        //boost water moves, reduce fire dmg, immune to frostbite
+#define ABILITY_SHADOW_REQUIEM 394      //immunity to ghost+supreme overlord
+#define ABILITY_FIRE_MANE 395           //boost fire type move power by 50% let's make this a fire aura
+#define ABILITY_EELEVATE 395            //ground immunity, hazard immunity and boosts highest stat on KO
 //turn class of moves into special moves
 //turn class of moves into physical moves
-//crippling venom from tarc2?
-//boost "drain moves" power
-//priority moves increase power haste from tarc2
 //guardian of the sea ability for lugia give water like attributes like water bubble
 //Requiem of shadow ability for giratina that gives ghost immunity and boost damage like kingambit
-//good as gold copy but only when full hp
-#define ABILITIES_COUNT_GEN9 390
+#define ABILITIES_COUNT_GEN9 396
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

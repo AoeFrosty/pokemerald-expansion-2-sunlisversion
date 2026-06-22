@@ -1492,7 +1492,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_MERCILESS, ABILITY_INSOMNIA, ABILITY_CORROSION },
+        .abilities = { ABILITY_MERCILESS, ABILITY_INSOMNIA, ABILITY_VENOM_SURGE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Ariados"),
         .cryId = CRY_ARIADOS,
@@ -7651,7 +7651,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_HIGH_VOLTAGE, ABILITY_NONE, ABILITY_INNER_FOCUS }, 
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_VOLT_ABSORB },
     #endif
@@ -7727,7 +7727,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },   //mega sol
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_FLASH_FIRE },
     #endif
@@ -7803,7 +7803,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INNER_FOCUS },   //purifying water aka purifying salt but poison resist
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_WATER_ABSORB },
     #endif
@@ -8112,10 +8112,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_LUGIA] =
     {
         .baseHP        = 106,
-        .baseAttack    = 90,
+        .baseAttack    = 70,    //-20
         .baseDefense   = 130,
         .baseSpeed     = 110,
-        .baseSpAttack  = 90,
+        .baseSpAttack  = 110,    //+20
         .baseSpDefense = 154,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
         .catchRate = 3,
@@ -8132,7 +8132,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_MULTISCALE },
+        .abilities = { ABILITY_SEA_GUARDIAN, ABILITY_NONE, ABILITY_MULTISCALE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Lugia"),
         .cryId = CRY_LUGIA,
@@ -8186,10 +8186,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_HO_OH] =
     {
         .baseHP        = 106,
-        .baseAttack    = 130,
+        .baseAttack    = 140,   //+10
         .baseDefense   = 90,
         .baseSpeed     = 90,
-        .baseSpAttack  = 110,
+        .baseSpAttack  = 100,   //-10
         .baseSpDefense = 154,
         .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
         .catchRate = 3,
@@ -8208,7 +8208,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_REGENERATOR },
+        .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_NONE, ABILITY_REGENERATOR },    //rename magma armor potentially for legendary feel
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Ho-Oh"),
         .cryId = CRY_HO_OH,

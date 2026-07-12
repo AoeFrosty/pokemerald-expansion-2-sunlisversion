@@ -430,12 +430,12 @@
 #define ABILITY_SEA_GUARDIAN 393        //boost water moves, reduce fire dmg, immune to frostbite
 #define ABILITY_SHADOW_REQUIEM 394      //immunity to ghost+supreme overlord
 #define ABILITY_FIRE_MANE 395           //boost fire type move power by 50% let's make this a fire aura
-#define ABILITY_EELEVATE 395            //ground immunity, hazard immunity and boosts highest stat on KO
+#define ABILITY_EELEVATE 396            //ground immunity, hazard immunity and boosts highest stat on KO
 //turn class of moves into special moves
 //turn class of moves into physical moves
 //guardian of the sea ability for lugia give water like attributes like water bubble
 //Requiem of shadow ability for giratina that gives ghost immunity and boost damage like kingambit
-#define ABILITIES_COUNT_GEN9 396
+#define ABILITIES_COUNT_GEN9 397
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

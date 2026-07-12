@@ -2931,4 +2931,46 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
         .breakable = TRUE,
     },
+    [ABILITY_HYPER_DRAIN] =
+    {
+        .name = _("Hyper Drain"),
+        .description = COMPOUND_STRING("Strengthens draining moves."),
+        .aiRating = 7,
+    },
+    [ABILITY_SOUL_DRAIN] =
+    {
+        .name = _("Soul Drain"),
+        .description = COMPOUND_STRING("Slight HP hitting poisoned foes."),
+        .aiRating = 3,
+    },
+    [ABILITY_MEGA_HUNTER] =
+    {
+        .name = _("Mega Hunter"),
+        .description = COMPOUND_STRING("Boosts damage versus megas."),
+        .aiRating = 8,
+    },
+    [ABILITY_SEA_GUARDIAN] =
+    {
+        .name = _("Sea Guardian"),
+        .description = COMPOUND_STRING("+water moves, -fire dmg, no frostbite."),
+        .aiRating = 8,
+    },
+    [ABILITY_SHADOW_REQUIEM] =
+    {
+        .name = _("Shadow Requiem"),
+        .description = COMPOUND_STRING("Immune to ghost+ Supreme Overlord."),
+        .aiRating = 8,
+    },
+    [ABILITY_FIRE_MANE] =
+    {
+        .name = _("Fire Mane"),
+        .description = COMPOUND_STRING("Boosts fire type attacks."),
+        .aiRating = 8,
+    },
+    [ABILITY_EELEVATE] =
+    {
+        .name = _("Eelevate"),
+        .description = COMPOUND_STRING("KOs boost best stat, immune to ground."),
+        .aiRating = 8,
+    },
 };

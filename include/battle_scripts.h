@@ -884,6 +884,7 @@ extern const u8 BattleScript_HardHatPop[];
 extern const u8 BattleScript_SandBagPop[];
 extern const u8 BattleScript_InflateActivatesMoveEnd[];
 extern const u8 BattleScript_SubBerry[];
+extern const u8 BattleScript_EffectToxicSwamp[];
 
 
 #endif // GUARD_BATTLE_SCRIPTS_H

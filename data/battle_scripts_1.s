@@ -328,6 +328,7 @@ BattleScript_MoveSwitchOpenPartyScreen:
 BattleScript_MoveSwitchEnd:
 	end
 
+
 BattleScript_EffectPledge::
 	attackcanceler
 	setpledge BattleScript_HitFromAccCheck

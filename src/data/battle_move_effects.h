@@ -2292,7 +2292,7 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
     },
     [EFFECT_TOXIC_SWAMP] =
     {
-        .battleScript = BattleScript_EffectToxicSwamp,
+        .battleScript = BattleScript_ToxicSwamp,
         .battleTvScore = 0, // TODO: Assign points
         .encourageEncore = TRUE,
     },

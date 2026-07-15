@@ -1108,8 +1108,6 @@
 #define MOVE_JETSTREAM_RUSH 1041    //water first impression that lowers def of target hit
 #define MOVE_ABYSSAL_DIVE 1042      //water type hyper drill
 #define MOVE_BOG_DOWN 1043          //summons swamp on enemy side of field for 4 turns
-//need some moves that deal extra damage to mega mons, maybe see if dynamax could be a reference
-//potential fighting move to hit switching mons
 //do defensive growth in sand
 
 

@@ -6244,6 +6244,7 @@ static const struct LevelUpMove sClodsireLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_TOXIC),
     LEVEL_UP_MOVE(43, MOVE_BLIGHT),
     LEVEL_UP_MOVE(47, MOVE_EARTHQUAKE),
+    LEVEL_UP_MOVE(51, MOVE_BOG_DOWN),
     LEVEL_UP_END
 };
 #endif //P_PALDEAN_FORMS

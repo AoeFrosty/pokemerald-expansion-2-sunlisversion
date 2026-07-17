@@ -14409,17 +14409,17 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
 #if P_MEGA_EVOLUTIONS
 #if FROSTY_MEGAS >= SPECIES_EMPOLEON
-    const u32 gMonFrontPic_EmpoleonMegaX[] = INCBIN_U32("graphics/pokemon/Empoleon/mega_x/front.4bpp.lz");
-    const u32 gMonPalette_EmpoleonMegaX[] = INCBIN_U32("graphics/pokemon/Empoleon/mega_x/normal.gbapal.lz");
-    const u32 gMonBackPic_EmpoleonMegaX[] = INCBIN_U32("graphics/pokemon/Empoleon/mega_x/back.4bpp.lz");
-    const u32 gMonShinyPalette_EmpoleonMegaX[] = INCBIN_U32("graphics/pokemon/Empoleon/mega_x/shiny.gbapal.lz");
-    const u8 gMonIcon_EmpoleonMegaX[] = INCBIN_U8("graphics/pokemon/Empoleon/icon.4bpp");
+    const u32 gMonFrontPic_EmpoleonMegaX[] = INCBIN_U32("graphics/pokemon/empoleon/mega_x/front.4bpp.lz");
+    const u32 gMonPalette_EmpoleonMegaX[] = INCBIN_U32("graphics/pokemon/empoleon/mega_x/normal.gbapal.lz");
+    const u32 gMonBackPic_EmpoleonMegaX[] = INCBIN_U32("graphics/pokemon/empoleon/mega_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_EmpoleonMegaX[] = INCBIN_U32("graphics/pokemon/empoleon/mega_x/shiny.gbapal.lz");
+    const u8 gMonIcon_EmpoleonMegaX[] = INCBIN_U8("graphics/pokemon/empoleon/icon.4bpp");
 
-    const u32 gMonFrontPic_EmpoleonMegaY[] = INCBIN_U32("graphics/pokemon/Empoleon/mega_y/megaempoleond.4bpp.lz");
-    const u32 gMonPalette_EmpoleonMegaY[] = INCBIN_U32("graphics/pokemon/Empoleon/mega_y/megadnormal.gbapal.lz");
-    const u32 gMonBackPic_EmpoleonMegaY[] = INCBIN_U32("graphics/pokemon/Empoleon/mega_y/megaempoleond_back.4bpp.lz");
-    const u32 gMonShinyPalette_EmpoleonMegaY[] = INCBIN_U32("graphics/pokemon/Empoleon/mega_y/megadshiny.gbapal.lz");
-    const u8 gMonIcon_EmpoleonMegaY[] = INCBIN_U8("graphics/pokemon/Empoleon/icon.4bpp");
+    const u32 gMonFrontPic_EmpoleonMegaY[] = INCBIN_U32("graphics/pokemon/empoleon/mega_y/megaempoleond.4bpp.lz");
+    const u32 gMonPalette_EmpoleonMegaY[] = INCBIN_U32("graphics/pokemon/empoleon/mega_y/megadnormal.gbapal.lz");
+    const u32 gMonBackPic_EmpoleonMegaY[] = INCBIN_U32("graphics/pokemon/empoleon/mega_y/megaempoleond_back.4bpp.lz");
+    const u32 gMonShinyPalette_EmpoleonMegaY[] = INCBIN_U32("graphics/pokemon/empoleon/mega_y/megadshiny.gbapal.lz");
+    const u8 gMonIcon_EmpoleonMegaY[] = INCBIN_U8("graphics/pokemon/empoleon/icon.4bpp");
 #endif //FROSTY_MEGAS >= SPECIES_EMPOLEON
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_PIPLUP

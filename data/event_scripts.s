@@ -1157,3 +1157,27 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/EverGrandeCity_FirstRoom_2/scripts.inc"
 
 	.include "data/maps/EverGrandeCity_FirstRoom_3/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_SecondRoom_1/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_SecondRoom_2/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_SecondRoom_3/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_ThirdRoom_1/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_ThirdRoom_2/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_ThirdRoom_3/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_FourthRoom_1/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_FourthRoom_2/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_FourthRoom_3/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_ChampionsRoom_2/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_ChampionsRoom_3/scripts.inc"
+
+	.include "data/maps/EverGrandeCity_ChampionsRoom_4/scripts.inc"

@@ -4440,6 +4440,126 @@
       "secondary_tileset": "gTileset_EliteFour",
       "border_filepath": "data/layouts/EverGrandeCity_FirstRoom_3/border.bin",
       "blockdata_filepath": "data/layouts/EverGrandeCity_FirstRoom_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_SECOND_ROOM_1",
+      "name": "EverGrandeCity_SecondRoom_1_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_SecondRoom_1/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_SecondRoom_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_SECOND_ROOM_2",
+      "name": "EverGrandeCity_SecondRoom_2_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_SecondRoom_2/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_SecondRoom_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_SECOND_ROOM_3",
+      "name": "EverGrandeCity_SecondRoom_3_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_SecondRoom_3/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_SecondRoom_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_THIRD_ROOM_1",
+      "name": "EverGrandeCity_ThirdRoom_1_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_ThirdRoom_1/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_ThirdRoom_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_THIRD_ROOM_2",
+      "name": "EverGrandeCity_ThirdRoom_2_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_ThirdRoom_2/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_ThirdRoom_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_THIRD_ROOM_3",
+      "name": "EverGrandeCity_ThirdRoom_3_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_ThirdRoom_3/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_ThirdRoom_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_FOURTH_ROOM_1",
+      "name": "EverGrandeCity_FourthRoom_1_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_FourthRoom_1/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_FourthRoom_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_FOURTH_ROOM_2",
+      "name": "EverGrandeCity_FourthRoom_2_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_FourthRoom_2/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_FourthRoom_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_FOURTH_ROOM_3",
+      "name": "EverGrandeCity_FourthRoom_3_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_FourthRoom_3/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_FourthRoom_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_CHAMPIONS_ROOM_2",
+      "name": "EverGrandeCity_ChampionsRoom_2_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_ChampionsRoom_2/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_ChampionsRoom_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_CHAMPIONS_ROOM_3",
+      "name": "EverGrandeCity_ChampionsRoom_3_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_ChampionsRoom_3/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_ChampionsRoom_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVER_GRANDE_CITY_CHAMPIONS_ROOM_4",
+      "name": "EverGrandeCity_ChampionsRoom_4_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EliteFour",
+      "border_filepath": "data/layouts/EverGrandeCity_ChampionsRoom_4/border.bin",
+      "blockdata_filepath": "data/layouts/EverGrandeCity_ChampionsRoom_4/map.bin"
     }
   ]
 }

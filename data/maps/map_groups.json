@@ -296,7 +296,19 @@
     "EverGrandeCity_PokemonLeague_2F",
     "EverGrandeCity_FirstRoom_1",
     "EverGrandeCity_FirstRoom_2",
-    "EverGrandeCity_FirstRoom_3"
+    "EverGrandeCity_FirstRoom_3",
+    "EverGrandeCity_SecondRoom_1",
+    "EverGrandeCity_SecondRoom_2",
+    "EverGrandeCity_SecondRoom_3",
+    "EverGrandeCity_ThirdRoom_1",
+    "EverGrandeCity_ThirdRoom_2",
+    "EverGrandeCity_ThirdRoom_3",
+    "EverGrandeCity_FourthRoom_1",
+    "EverGrandeCity_FourthRoom_2",
+    "EverGrandeCity_FourthRoom_3",
+    "EverGrandeCity_ChampionsRoom_2",
+    "EverGrandeCity_ChampionsRoom_3",
+    "EverGrandeCity_ChampionsRoom_4"
   ],
   "gMapGroup_IndoorRoute104": [
     "Route104_MrBrineysHouse",

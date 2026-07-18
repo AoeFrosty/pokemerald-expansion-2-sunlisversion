@@ -1131,11 +1131,12 @@
 #define ITEM_MARACCAS 952      //buff marractus  NEED TO CHANGE SPELLING
 // #define ITEM_SOUL_LANTERN 953   //buff spiritomb
 #define ITEM_TOXIN_BOOSTER 954
+#define ITEM_TM101 955
 // LEGEND PLATE //very complicated item that generally is only for arceus, could remodel into anti tera item?
 //maybe an item that inflicts torment but boosts move power?
 
 
-#define ITEMS_COUNT 955
+#define ITEMS_COUNT 956
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
@@ -1166,6 +1167,7 @@
 #define ITEM_TO_MULCH(itemId)(((itemId) - ITEM_GROWTH_MULCH) + 1)
 
 #define NUM_TECHNICAL_MACHINES 100
+#define NUM_EXTRA_TECHNICAL_MACHINES 150
 #define NUM_HIDDEN_MACHINES 8
 
 #define MAX_BAG_ITEM_CAPACITY         999

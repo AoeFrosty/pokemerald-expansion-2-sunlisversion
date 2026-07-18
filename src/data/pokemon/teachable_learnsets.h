@@ -55,6 +55,7 @@
 // - MOVE_SNATCH                                       //
 // - MOVE_OVERHEAT                                     //
 // - MOVE_SUCKER_PUNCH                                 //
+// - MOVE_AURA_SPHERE                                  //
 // - MOVE_CUT                                          //
 // - MOVE_FLY                                          //
 // - MOVE_SURF                                         //
@@ -361,6 +362,7 @@ static const u16 sCharizardTeachableLearnset[] = {
 #if P_FAMILY_SQUIRTLE
 static const u16 sSquirtleTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -404,6 +406,7 @@ static const u16 sSquirtleTeachableLearnset[] = {
 
 static const u16 sWartortleTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -447,6 +450,7 @@ static const u16 sWartortleTeachableLearnset[] = {
 
 static const u16 sBlastoiseTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -5487,6 +5491,7 @@ static const u16 sTyrogueTeachableLearnset[] = {
 
 static const u16 sHitmonleeTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_DOUBLE_TEAM,
@@ -5525,6 +5530,7 @@ static const u16 sHitmonleeTeachableLearnset[] = {
 
 static const u16 sHitmonchanTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_DOUBLE_TEAM,
@@ -8395,6 +8401,7 @@ static const u16 sDragoniteTeachableLearnset[] = {
 #if P_FAMILY_MEWTWO
 static const u16 sMewtwoTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -9304,6 +9311,7 @@ static const u16 sTogeticTeachableLearnset[] = {
 static const u16 sTogekissTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -12047,6 +12055,7 @@ static const u16 sMiltankTeachableLearnset[] = {
 
 #if P_FAMILY_RAIKOU
 static const u16 sRaikouTeachableLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_CALM_MIND,
     MOVE_CUT,
     MOVE_DIG,
@@ -12386,6 +12395,7 @@ static const u16 sHoOhTeachableLearnset[] = {
 #if P_FAMILY_CELEBI
 static const u16 sCelebiTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_CALM_MIND,
     MOVE_CUT,
     MOVE_DOUBLE_TEAM,
@@ -12641,6 +12651,7 @@ static const u16 sCombuskenTeachableLearnset[] = {
 static const u16 sBlazikenTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CUT,
@@ -13583,6 +13594,7 @@ static const u16 sKirliaTeachableLearnset[] = {
 
 static const u16 sGardevoirTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -13632,6 +13644,7 @@ static const u16 sGardevoirTeachableLearnset[] = {
 static const u16 sGalladeTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -14762,6 +14775,7 @@ static const u16 sMedititeTeachableLearnset[] = {
 static const u16 sMedichamTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -15862,6 +15876,7 @@ static const u16 sAltariaTeachableLearnset[] = {
 static const u16 sZangooseTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -17654,6 +17669,7 @@ static const u16 sRegisteelTeachableLearnset[] = {
 static const u16 sLatiasTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_CALM_MIND,
     MOVE_CUT,
     MOVE_DIVE,
@@ -17707,6 +17723,7 @@ static const u16 sLatiasTeachableLearnset[] = {
 static const u16 sLatiosTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_CALM_MIND,
     MOVE_CUT,
     MOVE_DIVE,
@@ -17912,6 +17929,7 @@ static const u16 sRayquazaTeachableLearnset[] = {
 #if P_FAMILY_JIRACHI
 static const u16 sJirachiTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -18369,6 +18387,7 @@ static const u16 sMonfernoTeachableLearnset[] = {
 static const u16 sInfernapeTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -19499,6 +19518,7 @@ static const u16 sBunearyTeachableLearnset[] = {
 
 static const u16 sLopunnyTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_CUT,
     MOVE_DIG,
@@ -19945,6 +19965,7 @@ static const u16 sGarchompTeachableLearnset[] = {
 static const u16 sRioluTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_DIG,
@@ -19983,6 +20004,7 @@ static const u16 sRioluTeachableLearnset[] = {
 static const u16 sLucarioTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -20582,6 +20604,7 @@ static const u16 sAzelfTeachableLearnset[] = {
 #if P_FAMILY_DIALGA
 static const u16 sDialgaTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -20629,6 +20652,7 @@ static const u16 sDialgaTeachableLearnset[] = {
 #if P_FAMILY_PALKIA
 static const u16 sPalkiaTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -20756,6 +20780,7 @@ static const u16 sRegigigasTeachableLearnset[] = {
 #if P_FAMILY_GIRATINA
 static const u16 sGiratinaTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_CALM_MIND,
     MOVE_CUT,
     MOVE_DOUBLE_TEAM,
@@ -21006,6 +21031,7 @@ static const u16 sShayminSkyTeachableLearnset[] = {
 #if P_FAMILY_ARCEUS
 static const u16 sArceusTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -25223,6 +25249,7 @@ static const u16 sStunfiskGalarTeachableLearnset[] = {
 static const u16 sMienfooTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -25256,6 +25283,7 @@ static const u16 sMienfooTeachableLearnset[] = {
 static const u16 sMienshaoTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -25910,6 +25938,7 @@ static const u16 sVolcaronaTeachableLearnset[] = {
 #if P_FAMILY_COBALION
 static const u16 sCobalionTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
     MOVE_CUT,
@@ -25945,6 +25974,7 @@ static const u16 sCobalionTeachableLearnset[] = {
 #if P_FAMILY_TERRAKION
 static const u16 sTerrakionTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
     MOVE_CUT,
@@ -25980,6 +26010,7 @@ static const u16 sTerrakionTeachableLearnset[] = {
 #if P_FAMILY_VIRIZION
 static const u16 sVirizionTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,
     MOVE_CALM_MIND,
@@ -26247,6 +26278,7 @@ static const u16 sKyuremTeachableLearnset[] = {
 #if P_FAMILY_KELDEO
 static const u16 sKeldeoTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
     MOVE_CUT,
@@ -27784,6 +27816,7 @@ static const u16 sDragalgeTeachableLearnset[] = {
 #if P_FAMILY_CLAUNCHER
 static const u16 sClauncherTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_CUT,
     MOVE_DIVE,
@@ -27813,6 +27846,7 @@ static const u16 sClauncherTeachableLearnset[] = {
 
 static const u16 sClawitzerTeachableLearnset[] = {
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_CUT,
     MOVE_DIVE,
@@ -28970,6 +29004,7 @@ static const u16 sDecidueyeTeachableLearnset[] = {
 #if P_HISUIAN_FORMS
 static const u16 sDecidueyeHisuiTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_BULLET_SEED,
@@ -30788,6 +30823,7 @@ static const u16 sHakamoOTeachableLearnset[] = {
 static const u16 sKommoOTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_DOUBLE_TEAM,
@@ -31263,6 +31299,7 @@ static const u16 sNecrozmaTeachableLearnset[] = {
 
 #if P_FAMILY_MAGEARNA
 static const u16 sMagearnaTeachableLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -31296,6 +31333,7 @@ static const u16 sMagearnaTeachableLearnset[] = {
 
 #if P_FAMILY_MARSHADOW
 static const u16 sMarshadowTeachableLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -31426,6 +31464,7 @@ static const u16 sBlacephalonTeachableLearnset[] = {
 #if P_FAMILY_ZERAORA
 static const u16 sZeraoraTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_CALM_MIND,
@@ -33130,6 +33169,7 @@ static const u16 sDuraludonTeachableLearnset[] = {
 
 #if P_GEN_9_CROSS_EVOS
 static const u16 sArchaludonTeachableLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_DRAGON_CLAW,
     MOVE_EARTHQUAKE,
@@ -33336,6 +33376,7 @@ static const u16 sKubfuTeachableLearnset[] = {
 static const u16 sUrshifuSingleStrikeTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_DIG,
@@ -33369,6 +33410,7 @@ static const u16 sUrshifuSingleStrikeTeachableLearnset[] = {
 static const u16 sUrshifuRapidStrikeTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
     MOVE_DIG,
@@ -33672,6 +33714,7 @@ static const u16 sFloragatoTeachableLearnset[] = {
 
 static const u16 sMeowscaradaTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,
     MOVE_DOUBLE_TEAM,
@@ -34212,6 +34255,7 @@ static const u16 sCharcadetTeachableLearnset[] = {
 };
 
 static const u16 sArmarougeTeachableLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_CALM_MIND,
     MOVE_FACADE,
     MOVE_FIRE_BLAST,
@@ -34795,6 +34839,7 @@ static const u16 sFinizenTeachableLearnset[] = {
 };
 
 static const u16 sPalafinTeachableLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_BLIZZARD,
     MOVE_BULK_UP,
     MOVE_DIVE,
@@ -35618,6 +35663,7 @@ static const u16 sRoaringMoonTeachableLearnset[] = {
 #if P_FAMILY_IRON_VALIANT
 static const u16 sIronValiantTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
+    MOVE_AURA_SPHERE,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -35966,6 +36012,7 @@ static const u16 sIronCrownTeachableLearnset[] = {
 
 #if P_FAMILY_TERAPAGOS
 static const u16 sTerapagosTeachableLearnset[] = {
+    MOVE_AURA_SPHERE,
     MOVE_CALM_MIND,
     MOVE_EARTHQUAKE,
     MOVE_FACADE,

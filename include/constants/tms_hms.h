@@ -53,6 +53,7 @@
     F(SNATCH) \
     F(OVERHEAT) \
     F(SUCKER_PUNCH) \
+    F(AURA_SPHERE) \
 
 #define FOREACH_HM(F) \
     F(CUT) \

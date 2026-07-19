@@ -667,8 +667,81 @@ void SetWarpDestination(s8 mapGroup, s8 mapNum, s8 warpId, s8 x, s8 y)
     SetWarpData(&sWarpDestination, mapGroup, mapNum, warpId, x, y);
 }
 
+enum{
+    ELITE_FOUR_WARP_1,
+    ELITE_FOUR_WARP_2,
+    ELITE_FOUR_WARP_3,
+    ELITE_FOUR_WARP_4,
+    ELITE_FOUR_CHAMP_WARP,
+    NUM_ELITE_FOUR_WARPS,
+};
+
+static const u16 sEliteFourWarpData[NUM_ELITE_FOUR_WARPS] = 
+{
+	[ELITE_FOUR_WARP_1]     = MAP_NUM(EVER_GRANDE_CITY_SIDNEYS_ROOM),
+	[ELITE_FOUR_WARP_2]     = MAP_NUM(EVER_GRANDE_CITY_PHOEBES_ROOM),
+	[ELITE_FOUR_WARP_3]     = MAP_NUM(EVER_GRANDE_CITY_GLACIAS_ROOM),
+	[ELITE_FOUR_WARP_4]     = MAP_NUM(EVER_GRANDE_CITY_DRAKES_ROOM),
+	[ELITE_FOUR_CHAMP_WARP] = MAP_NUM(EVER_GRANDE_CITY_CHAMPIONS_ROOM),
+};
+
+#define ELITE_FOUR_OPTIONS_PER_ROOM 4
+
+static const u16 sPossibleWarpData[NUM_ELITE_FOUR_WARPS][ELITE_FOUR_OPTIONS_PER_ROOM] = {
+	[ELITE_FOUR_WARP_1] =
+    {
+        [0] = MAP_NUM(EVER_GRANDE_CITY_SIDNEYS_ROOM),
+        [1] = MAP_NUM(EVER_GRANDE_CITY_FIRST_ROOM_1),
+        [2] = MAP_NUM(EVER_GRANDE_CITY_FIRST_ROOM_2),
+        [3] = MAP_NUM(EVER_GRANDE_CITY_FIRST_ROOM_3),
+    },
+	[ELITE_FOUR_WARP_2] =
+    {
+        [0] = MAP_NUM(EVER_GRANDE_CITY_PHOEBES_ROOM),
+        [1] = MAP_NUM(EVER_GRANDE_CITY_SECOND_ROOM_1),
+        [2] = MAP_NUM(EVER_GRANDE_CITY_SECOND_ROOM_2),
+        [3] = MAP_NUM(EVER_GRANDE_CITY_SECOND_ROOM_3),
+    },
+	[ELITE_FOUR_WARP_3] =
+    {
+        [0] = MAP_NUM(EVER_GRANDE_CITY_GLACIAS_ROOM),
+        [1] = MAP_NUM(EVER_GRANDE_CITY_THIRD_ROOM_1),
+        [2] = MAP_NUM(EVER_GRANDE_CITY_THIRD_ROOM_2),
+        [3] = MAP_NUM(EVER_GRANDE_CITY_THIRD_ROOM_3),
+    },
+	[ELITE_FOUR_WARP_4] =
+    {
+        [0] = MAP_NUM(EVER_GRANDE_CITY_DRAKES_ROOM),
+        [1] = MAP_NUM(EVER_GRANDE_CITY_FOURTH_ROOM_1),
+        [2] = MAP_NUM(EVER_GRANDE_CITY_FOURTH_ROOM_2),
+        [3] = MAP_NUM(EVER_GRANDE_CITY_FOURTH_ROOM_3),
+    },
+	[ELITE_FOUR_CHAMP_WARP] =
+    {
+        [0] = MAP_NUM(EVER_GRANDE_CITY_CHAMPIONS_ROOM),
+        [1] = MAP_NUM(EVER_GRANDE_CITY_CHAMPIONS_ROOM_2),
+        [2] = MAP_NUM(EVER_GRANDE_CITY_CHAMPIONS_ROOM_3),
+        [3] = MAP_NUM(EVER_GRANDE_CITY_CHAMPIONS_ROOM_4),
+    },
+};
+
 void SetWarpDestinationToMapWarp(s8 mapGroup, s8 mapNum, s8 warpId)
 {
+    //Elite Four Warp Handling
+    if(mapGroup == MAP_GROUP(EVER_GRANDE_CITY_SIDNEYS_ROOM)){
+        u8 i;
+        //Check if Room is Available
+        for(i = 0; i < NUM_ELITE_FOUR_WARPS; i++){
+			if(mapNum == sEliteFourWarpData[i])
+			{
+                u8 warpID = Random() % ELITE_FOUR_OPTIONS_PER_ROOM;
+                VarSet(VAR_ELITE_4_STATE, i);
+				mapNum = sPossibleWarpData[i][warpID];
+                break;
+			}
+		}
+    }
+
     SetWarpDestination(mapGroup, mapNum, warpId, -1, -1);
 }
 

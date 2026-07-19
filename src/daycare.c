@@ -879,9 +879,15 @@ static void BuildEggMoveset(struct Pokemon *egg, struct BoxPokemon *father, stru
         {
             if (sHatchedEggFatherMoves[i] != MOVE_NONE)
             {
-                for (j = 0; j < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES; j++)
+                for (j = 0; j < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES + NUM_EXTRA_TECHNICAL_MACHINES; j++)
                 {
-                    u16 moveId = ItemIdToBattleMoveId(ITEM_TM01 + j);
+                    u16 moveId = MOVE_NONE;
+
+                    if(j < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES)
+                        moveId = ItemIdToBattleMoveId(ITEM_TM01 + j);
+                    else
+                        moveId = ItemIdToBattleMoveId(ITEM_TM101 + j - (NUM_EXTRA_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES));
+
                     if (sHatchedEggFatherMoves[i] == moveId && CanLearnTeachableMove(GetMonData(egg, MON_DATA_SPECIES_OR_EGG), moveId))
                     {
                         if (GiveMoveToMon(egg, sHatchedEggFatherMoves[i]) == MON_HAS_MAX_MOVES)

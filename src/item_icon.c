@@ -171,6 +171,10 @@ const void *GetItemIconPic(u16 itemId)
             return gItemIcon_TM;
         return gItemIcon_HM;
     }
+    if (itemId >= ITEM_TM101 && itemId < ITEM_TM101 + NUM_EXTRA_TECHNICAL_MACHINES)
+    {
+        return gItemIcon_TM;
+    }
 
     return gItemsInfo[itemId].iconPic;
 }
@@ -181,7 +185,7 @@ const void *GetItemIconPalette(u16 itemId)
         return gItemIconPalette_ReturnToFieldArrow;
     if (itemId >= ITEMS_COUNT)
         return gItemsInfo[0].iconPalette;
-    if (itemId >= ITEM_TM01 && itemId < ITEM_HM01 + NUM_HIDDEN_MACHINES)
+    if ((itemId >= ITEM_TM01 && itemId < ITEM_HM01 + NUM_HIDDEN_MACHINES) || (itemId >= ITEM_TM101 && itemId < ITEM_TM101 + NUM_EXTRA_TECHNICAL_MACHINES))
         return gTypesInfo[gMovesInfo[gItemsInfo[itemId].secondaryId].type].paletteTMHM;
 
     return gItemsInfo[itemId].iconPalette;

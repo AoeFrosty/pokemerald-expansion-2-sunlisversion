@@ -1114,7 +1114,6 @@
 #define ITEM_MOLT_BERRY 938      //at 25% hp burn opponent
 #define ITEM_ZAPPA_BERRY 939     //at 25% hp paralyze opponent
 #define ITEM_ARCTI_BERRY 940     //at 25% hp frostite opponent
-// HOPO BERRY //leppa berry but restores 5PP to all moves when procs
 
 //Held
 // #define ITEM_RIOT_SHIELD 941
@@ -1282,7 +1281,6 @@
 #define ITEM_TM248 1102
 #define ITEM_TM249 1103
 #define ITEM_TM250 1104
-// LEGEND PLATE //very complicated item that generally is only for arceus, could remodel into anti tera item?
 //maybe an item that inflicts torment but boosts move power?
 
 #define ITEMS_COUNT 1105

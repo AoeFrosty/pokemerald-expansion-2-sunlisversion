@@ -908,7 +908,7 @@
 #define MOVE_UPPER_HAND 846
 #define MOVE_MALIGNANT_CHAIN 847
 //Custom Moves
-#define MOVE_EXO_BASH 848
+#define MOVE_EXO_BASH 848           //tm
 #define MOVE_FROST_SPORE 849 
 #define MOVE_CHILI_POWDER 850 
 #define MOVE_STONE_STORM 851 
@@ -919,7 +919,7 @@
 #define MOVE_LUMINATION 856
 #define MOVE_MINDSTORM 857
 #define MOVE_BEWITCH 858
-#define MOVE_VOLT_CRASH 859
+#define MOVE_VOLT_CRASH 859         
 #define MOVE_GOLD_RUSH 860
 #define MOVE_MAGNESURGE 861
 #define MOVE_FOAM_BURST 862
@@ -930,14 +930,14 @@
 #define MOVE_QUICK_STING 867
 #define MOVE_COMPOST_BLAST 868
 #define MOVE_PSI_PUNCH 869        
-#define MOVE_DAZZLE_DASH 870
+#define MOVE_DAZZLE_DASH 870        
 #define MOVE_SMITE 871
-#define MOVE_DEPLETION_RAY 872
+#define MOVE_DEPLETION_RAY 872      
 #define MOVE_MUDSLIDE 873
 #define MOVE_TREMOR_RUSH 874
 #define MOVE_SAND_BLAST 875
 #define MOVE_POWER_CHORD 876
-#define MOVE_CANNONBALL 877
+#define MOVE_CANNONBALL 877         
 #define MOVE_BOULDER_BASH 878
 #define MOVE_CENTIFERNO 879
 #define MOVE_JET_FLARE 880
@@ -950,36 +950,36 @@
 #define MOVE_BATTLE_CRY 887                         //Remove?
 #define MOVE_ROUNDHOUSE 888
 #define MOVE_ECHO_BURN 889
-#define MOVE_ADRENALINE 890 //TEST
-#define MOVE_TRI_STRIKE 891
+#define MOVE_ADRENALINE 890 //TEST  //TM
+#define MOVE_TRI_STRIKE 891         
 #define MOVE_COLD_SNAP 892
 #define MOVE_RAIN_CALL 893
 #define MOVE_SOLAR_FLARE 894
 #define MOVE_ARC_STRIKE 895 
 #define MOVE_PUZZLE_PULSE 896
-#define MOVE_RIPOSTE 897 
+#define MOVE_RIPOSTE 897            
 #define MOVE_ACID_RAIN 898                          //remove?
 #define MOVE_TORRENT_WEB 899 
 #define MOVE_FIRESTORM 900
 #define MOVE_BLAZE_O_FURY 901
 #define MOVE_BELLY_FLOP 902
-#define MOVE_BANSHEE_SCREAM 903
+#define MOVE_BANSHEE_SCREAM 903     //tm
 //Stage 2
 #define MOVE_AURORA_STREAM 904
 #define MOVE_ROCKET_JUMP 905
 #define MOVE_FAIRY_SLAP 906
-#define MOVE_MYTHIC_BLOW 907
-#define MOVE_SPARKLESTRIKE 908
+#define MOVE_MYTHIC_BLOW 907        //tm
+#define MOVE_SPARKLESTRIKE 908      //tm
 #define MOVE_DARK_DART 909
 #define MOVE_DOOM_DUST 910
 #define MOVE_AFTERSHOCK 911
 #define MOVE_FIRE_DRIFT 912
 #define MOVE_COMBUSTION 913
-#define MOVE_DARK_SURGE 914
-#define MOVE_FINAL_MIGHT 915
+#define MOVE_DARK_SURGE 914         //tm
+#define MOVE_FINAL_MIGHT 915        //tm
 #define MOVE_MERCURY_BEAM 916               //remove?
 #define MOVE_TITANIUM_BLOW 917
-#define MOVE_TALON_STRIKE 918
+#define MOVE_TALON_STRIKE 918       //tm
 #define MOVE_AURA_BARRAGE 919
 #define MOVE_AURA_REND 920
 #define MOVE_STEELSURGE 921
@@ -987,10 +987,10 @@
 #define MOVE_FROST_BLADE 923
 #define MOVE_HONEY_BOMB 924
 #define MOVE_ANTENNAE_WHIP 925
-#define MOVE_LOCUST_SWARM 926
-#define MOVE_ASTRAL_WAVE 927
+#define MOVE_LOCUST_SWARM 926       //tm
+#define MOVE_ASTRAL_WAVE 927        
 #define MOVE_CHLOROSTRIKE 928
-#define MOVE_BRUTAL_BUZZ 929
+#define MOVE_BRUTAL_BUZZ 929        
 #define MOVE_SHADOW_STARE 930
 #define MOVE_CORROSHOT 931                          //remove?
 #define MOVE_RUPTURE_PULSE 932 
@@ -1046,7 +1046,7 @@
 #define MOVE_SPLINTER_FIST 981 
 #define MOVE_CRIMSON_STORM 982      
 #define MOVE_MIST_SLASH 983         
-#define MOVE_THUNDER_SPEAR 984      
+#define MOVE_THUNDER_SPEAR 984      //tm
 #define MOVE_POISON_HORN 985        
 #define MOVE_WATER_ARROW 986        
 #define MOVE_GIANT_BLOOM 987        
@@ -1056,7 +1056,7 @@
 #define MOVE_TANGLE_ARROW 991       
 #define MOVE_WINDCHILL 992 
 #define MOVE_BUZZ_BURST 993 
-#define MOVE_CYCLONE 994 
+#define MOVE_CYCLONE 994            //tm
 //Stage 4
 #define MOVE_VENGEANCE 995
 #define MOVE_SINISTER_SLAM 996
@@ -1071,8 +1071,8 @@
 #define MOVE_GHASTLY_BURST 1005
 #define MOVE_NOSEDIVE 1006
 #define MOVE_FLURRY_O_BLOWS 1007                                //remove?
-#define MOVE_TRIPLE_SPIKE 1008        //dugtrio ground type triple axel
-#define MOVE_FRIGID_PUNCH 1009       //ice sucker punch
+#define MOVE_TRIPLE_SPIKE 1008                              //dugtrio ground type triple axel
+#define MOVE_FRIGID_PUNCH 1009       //tm                   //ice sucker punch
 #define MOVE_ANCIENT_WING 1010
 #define MOVE_SHELL_SLASH 1011
 #define MOVE_SHELL_BURST 1012
@@ -1096,14 +1096,14 @@
 //Stage 5 final stage can max 15 moves must cleanse 20 moves after done
 #define MOVE_PHANTOM_CLEAVE 1030    //ghost liquidation for dusknoir and trevanent
 #define MOVE_THUNDER_LARIAT 1031    //darkest lariat for electivire and luxray
-#define MOVE_VENOM_REND 1032        //physical venoshock
+#define MOVE_VENOM_REND 1032     //tm //physical venoshock
 #define MOVE_SNOWPLOW 1033          //ice fell stinger
 #define MOVE_TRIPLE_PECK 1034       //triple axel for dodrio
 #define MOVE_MOLTEN_BURST 1035      //65BP physical fire spread move with 95 acc and 10 burn flinch for flareon
 #define MOVE_FURY_SWEEP 1036        //always crits flying for fearow
 #define MOVE_TECTONIC_SLAM 1037     //120BP, 85 acc move that breaks screens ground for donphan and rhyperior
 #define MOVE_FOXFIRE 1038           //fox fire confuse or burn or both
-#define MOVE_TRIPLE_TAKEDOWN 1039   //triple axel but grass
+#define MOVE_TRIPLE_TAKEDOWN 1039  //tm //triple axel but grass
 #define MOVE_LANTERN_SWING 1040      //ghost attack may burn physical
 #define MOVE_JETSTREAM_RUSH 1041    //water first impression that lowers def of target hit
 #define MOVE_ABYSSAL_DIVE 1042      //water type hyper drill

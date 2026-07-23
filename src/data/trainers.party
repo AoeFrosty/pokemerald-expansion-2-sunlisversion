@@ -4777,10 +4777,10 @@ Careful Nature
 - Drain Punch
 - Rage Fist
 
-=== TRAINER_GLACIA ===
-Name: GLACIA
+=== TRAINER_LORELEI ===
+Name: LORELEI
 Class: Elite Four
-Pic: Elite Four Glacia
+Pic: Elite Four Lorelei
 Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
@@ -4856,11 +4856,11 @@ Adamant Nature
 - Earthquake
 
 
-=== TRAINER_DRAKE ===
-Name: DRAKE
+=== TRAINER_CLAIR ===
+Name: CLAIR
 Class: Elite Four
-Pic: Elite Four Drake
-Gender: Male
+Pic: Elite Four Clair
+Gender: Female
 Music: Elite Four
 Items: Full Restore / Full Restore
 Double Battle: No
@@ -16983,23 +16983,84 @@ Machamp
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-=== TRAINER_CRISTIN_2 ===
-Name: CRISTIN
-Class: Cooltrainer
-Pic: Cooltrainer F
-Gender: Female
-Music: Cool
-Items: Hyper Potion
+
+=== TRAINER_KOGA ===
+Name: KOGA
+Class: Elite Four
+Pic: Ninja
+Gender: Male
+Music: Elite Four
+Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Purple
 
-Loudred
-Level: 35
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Kleavor @ Focus Sash
+Level: 61
+Ability: Sharpness
+EVs: 252 Atk / 120 Def / 136 Spe
+Adamant Nature
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Stone Axe
+- Close Combat
+- U-turn
+- Counter
 
-Vigoroth
-Level: 35
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
+Golisopod @ Golisopite
+Level: 61
+Ability: Shell Armor
+EVs: 252 Atk / 120 Def / 136 SpD
+Impish Nature
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- First Impression
+- Exo Bash
+- Liquidation
+- Sucker Punch
+
+Galvantula @ Flame Orb
+Level: 61
+Ability: Pride
+EVs: 252 HP / 120 Def / 136 SpA
+Timid Nature
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Luminsphere
+- Thunderclap
+- Bug Buzz
+- Sticky Web
+
+Pheromosa @ Focus Band
+Level: 61
+Ability: Beast Boost
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+Tera Type: Dark
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Close Combat
+- Triple Axel
+- U Turn
+- Throat Chop
+
+Volcarona @ Sitrus Berry
+Level: 61
+Ability: Flame Body
+EVs: 252 HP / 252 SpA / 4 Spe
+Modest Nature
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Quiver Dance
+- Fiery Dance
+- Bug Buzz
+- Giga Drain
+
+Yanmega @ Assault Vest
+Level: 61
+Ability: Speed Boost
+EVs: 252 HP / 4 Def / 252 SpA
+Modest Nature
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Buzz Burst
+- Scale Rain
+- Air Slash
+- Adrenaline
 
 === TRAINER_CRISTIN_3 ===
 Name: CRISTIN

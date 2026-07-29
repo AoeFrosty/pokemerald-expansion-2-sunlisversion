@@ -13618,7 +13618,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Throws two steel gears\n"
             "that strike twice."),
         .effect = EFFECT_HIT,
-        .power = 60,
+        .power = 60,    //+5?
         .type = TYPE_STEEL,
         .accuracy = 90, //+5
         .pp = 15,

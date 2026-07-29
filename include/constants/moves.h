@@ -1109,6 +1109,7 @@
 #define MOVE_ABYSSAL_DIVE 1042      //water type hyper drill
 #define MOVE_BOG_DOWN 1043          //summons swamp on enemy side of field for 4 turns
 //do defensive growth in sand
+//Iron fang for stunfisk
 
 
 

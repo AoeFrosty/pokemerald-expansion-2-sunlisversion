@@ -2010,11 +2010,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_BASTIODON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 57,    //+5
+        .baseHP        = 75,    //+15
+        .baseAttack    = 67,    //+15
         .baseDefense   = 168,
         .baseSpeed     = 30,
-        .baseSpAttack  = 57,    //+10
+        .baseSpAttack  = 47,    
         .baseSpDefense = 138,
         .types = MON_TYPES(TYPE_ROCK, TYPE_STEEL),
         .catchRate = 45,

@@ -4459,12 +4459,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_FORRETRESS] =
     {
-        .baseHP        = 55, //+5
-        .baseAttack    = 90,
-        .baseDefense   = 120, //-20
-        .baseSpeed     = 20, //-20
-        .baseSpAttack  = 60,
-        .baseSpDefense = 120, //+60
+        .baseHP        = 60,    //+10
+        .baseAttack    = 100,   //+10
+        .baseDefense   = 120,   //-20
+        .baseSpeed     = 20,    //-20
+        .baseSpAttack  = 40,    //-20
+        .baseSpDefense = 100,   //+40
         .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 118,

@@ -6473,7 +6473,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAND_VEIL, ABILITY_TANGLING_HAIR, ABILITY_SAND_FORCE },
+        .abilities = { ABILITY_ARENA_TRAP, ABILITY_TANGLING_HAIR, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Dugtrio"),
@@ -6858,12 +6858,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_PERRSERKER] =
     {
-        .baseHP        = 80,    //+10
+        .baseHP        = 90,    //+20
         .baseAttack    = 115,   //+5
-        .baseDefense   = 110,   //+10
-        .baseSpeed     = 50,
-        .baseSpAttack  = 60,    //+10
-        .baseSpDefense = 60,
+        .baseDefense   = 100,   
+        .baseSpeed     = 55,    //+5
+        .baseSpAttack  = 50,   
+        .baseSpDefense = 70,    //+10
         .types = MON_TYPES(TYPE_STEEL),
         .catchRate = 90,
         .expYield = 154,

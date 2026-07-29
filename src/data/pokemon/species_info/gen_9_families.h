@@ -4305,8 +4305,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_REVAVROOM] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 119,
+        .baseHP        = 85,    //+5
+        .baseAttack    = 124,   //+5
         .baseDefense   = 90,
         .baseSpeed     = 95,    //+5
         .baseSpAttack  = 54,

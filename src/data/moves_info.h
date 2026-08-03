@@ -24212,8 +24212,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Cyclone"),
         .description = COMPOUND_STRING(
-            "Strikes the foe with a\n"
-            "powerful gust of wind."),
+            "Strikes with strong wind.\n"
+            "Can lower Speed."),
         .effect = EFFECT_HIT,
         .power = 90,
         .type = TYPE_FLYING,
@@ -25290,9 +25290,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = gBattleAnimMove_SappySeed,
     },
 
-    [MOVE_TRIPLE_TAKEDOWN] =
+    [MOVE_TRIPLE_WHIP] =
     {
-        .name = COMPOUND_STRING("Triple Takedown"),
+        .name = COMPOUND_STRING("Triple Whip"),
         .description = COMPOUND_STRING(
             "A 3-whip attack that gets\n"
             "more powerful with each hit."),

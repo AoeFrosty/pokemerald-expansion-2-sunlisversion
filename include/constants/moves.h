@@ -1103,7 +1103,7 @@
 #define MOVE_FURY_SWEEP 1036        //always crits flying for fearow
 #define MOVE_TECTONIC_SLAM 1037     //120BP, 85 acc move that breaks screens ground for donphan and rhyperior
 #define MOVE_FOXFIRE 1038           //fox fire confuse or burn or both
-#define MOVE_TRIPLE_TAKEDOWN 1039  //tm //triple axel but grass
+#define MOVE_TRIPLE_WHIP 1039   //tm //triple axel but grass
 #define MOVE_LANTERN_SWING 1040      //ghost attack may burn physical
 #define MOVE_JETSTREAM_RUSH 1041    //water first impression that lowers def of target hit
 #define MOVE_ABYSSAL_DIVE 1042      //water type hyper drill

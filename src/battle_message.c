@@ -1161,8 +1161,8 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_ELECTRICCURRENTISRUNNING]             = COMPOUND_STRING("An electric current is running across the battlefield!"),
     [STRINGID_SEEMSWEIRD]                           = COMPOUND_STRING("The battlefield seems weird!"),
     [STRINGID_WAGGLINGAFINGER]                      = COMPOUND_STRING("Waggling a finger let it use {B_CURRENT_MOVE}!"),
-    [STRINGID_BLASTBURNISCHARGING]                  = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} building a blazing inferno!"), 
-    [STRINGID_HYDROCANNONISCHARGING]                = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} building a powerful torrent!"),
+    [STRINGID_BLASTBURNISCHARGING]                  = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is building a blazing inferno!"), 
+    [STRINGID_HYDROCANNONISCHARGING]                = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is building a powerful torrent!"),
     [STRINGID_PKMNALREADYHASFROSTBITE]              = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} is already frostbitten!"),
     [STRINGID_PKMNDROPPEDITEM]                      = COMPOUND_STRING("Wild {B_OPPONENT_MON1_NAME} dropped an item!"),
     [STRINGID_ADDEDTOBAG]                           = COMPOUND_STRING("{B_PLAYER_NAME} put away the {B_BUFF1}\nin the BAG."),
@@ -1182,6 +1182,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_COZYDREAMS]                           = COMPOUND_STRING("Cozy Dreams have a healing effect!"),
     [STRINGID_SOULDRAINTRIGGERS]                    = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} drained hp from the poisoned target!"),
     [STRINGID_TOXICSWAMP]                           = COMPOUND_STRING("A swamp has covered the opposing side! Opposing speed has lowered!"),
+    [STRINGID_FRENZYPLANTISCHARGING]                = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is building a powerful summer storm!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

@@ -8601,28 +8601,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Frenzy Plant"),
         .description = COMPOUND_STRING(
-            "Powerful, but leaves the\n"
-            "user immobile the next turn."),
+            "A two turn leaf storm that\n"
+            "raises Sp.A, 1 turn in sun."),
         .effect = EFFECT_HIT,
-        .power = 150,
+        .power = 120,
         .type = TYPE_GRASS,
-        .accuracy = 90,
-        .pp = 5,
+        .accuracy = 100,
+        .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .skyBattleBanned = TRUE,
+        .argument = TWO_TURN_ARG(STRINGID_BLASTBURNISCHARGING, B_WEATHER_SUN),
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
+            .moveEffect = MOVE_EFFECT_SP_ATK_PLUS_1,
             .self = TRUE,
-        }),
+            .onChargeTurnOnly = TRUE,
+        }), 
         .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_GROWTH},
         .battleAnimScript = gBattleAnimMove_FrenzyPlant,
     },
-
+  
     [MOVE_BULK_UP] =
     {
         .name = COMPOUND_STRING("Bulk Up"),

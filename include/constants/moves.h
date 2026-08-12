@@ -1108,12 +1108,14 @@
 #define MOVE_JETSTREAM_RUSH 1041    //water first impression that lowers def of target hit
 #define MOVE_ABYSSAL_DIVE 1042      //water type hyper drill
 #define MOVE_BOG_DOWN 1043          //summons swamp on enemy side of field for 4 turns
+#define MOVE_IRON_FANG 1044         //stunfisk sig move lowers def guaranteed
+#define MOVE_PAINT_BOMB 1045        //Physical normal move that flinches, confuses or infactuates
 //do defensive growth in sand
-//Iron fang for stunfisk
 
 
 
-#define MOVES_COUNT_GEN9 1044
+
+#define MOVES_COUNT_GEN9 1046
 
 #define MOVES_COUNT         MOVES_COUNT_GEN9
 

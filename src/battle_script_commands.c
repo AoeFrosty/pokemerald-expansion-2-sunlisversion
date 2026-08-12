@@ -3424,6 +3424,23 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     SetMoveEffect(primary, certain);
                 }
                 break;
+            case MOVE_EFFECT_PAINT_BOMB:
+                if (gBattleMons[gEffectBattler].status1)
+                {
+                    gBattlescriptCurrInstr++;
+                }
+                else
+                {
+                    static const u8 sPaintBombEffects[] =
+                    {
+                        MOVE_EFFECT_FLINCH,
+                        MOVE_EFFECT_CONFUSION,
+                        MOVE_EFFECT_PARALYSIS
+                    };
+                    gBattleScripting.moveEffect = RandomElement(RNG_TRI_ATTACK, sPaintBombEffects);
+                    SetMoveEffect(primary, certain);
+                }
+                break;
             case MOVE_EFFECT_CHARGING:
                 gBattleMons[gEffectBattler].status2 |= STATUS2_MULTIPLETURNS;
                 gLockedMoves[gEffectBattler] = gCurrentMove;

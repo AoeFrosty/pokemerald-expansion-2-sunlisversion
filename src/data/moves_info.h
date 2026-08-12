@@ -25410,6 +25410,62 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = gBattleAnimMove_Defog,
     },
 
+    [MOVE_IRON_FANG] =
+    {
+        .name = COMPOUND_STRING("Iron Fang"),
+        .description = COMPOUND_STRING(
+            "May cause flinching or\n"
+            "lower the DEF of the foe."),
+        .effect = EFFECT_HIT,
+        .power = 75,
+        .type = TYPE_STEEL,
+        .accuracy = 95,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .bitingMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
+            .chance = 20,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 10,
+        }),
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = COMBO_STARTER_THUNDER_FANG,
+        .contestComboMoves = {COMBO_STARTER_CHARGE, COMBO_STARTER_FIRE_FANG, COMBO_STARTER_ICE_FANG},
+        .battleAnimScript = gBattleAnimMove_ThunderFang,
+    },
+
+    [MOVE_PAINT_BOMB] =
+    {
+        .name = COMPOUND_STRING("Paint Bomb"),
+        .description = COMPOUND_STRING(
+            "Fires a colorful paint\n"
+            "bomb, making beautiful art."),
+        .effect = EFFECT_HIT,
+        .power = 90,
+        .type = TYPE_NORMAL,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PAINT_BOMB,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_LOCK_ON},
+        .battleAnimScript = gBattleAnimMove_SludgeBomb,
+    },
+
     //bulag
 
     // Z-Moves

@@ -431,8 +431,9 @@
 #define MOVE_EFFECT_SALT_CURE           100
 #define MOVE_EFFECT_EERIE_SPELL         101
 #define MOVE_EFFECT_STEEL_SHOT          102
+#define MOVE_EFFECT_PAINT_BOMB          103
 
-#define NUM_MOVE_EFFECTS                103
+#define NUM_MOVE_EFFECTS                104
 
 #define MOVE_EFFECT_AFFECTS_USER        0x2000
 #define MOVE_EFFECT_CERTAIN             0x4000

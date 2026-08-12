@@ -23438,15 +23438,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Elude"),
         .description = COMPOUND_STRING(
-            "A fairy move for fleeing\n"
-            "from battle instantly."),
-        .effect = EFFECT_TELEPORT,
+            "Lowers the foe's Defense and\n"
+            "Sp. Def, then switches out."),
+        .effect = EFFECT_ELUDE,
         .power = 0,
         .type = TYPE_FAIRY,
         .accuracy = 0,
         .pp = 20,
         .target = MOVE_TARGET_USER,
-        .priority = -6,
+        .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_RECOVER_HP },
         .ignoresProtect = TRUE,

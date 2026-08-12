@@ -216,7 +216,7 @@
 #define TRAINER_BERNIE_5                    210
 #define TRAINER_DREW                        211
 #define TRAINER_BEAU                        212
-#define TRAINER_LARRY                       213
+#define TRAINER_LARY                        213
 #define TRAINER_SHANE                       214
 #define TRAINER_JUSTIN                      215
 #define TRAINER_ETHAN_1                     216
@@ -362,7 +362,7 @@
 #define TRAINER_BENJAMIN_4                  356
 #define TRAINER_BENJAMIN_5                  357
 #define TRAINER_ABIGAIL_1                   358
-#define TRAINER_JASMINE                     359
+#define TRAINER_JASMYNE                     359
 #define TRAINER_ABIGAIL_2                   360
 #define TRAINER_ABIGAIL_3                   361
 #define TRAINER_ABIGAIL_4                   362
@@ -859,6 +859,13 @@
 #define TRAINER_BUGSY                       853
 #define TRAINER_BRENDAN_PLACEHOLDER         854
 #define TRAINER_MAY_PLACEHOLDER             855
+#define TRAINER_ROXIE                       856
+#define TRAINER_ERIKA                       857
+#define TRAINER_BRUNO                       858
+#define TRAINER_ELESA                       859
+#define TRAINER_MELONY                      860
+#define TRAINER_KORRINA                     861
+#define TRAINER_BEDE                        862
 
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 (863) additional trainers before trainer flag space overflows

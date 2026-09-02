@@ -832,18 +832,18 @@
 #define TRAINER_KOJI_4                      826
 #define TRAINER_KOJI_5                      827
 #define TRAINER_KOGA                        828     //team need graphics and event dialogue
-#define TRAINER_SABRINA                     829
+#define TRAINER_SABRINA                     829     //team need graphics
 #define TRAINER_RIKA                        830     //team need graphics and event dialogue
 #define TRAINER_MARNIE                      831
 #define TRAINER_BEA                         832     //team need graphics
 #define TRAINER_NESSA                       833     //team need graphics and event dialogue
 #define TRAINER_LARRY                       834     //team need graphics etc
 #define TRAINER_LUSAMINE                    835
-#define TRAINER_WHITNEY                     836
-#define TRAINER_VOLKNER                     837
+#define TRAINER_WHITNEY                     836     //team need graphics
+#define TRAINER_VOLKNER                     837     //team need graphics
 #define TRAINER_KIAWE                       838
 #define TRAINER_SILVER                      839
-#define TRAINER_JASMINE                     840
+#define TRAINER_JASMINE                     840     //team need graphics
 #define TRAINER_BLUE                        841
 #define TRAINER_CYNTHIA                     842
 #define TRAINER_IRIS                        843

@@ -1706,10 +1706,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_ARBOLIVA] =
     {
-        .baseHP        = 82, //+4
-        .baseAttack    = 69,
+        .baseHP        = 92,    //+14
+        .baseAttack    = 63,    //-6
         .baseDefense   = 90,
-        .baseSpeed     = 39,
+        .baseSpeed     = 35,    //-4
         .baseSpAttack  = 125,
         .baseSpDefense = 109,
         .types = MON_TYPES(TYPE_GRASS, TYPE_NORMAL),
@@ -1721,7 +1721,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
-        .abilities = { ABILITY_SEED_SOWER, ABILITY_NONE, ABILITY_HARVEST },
+        .abilities = { ABILITY_SEED_SOWER, ABILITY_SUPERSWEET_SYRUP, ABILITY_HARVEST },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Arboliva"),
         .cryId = CRY_ARBOLIVA,
@@ -3287,11 +3287,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 
     [SPECIES_SCOVILLAIN] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 108,
+        .baseHP        = 75,    //+10
+        .baseAttack    = 113,   //+5
         .baseDefense   = 65,
         .baseSpeed     = 75,
-        .baseSpAttack  = 108,
+        .baseSpAttack  = 113,   //+5
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
         .catchRate = 75,
@@ -3352,12 +3352,12 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_SCOVILLAIN_MEGA] =
     {
-        .baseHP        = 65,
+        .baseHP        = 75,
         .baseAttack    = 138,
-        .baseDefense   = 85,
+        .baseDefense   = 90,    //+5
         .baseSpeed     = 75,
         .baseSpAttack  = 138,
-        .baseSpDefense = 85,
+        .baseSpDefense = 90,    //+5
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
         .catchRate = 75,
         .expYield = 170,

@@ -1747,8 +1747,10 @@
 #define SPECIES_BEARTIC_MEGA                            1627
 #define SPECIES_HYPNO_MEGA                              1628
 #define SPECIES_SUNFLORA_MEGA                           1629
+#define SPECIES_RAPIDASH_MEGA                           1630
+#define SPECIES_ELECTRODE_MEGA                          1631
 //custom forms
-#define SPECIES_CASTFORM_SANDY                          1630
+#define SPECIES_CASTFORM_SANDY                          1632
 
 #define SPECIES_EGG                                     (SPECIES_CASTFORM_SANDY + 1)
 

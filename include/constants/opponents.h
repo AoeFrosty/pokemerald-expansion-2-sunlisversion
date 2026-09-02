@@ -266,8 +266,8 @@
 #define TRAINER_WALTER_5                    260
 #define TRAINER_SIDNEY                      261
 #define TRAINER_PHOEBE                      262
-#define TRAINER_LORELEI                     263
-#define TRAINER_CLAIR                       264
+#define TRAINER_LORELEI                     263     //team need graphics and event dialogue
+#define TRAINER_CLAIR                       264     //team need graphics and event dialogue
 #define TRAINER_ROXANNE_1                   265
 #define TRAINER_BRAWLY_1                    266
 #define TRAINER_WATTSON_1                   267
@@ -831,13 +831,13 @@
 #define TRAINER_KOJI_3                      825
 #define TRAINER_KOJI_4                      826
 #define TRAINER_KOJI_5                      827
-#define TRAINER_KOGA                        828
+#define TRAINER_KOGA                        828     //team need graphics and event dialogue
 #define TRAINER_SABRINA                     829
-#define TRAINER_RIKA                        830
+#define TRAINER_RIKA                        830     //team need graphics and event dialogue
 #define TRAINER_MARNIE                      831
-#define TRAINER_BEA                         832
-#define TRAINER_NESSA                       833
-#define TRAINER_LARRY                       834
+#define TRAINER_BEA                         832     //team need graphics
+#define TRAINER_NESSA                       833     //team need graphics and event dialogue
+#define TRAINER_LARRY                       834     //team need graphics etc
 #define TRAINER_LUSAMINE                    835
 #define TRAINER_WHITNEY                     836
 #define TRAINER_VOLKNER                     837

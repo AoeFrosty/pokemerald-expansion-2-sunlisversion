@@ -2166,7 +2166,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_DREDNAW] =
     {
-        .baseHP        = 90,
+        .baseHP        = 100,   //+10
         .baseAttack    = 120,   //+5
         .baseDefense   = 100,   //+10
         .baseSpeed     = 74,
@@ -2230,12 +2230,12 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if FROSTY_MEGAS >= SPECIES_DREDNAW
     [SPECIES_DREDNAW_MEGA] =
     {
-        .baseHP        = 90,
+        .baseHP        = 100,   //+10
         .baseAttack    = 160,   //+40
         .baseDefense   = 160,   //+60
-        .baseSpeed     = 39,    //-35
-        .baseSpAttack  = 38,    //-10
-        .baseSpDefense = 108,   //+40
+        .baseSpeed     = 49,    //-25
+        .baseSpAttack  = 33,    //-15
+        .baseSpDefense = 103,   //+35
         .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
         .catchRate = 75,
         .expYield = 170,
@@ -2245,7 +2245,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SHELL_ARMOR, ABILITY_SHELL_ARMOR },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_SWIFT_SWIM, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Drednaw"),
         .cryId = CRY_DREDNAW,
@@ -6289,7 +6289,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_FAMILY_MORPEKO
     [SPECIES_MORPEKO_FULL_BELLY] =
     {
-        .baseHP        = 58,
+        .baseHP        = 68,        //+10
         .baseAttack    = 95,
         .baseDefense   = 58,
         .baseSpeed     = 112,        //+15
@@ -6353,7 +6353,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
     [SPECIES_MORPEKO_HANGRY] =
     {
-        .baseHP        = 58,
+        .baseHP        = 68,    //+10
         .baseAttack    = 95,
         .baseDefense   = 58,
         .baseSpeed     = 112,    //+15

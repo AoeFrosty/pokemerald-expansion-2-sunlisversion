@@ -1130,6 +1130,8 @@
 #define ITEM_MARACCAS 952      //buff marractus  NEED TO CHANGE SPELLING
 // #define ITEM_SOUL_LANTERN 953   //buff spiritomb
 #define ITEM_TOXIN_BOOSTER 954
+//item that recalls pokemon that holds this item at the end of their turn
+
 //Extra TMs
 #define ITEM_TM_STRUGGLE_BUG 955
 #define ITEM_TM_BULLDOZE 956

@@ -309,6 +309,9 @@ static const u16 sPonytaFormSpeciesIdTable[] = {
 
 static const u16 sRapidashFormSpeciesIdTable[] = {
     SPECIES_RAPIDASH,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_RAPIDASH_MEGA,
+#endif
 #if P_GALARIAN_FORMS
     SPECIES_RAPIDASH_GALAR,
 #endif
@@ -431,6 +434,9 @@ static const u16 sVoltorbFormSpeciesIdTable[] = {
 
 static const u16 sElectrodeFormSpeciesIdTable[] = {
     SPECIES_ELECTRODE,
+#if P_MEGA_EVOLUTIONS
+    SPECIES_ELECTRODE_MEGA,
+#endif
 #if P_HISUIAN_FORMS
     SPECIES_ELECTRODE_HISUI,
 #endif

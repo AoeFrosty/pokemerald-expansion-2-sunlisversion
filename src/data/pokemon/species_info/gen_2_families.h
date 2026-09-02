@@ -7088,10 +7088,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_HOUNDOOM] =
     {
-        .baseHP        = 80,    //+5
+        .baseHP        = 85,    //+10
         .baseAttack    = 90,
-        .baseDefense   = 50,
-        .baseSpeed     = 95,
+        .baseDefense   = 55,    //+5
+        .baseSpeed     = 101,   //+6
         .baseSpAttack  = 115,   //+5
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_DARK, TYPE_FIRE),
@@ -7164,11 +7164,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_HOUNDOOM_MEGA] =
     {
-        .baseHP        = 80,
+        .baseHP        = 85,
         .baseAttack    = 75,    //-15
         .baseDefense   = 90,
-        .baseSpeed     = 120,   //+5  
-        .baseSpAttack  = 155,   //+10
+        .baseSpeed     = 131,   //+16  
+        .baseSpAttack  = 160,   //+15
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_DARK, TYPE_FIRE),
         .catchRate = 45,

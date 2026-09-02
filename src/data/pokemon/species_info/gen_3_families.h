@@ -6147,10 +6147,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_CAMERUPT] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 100,
+        .baseHP        = 80,    //+20
+        .baseAttack    = 105,   //+5
         .baseDefense   = 70,
-        .baseSpeed     = 40,
+        .baseSpeed     = 36,    //-4
         .baseSpAttack  = 105,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
@@ -6228,11 +6228,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_CAMERUPT_MEGA] =
     {
-        .baseHP        = 70,
+        .baseHP        = 90,
         .baseAttack    = 120,
         .baseDefense   = 100,
         .baseSpeed     = 20,
-        .baseSpAttack  = 145,
+        .baseSpAttack  = 146,   //+1
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
         .catchRate = 150,
@@ -10404,9 +10404,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 120,       //+20
         .baseAttack    = 110,       //+20
-        .baseDefense   = 140,       //+10
-        .baseSpeed     = 25,        //-30
-        .baseSpAttack  = 35,        //-10
+        .baseDefense   = 130,       
+        .baseSpeed     = 65,        //+10
+        .baseSpAttack  = 30,        //-15
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
         .catchRate = 25,
@@ -10419,7 +10419,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_SOLID_ROCK, ABILITY_ROCK_HEAD, ABILITY_SAP_SIPPER },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_ROCK_HEAD, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Relicanth"),
         .cryId = CRY_RELICANTH,

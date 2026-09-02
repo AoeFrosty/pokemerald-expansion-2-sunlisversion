@@ -1143,10 +1143,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_VIKAVOLT] =
     {
-        .baseHP        = 77,    
+        .baseHP        = 82,    //+5
         .baseAttack    = 50,    //-20
-        .baseDefense   = 95,    //+5
-        .baseSpeed     = 83,    //+40
+        .baseDefense   = 115,   //+25
+        .baseSpeed     = 43,   
         .baseSpAttack  = 145,   
         .baseSpDefense = 75,    
         .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
@@ -1158,7 +1158,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_TRANSISTOR },
+        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_COMPOUND_EYES },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Vikavolt"),
         .cryId = CRY_VIKAVOLT,
@@ -1468,10 +1468,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ORICORIO_BAILE] =
     {
         .baseHP        = 85,    //+10
-        .baseAttack    = 70,
+        .baseAttack    = 65,    //-5
         .baseDefense   = 70,
         .baseSpeed     = 93,
-        .baseSpAttack  = 98,
+        .baseSpAttack  = 103,    //+5
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
         .catchRate = 45,
@@ -1533,9 +1533,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ORICORIO_POM_POM] =
     {
         .baseHP        = 85,    //+10
-        .baseAttack    = 70,
+        .baseAttack    = 65,    //-5
         .baseDefense   = 70,
-        .baseSpeed     = 93,
+        .baseSpeed     = 98,    //+5
         .baseSpAttack  = 98,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
@@ -1598,9 +1598,9 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ORICORIO_PAU] =
     {
         .baseHP        = 85,    //+10
-        .baseAttack    = 70,
+        .baseAttack    = 65,    //-5
         .baseDefense   = 70,
-        .baseSpeed     = 93,
+        .baseSpeed     = 98,    //+5
         .baseSpAttack  = 98,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
@@ -1663,10 +1663,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_ORICORIO_SENSU] =
     {
         .baseHP        = 85,    //+10
-        .baseAttack    = 70,
+        .baseAttack    = 65,    //-5
         .baseDefense   = 70,
         .baseSpeed     = 93,
-        .baseSpAttack  = 98,
+        .baseSpAttack  = 103,    //+5
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
         .catchRate = 45,
@@ -3183,10 +3183,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     {
         .baseHP        = 68,
         .baseAttack    = 64,
-        .baseDefense   = 70,     //+10 
-        .baseSpeed     = 117,
-        .baseSpAttack  = 111,
-        .baseSpDefense = 70,    //+10
+        .baseDefense   = 60,     
+        .baseSpeed     = 122,   //+5
+        .baseSpAttack  = 121,   //+10
+        .baseSpDefense = 60,    
         .types = MON_TYPES(TYPE_POISON, TYPE_FIRE),
         .catchRate = 45,
         .expYield = 168,
@@ -3368,7 +3368,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     [SPECIES_BEWEAR] =
     {
         .baseHP        = 120,
-        .baseAttack    = 125,
+        .baseAttack    = 130,   //+5
         .baseDefense   = 85,    //+5
         .baseSpeed     = 50,    //-10
         .baseSpAttack  = 50,    //-5
@@ -4528,11 +4528,11 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_TURTONATOR
     [SPECIES_TURTONATOR] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 78,
+        .baseHP        = 70,    //+10
+        .baseAttack    = 72,    //-6
         .baseDefense   = 135,
-        .baseSpeed     = 36,
-        .baseSpAttack  = 91,
+        .baseSpeed     = 34,    //-2
+        .baseSpAttack  = 101,   //+10
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
         .catchRate = 70,
@@ -4544,7 +4544,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_NONE, ABILITY_BULLETPROOF },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Turtonator"),
         .cryId = CRY_TURTONATOR,
@@ -5017,12 +5017,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_DRAMPA
     [SPECIES_DRAMPA] =
     {
-        .baseHP        = 78,
-        .baseAttack    = 60,
+        .baseHP        = 88,    //+10
+        .baseAttack    = 55,    //-5
         .baseDefense   = 85,
-        .baseSpeed     = 36,
+        .baseSpeed     = 32,    //-4
         .baseSpAttack  = 135,
-        .baseSpDefense = 91,
+        .baseSpDefense = 100,   //+9
         .types = MON_TYPES(TYPE_NORMAL, TYPE_DRAGON),
         .catchRate = 70,
         .expYield = 170,
@@ -5083,7 +5083,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_DRAMPA_MEGA] =
     {
-        .baseHP        = 78,
+        .baseHP        = 88,
         .baseAttack    = 85,
         .baseDefense   = 110,
         .baseSpeed     = 36,

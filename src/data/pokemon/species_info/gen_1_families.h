@@ -2226,10 +2226,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_RATICATE_ALOLA] =
     {
         .baseHP        = 75,
-        .baseAttack    = 71,
-        .baseDefense   = 77, //+7
+        .baseAttack    = 81,    //+10
+        .baseDefense   = 77,    //+7
         .baseSpeed     = 77,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 30,    //-10
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
         .catchRate = 127,
@@ -2241,7 +2241,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_GLUTTONY, ABILITY_HUSTLE, ABILITY_THICK_FAT },
+        .abilities = { ABILITY_FLUFFY, ABILITY_STRONG_JAW, ABILITY_OPPORTUNIST },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Raticate"),
         .cryId = CRY_RATICATE,
@@ -3955,7 +3955,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_SURGE_SURFER, ABILITY_ELECTRIC_SURGE, ABILITY_QUICK_WIT },
+        .abilities = { ABILITY_SURGE_SURFER, ABILITY_LEVITATE, ABILITY_QUICK_WIT },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Raichu"),
         .cryId = CRY_RAICHU,
@@ -7696,11 +7696,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_POLIWRATH] =
     {
-        .baseHP        = 95,
-        .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 100 : 85,    //+5
+        .baseHP        = 105,   //+10
+        .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 110 : 85,    //+15
         .baseDefense   = 95,
-        .baseSpeed     = 80,    //+10
-        .baseSpAttack  = 70,
+        .baseSpeed     = 70,    
+        .baseSpAttack  = 60,    //-10
         .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_WATER, TYPE_FIGHTING),
         .catchRate = 45,
@@ -9522,7 +9522,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_MISTY_SURGE, ABILITY_PASTEL_VEIL, ABILITY_LOVER },
+        .abilities = { ABILITY_MISTY_SURGE, ABILITY_PASTEL_VEIL, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Rapidash"),
         .cryId = CRY_RAPIDASH,
@@ -9640,8 +9640,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_SLOWBRO] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 75,
+        .baseHP        = 105,   //+10
+        .baseAttack    = 70,    //-5
         .baseDefense   = 110,
         .baseSpeed     = 30,
         .baseSpAttack  = 100,
@@ -10662,12 +10662,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_DEWGONG] =
     {
-        .baseHP        = 95,    //+5
+        .baseHP        = 100,   //+10
         .baseAttack    = 80,    //+10
         .baseDefense   = 80,
         .baseSpeed     = 70,
         .baseSpAttack  = 80,    //+10
-        .baseSpDefense = 95, 
+        .baseSpDefense = 95,    //-5
         .types = MON_TYPES(TYPE_WATER, TYPE_ICE),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 176,
@@ -17907,7 +17907,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_ROCK_HEAD, ABILITY_TOUGH_CLAWS, ABILITY_UNNERVE },
+        .abilities = { ABILITY_ANGER_POINT, ABILITY_TOUGH_CLAWS, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Aerodactyl"),
         .cryId = CRY_AERODACTYL,

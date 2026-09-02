@@ -1296,12 +1296,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_BIBAREL] =
     {
-        .baseHP        = 84,    //+5
-        .baseAttack    = 90,    //+5
-        .baseDefense   = 60,
+        .baseHP        = 94,    //+15
+        .baseAttack    = 85,    
+        .baseDefense   = 70,    //+10
         .baseSpeed     = 71,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 60,
+        .baseSpAttack  = 50,    //-5
+        .baseSpDefense = 70,    //+10
         .types = MON_TYPES(TYPE_NORMAL, TYPE_WATER),
         .catchRate = 127,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 144 : 116,
@@ -4709,7 +4709,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_FLUFFY, ABILITY_FLUFFY, ABILITY_FLUFFY },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Lucario"),
         .cryId = CRY_LUCARIO_MEGA,
@@ -5616,8 +5616,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseHP        = 60,    //+10
         .baseAttack    = 50,
         .baseDefense   = 77,
-        .baseSpeed     = 91,
-        .baseSpAttack  = 95,
+        .baseSpeed     = 97,    //+6
+        .baseSpAttack  = 105,   //+10
         .baseSpDefense = 77,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_GHOST),
         .catchRate = 45,
@@ -5686,7 +5686,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_ROTOM_HEAT] =
     {
-        .baseHP        = 50,
+        .baseHP        = 60,    //+10
         .baseAttack    = 65,
         .baseDefense   = 107,
         .baseSpeed     = 86,
@@ -5751,7 +5751,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_ROTOM_WASH] =
     {
-        .baseHP        = 50,
+        .baseHP        = 60,    //+10
         .baseAttack    = 65,
         .baseDefense   = 107,
         .baseSpeed     = 86,
@@ -5817,12 +5817,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_ROTOM_FROST] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 65,
-        .baseDefense   = 107,
-        .baseSpeed     = 86,
+        .baseHP        = 60,    //+10
+        .baseAttack    = 55,    //-10
+        .baseDefense   = 117,   //+10
+        .baseSpeed     = 81,    //-5
         .baseSpAttack  = 105,
-        .baseSpDefense = 107,
+        .baseSpDefense = 112,   //+5
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_ICE),
         .catchRate = 45,
         .expYield = ROTOM_APPLIANCE_EXP_YIELD,
@@ -5882,12 +5882,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_ROTOM_FAN] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 65,
-        .baseDefense   = 107,
-        .baseSpeed     = 86,
+        .baseHP        = 60,    //+10
+        .baseAttack    = 51,    //-14
+        .baseDefense   = 102,   //-5
+        .baseSpeed     = 100,   //+14
         .baseSpAttack  = 105,
-        .baseSpDefense = 107,
+        .baseSpDefense = 102,   //-5
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
         .catchRate = 45,
         .expYield = ROTOM_APPLIANCE_EXP_YIELD,
@@ -5948,7 +5948,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_ROTOM_MOW] =
     {
-        .baseHP        = 50,
+        .baseHP        = 60,    //+10
         .baseAttack    = 65,
         .baseDefense   = 107,
         .baseSpeed     = 86,

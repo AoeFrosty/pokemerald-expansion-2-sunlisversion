@@ -431,8 +431,14 @@
 #define ABILITY_SHADOW_REQUIEM 394      //immunity to ghost+supreme overlord
 #define ABILITY_FIRE_MANE 395           //boost fire type move power by 50% let's make this a fire aura
 #define ABILITY_EELEVATE 396            //ground immunity, hazard immunity and boosts highest stat on KO
+#define ABILITY_AURA_GUARD 397          //halves damage from contact moves
 
-#define ABILITIES_COUNT_GEN9 397
+//boost highest stat at end of turn if X condition is true (weather, terrain, status, etc)
+//ghost moves leech hp
+//X type of moves have a chance to lower stats
+
+
+#define ABILITIES_COUNT_GEN9 398
 #define ABILITIES_COUNT ABILITIES_COUNT_GEN9
 
 #endif  // GUARD_CONSTANTS_ABILITIES_H

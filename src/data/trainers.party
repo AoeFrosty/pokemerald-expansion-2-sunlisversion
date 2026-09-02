@@ -4644,27 +4644,30 @@ Weavile @ Focus Sash
 Ability: Adaptability 
 Level: 56   
 EVs: 252 Atk / 4 Def / 252 Spe  
-Jolly Nature  
+Jolly Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
 - Frost Blade 
 - Night Slash 
 - Ice Shard  
 - Swords Dance  
 
-Grimmsnarl @ Grimmsnarlite 
-Ability: Prankster  
+Greninja @ Greninjite
+Ability: Protean
 Level: 57  
-EVs: 252 HP / 244 Def / 12 SpD  
-Impish Nature  
-- Spirit Break  
-- Reflect  
-- Light Screen  
-- Taunt  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump  
+- U-Turn  
+- Dark Pulse 
+- Sludge Wave 
 
 Muk-Alola @ Assault Vest  
 Ability: Poison Touch  
 Level: 58   
 EVs: 252 HP / 12 Atk / 156 Def / 88 SpD  
-Careful Nature  
+Careful Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
 - Knock Off  
 - Zen Headbutt  
 - Drain Punch  
@@ -4674,7 +4677,8 @@ Mandibuzz @ Leftovers
 Ability: Big Pecks  
 Level: 56  
 EVs: 252 HP / 252 Def / 4 SpD  
-Impish Nature  
+Impish Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
 - Toxic  
 - Roost  
 - U-turn  
@@ -4684,7 +4688,8 @@ Roaring Moon @ Booster Energy
 Ability: Protosynthesis  
 Level: 58   
 EVs: 252 Atk / 4 SpD / 252 Spe  
-Adamant Nature  
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
 - Dragon Dance  
 - Final Might  
 - Acrobatics  
@@ -4695,7 +4700,8 @@ Ability: Supreme Overlord
 Level: 58
 Tera Type: Fairy
 EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
 - Iron Head  
 - Kowtow Cleave  
 - Swords Dance  
@@ -17061,6 +17067,395 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Scale Rain
 - Air Slash
 - Adrenaline
+
+=== TRAINER_RIKA ===
+Name: RIKA
+Class: Elite Four
+Pic: Pike Queen Lucy
+Gender: Female
+Music: Female
+Items: Full Restore / Full Restore 
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Blue
+
+Hippowdon @ Leftovers
+Impish Nature
+Level: 61
+Ability: Sand Stream
+EVs: 252 HP/ 252 Def / 4 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
+- Aftershock
+- Yawn
+- Crunch
+
+Sandaconda @ Sandacondite  
+Ability: Sand Stream  
+Level: 64  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe   
+EVs: 252 HP / 4 Def / 252 SpA  
+Adamant Nature  
+- Weather Ball  
+- Tailwind  
+- Hurricane  
+- U-turn
+
+Clodsire @ Black Sludge  
+Ability: Water Absorb  
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 252 HP / 4 Def / 252 SpD  
+Impish Nature  
+- Baneful Bunker  
+- Recover  
+- Liquidation  
+- Iron Defense
+
+Great Tusk @ Booster Energy
+Ability: Protosynthesis
+Tera Type: Fighting
+Jolly Nature
+EVs: 252 Atk / 4 Def / 252 Spe
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Headlong Rush
+- Ice Spinner
+- Knock Off
+- Close Combat
+
+Excadrill @ Life Orb
+Ability: Sand Rush
+Calm Nature
+Evs: 252 HP / 4 Def / 252 SpA
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake
+- Iron Head
+- Throat Chop
+- Protect
+
+Ursaluna-Bloodmoon @ Assault Vest  
+Ability: Mind's Eye  
+Level: 63   
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Modest Nature  
+IVs: 0 Atk  
+- Blood Moon  
+- Earth Power  
+- Moonblast  
+- Focus Blast
+
+=== TRAINER_NESSA ===
+Name: NESSA
+Class: Elite Four
+Pic: Swimmer F
+Gender: Female
+Music: Female
+Items: Full Restore / Full Restore 
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Orange
+
+Quagsire @ Mental Herb
+Impish Nature
+Level: 61
+Ability: Unaware
+EVs: 252 HP/ 252 Def / 4 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rain Dance
+- Toxic
+- Earthquake
+- Stealth Rock
+
+Pelipper @ Focus Sash  
+Ability: Drizzle  
+Level: 61  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe   
+EVs: 252 HP / 4 Def / 252 SpA  
+Modest Nature  
+- Weather Ball  
+- Tailwind  
+- Hurricane  
+- U-turn
+
+Toxapex @ Black Sludge  
+Ability: Corrosion  
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 252 HP / 4 Def / 252 SpD  
+Careful Nature  
+- Baneful Bunker  
+- Recover  
+- Liquidation  
+- Iron Defense
+
+Drednaw @ Drednite
+Ability: Shell Armor
+Jolly Nature
+EVs: 252 HP / 252 Atk / 4 Spe
+Level: 64
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Head Smash
+- Liquidation
+- Swords Dance
+- Poison Jab
+
+Milotic @ Leftovers
+Ability: Dragon Song
+Calm Nature
+Evs: 252 HP / 4 Def / 252 SpA
+Level: 63
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scald
+- Recover
+- Alluring Voice
+- Icy Wind
+
+Barraskewda @ Mystic Water
+Ability: Swift Swim
+Adamant Nature
+Tera Type: Water
+EVs: 252 Atk / 4 Def / 252 Spe
+Level: 64
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wave Crash
+- Flip Turn
+- Close Combat
+- Poison Fang
+
+=== TRAINER_LARRY ===
+Name: LARRY
+Class: Elite Four
+Pic: Bird Keeper
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore 
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Green
+
+Talonflame @ Hard Hat
+Jolly Nature
+Level: 61
+Ability: Gale Wings
+EVs: 252 Atk / 4 Def / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Talon Strike
+- Tailwind
+- U-turn
+- Flare Blitz
+
+Staraptor @ Staraptite 
+Ability: Intimidate  
+Level: 64  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe   
+EVs: 252 Atk / 4 Def / 252 Spe 
+Jolly Nature  
+- Close Combat 
+- Brave Bird 
+- Roost 
+- Blaze Kick
+
+Gliscor @ Toxic Orb
+Ability: Poison Heal 
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Careful Nature  
+- High Horsepower 
+- Knock Off  
+- Toxic Spikes 
+- Stealth Rock
+
+Corviknight @ Sitrus Berry
+Ability: Mirror Armor
+Careful Nature
+EVs: 252 HP / 252 Def / 4 Spe
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dual Wingbeat
+- Body Press
+- Iron Defense
+- Roost
+
+Zoroark @ Life Orb
+Ability: Illusion
+Timid Nature
+Evs: 252 SpA / 4 SpD / 252 Spe
+Level: 63
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower
+- Icy Wind
+- Sludge Bomb
+- Shadow Ball
+
+Iron Jugulis @ Assault Vest  
+Ability: Quark Drive 
+Level: 63
+Tera Type: Dragon   
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Modest Nature   
+- Meteor Beam  
+- Earth Power  
+- Cyclone  
+- Dragon Pulse
+
+=== TRAINER_VOLKNER ===
+Name: Volkner
+Class: Elite Four
+Pic: Rich Boy
+Gender: Male
+Music: Male
+Items: Full Restore / Full Restore 
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Blue
+
+Pelipper @ Damp Rock
+Timid Nature
+Level: 61
+Ability: Drizzle
+EVs: 252 HP/ 252 SpA / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Weather Ball
+- Hurricane
+- U-turn
+- Soak
+
+Luxray @ Luxrite 
+Ability: Intimidate
+Level: 64  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe   
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Dark Bolts  
+- Thunder Lariat 
+- Thunder Wave  
+- Ice Fang
+
+Iron Hands @ Booster Energy
+Ability: Quark Drive  
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 252 Atk / 172 SpD / 84 Spe  
+Adamant Nature  
+- Drain Punch 
+- Thunder Punch  
+- Swords Dance 
+- Ice Punch
+
+Electivire @ Leftovers
+Ability: Bulletproof
+Tera Type: Grass
+Jolly Nature
+EVs: 248 HP / 8 Def / 252 Spe
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Clangorous Soul
+- Drain Punch
+- Shadow Claw
+- Substitute
+
+Rotom-Wash @ Leek
+Ability: Scrappy
+Jolly Nature
+Evs: 4 HP / 252 Atk / 252 Spe
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Meteor Assault
+- Knock Off
+- First Impression
+
+Archaludon @ Assault Vest  
+Ability: Inner Focus 
+Level: 63   
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Modest Nature  
+IVs: 0 Atk  
+- Aura Sphere  
+- Flash Cannon  
+- Vacuum Wave  
+- Aura Rend
+
+=== TRAINER_BEA ===
+Name: Bea
+Class: Elite Four
+Pic: Battle Girl
+Gender: Female
+Music: Female
+Items: Full Restore / Full Restore 
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+Mugshot: Orange
+
+Sneasler @ Lum Berry
+Jolly Nature
+Level: 61
+Ability: Poison Touch
+EVs: 2 HP/ 252 Atk / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dire Claw
+- Close Combat
+- U-turn
+- Throat Chop
+
+Machamp @ Machampite 
+Ability: No Guard  
+Level: 64  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe   
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Dynamic Punch  
+- Bulk Up  
+- Stone Edge  
+- Retaliate
+
+Iron Hands @ Booster Energy
+Ability: Quark Drive  
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 252 Atk / 172 SpD / 84 Spe  
+Adamant Nature  
+- Drain Punch 
+- Thunder Punch  
+- Swords Dance 
+- Heavy Slam
+
+Kommo-O @ Leftovers
+Ability: Bulletproof
+Tera Type: Fairy
+Jolly Nature
+EVs: 248 HP / 8 Def / 252 Spe
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Clangorous Soul
+- Drain Punch
+- Shadow Claw
+- Substitute
+
+Sirfetchd @ Leek
+Ability: Scrappy
+Jolly Nature
+Evs: 4 HP / 252 Atk / 252 Spe
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leaf Blade
+- Meteor Assault
+- Knock Off
+- First Impression
+
+Lucario @ Assault Vest  
+Ability: Inner Focus 
+Level: 63   
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Modest Nature  
+IVs: 0 Atk  
+- Aura Sphere  
+- Flash Cannon  
+- Vacuum Wave  
+- Aura Rend
 
 === TRAINER_THALIA_2 ===
 Name: THALIA

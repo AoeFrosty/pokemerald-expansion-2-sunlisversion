@@ -491,9 +491,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_BLAZIKEN_MEGA] =
     {
         .baseHP        = 70,
-        .baseAttack    = 155,   //-5
+        .baseAttack    = 160,   
         .baseDefense   = 90,
-        .baseSpeed     = 105,   //+5
+        .baseSpeed     = 100,   
         .baseSpAttack  = 130,   
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FIRE, TYPE_FIGHTING),
@@ -505,7 +505,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_LIMBER, ABILITY_LIMBER, ABILITY_LIMBER },
+        .abilities = { ABILITY_SPEED_BOOST, ABILITY_SPEED_BOOST, ABILITY_SPEED_BOOST },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Blaziken"),
         .cryId = CRY_BLAZIKEN_MEGA,
@@ -2499,9 +2499,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 68,
         .baseAttack    = 65,
-        .baseDefense   = 65,
+        .baseDefense   = 70,    //+5
         .baseSpeed     = 80,
-        .baseSpAttack  = 125,
+        .baseSpAttack  = 130,   //+5
         .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_PSYCHIC, RALTS_FAMILY_TYPE2),
         .catchRate = 45,
@@ -2570,8 +2570,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseHP        = 68,
         .baseAttack    = 85,
         .baseDefense   = 65,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 165,
+        .baseSpeed     = 101,
+        .baseSpAttack  = 173,   //+9
         .baseSpDefense = 135,
         .types = MON_TYPES(TYPE_PSYCHIC, RALTS_FAMILY_TYPE2),
         .catchRate = 45,
@@ -2627,8 +2627,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 68,
         .baseAttack    = 125,
-        .baseDefense   = 65,
-        .baseSpeed     = 80,
+        .baseDefense   = 70,    //+5
+        .baseSpeed     = 85,    //+5
         .baseSpAttack  = 65,
         .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FIGHTING),
@@ -2700,11 +2700,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_GALLADE_MEGA] =
     {
         .baseHP        = 68,
-        .baseAttack    = 165,
-        .baseDefense   = 95,
+        .baseAttack    = 165,   
+        .baseDefense   = 100,    //+5
         .baseSpeed     = 110,
         .baseSpAttack  = 65,
-        .baseSpDefense = 115,
+        .baseSpDefense = 120,   //+5
         .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FIGHTING),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 309 : 278,
@@ -2714,7 +2714,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = RALTS_FAMILY_EGG_GROUPS,
-        .abilities = { ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS },
+        .abilities = { ABILITY_SHARPNESS, ABILITY_SHARPNESS, ABILITY_SHARPNESS },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Gallade"),
         .cryId = CRY_GALLADE_MEGA,
@@ -4219,12 +4219,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_MAWILE] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 85,
-        .baseDefense   = 85,
+        .baseHP        = 65,    //+15
+        .baseAttack    = 90,    //+5
+        .baseDefense   = 90,    //+5
         .baseSpeed     = 50,
         .baseSpAttack  = 55,
-        .baseSpDefense = 55,
+        .baseSpDefense = 60,    //+5
         .types = MAWILE_TYPES,
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 133 : 98,
@@ -4286,12 +4286,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_MAWILE_MEGA] =
     {
-        .baseHP        = 50,
+        .baseHP        = 65,
         .baseAttack    = 105,
-        .baseDefense   = 125,
+        .baseDefense   = 130,   //+5
         .baseSpeed     = 50,
         .baseSpAttack  = 55,
-        .baseSpDefense = 95,
+        .baseSpDefense = 105,   //+10
         .types = MAWILE_TYPES,
         .catchRate = 45,
         .expYield = 168,
@@ -4759,9 +4759,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseHP        = 65,
         .baseAttack    = 100,
         .baseDefense   = 85,
-        .baseSpeed     = 105,
+        .baseSpeed     = 105,   //+5
         .baseSpAttack  = 80,
-        .baseSpDefense = 90,
+        .baseSpDefense = 90,    //+5
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_PSYCHIC),
         .catchRate = 90,
         .expYield = 179,
@@ -5427,9 +5427,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_ROSERADE] =
     {
-        .baseHP        = 60,
+        .baseHP        = 70,    //+10
         .baseAttack    = 70,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 65 : 55,
+        .baseDefense   = 65,
         .baseSpeed     = 90,
         .baseSpAttack  = 125,
         .baseSpDefense = 105,
@@ -5513,9 +5513,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if FROSTY_MEGAS >= SPECIES_ROSERADE
     [SPECIES_ROSERADE_MEGA] =
     {
-        .baseHP        = 60,
+        .baseHP        = 70,
         .baseAttack    = 70,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 65 : 55,
+        .baseDefense   = 65,
         .baseSpeed     = 130,   //+40
         .baseSpAttack  = 165,   //+40
         .baseSpDefense = 125,   //+20
@@ -5881,10 +5881,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_SHARPEDO_MEGA] =
     {
         .baseHP        = 80,
-        .baseAttack    = 140,
+        .baseAttack    = 150,   //+10
         .baseDefense   = 80,    //+10
         .baseSpeed     = 105,
-        .baseSpAttack  = 100,   //-15
+        .baseSpAttack  = 90,    //-25
         .baseSpDefense = 70,    //+5
         .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
         .catchRate = 60,
@@ -6147,7 +6147,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_CAMERUPT] =
     {
-        .baseHP        = 80,    //+20
+        .baseHP        = 90,    //+20
         .baseAttack    = 105,   //+5
         .baseDefense   = 70,
         .baseSpeed     = 36,    //-4
@@ -7028,10 +7028,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_ALTARIA_MEGA] =
     {
         .baseHP        = 75,
-        .baseAttack    = 100,
+        .baseAttack    = 110,   
         .baseDefense   = 110,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 125,
+        .baseSpeed     = 80,    
+        .baseSpAttack  = 125,   //+15
         .baseSpDefense = 105,
         .types = MON_TYPES(TYPE_DRAGON, TYPE_FAIRY),
         .catchRate = 45,
@@ -8785,11 +8785,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_BANETTE_MEGA] =
     {
-        .baseHP        = 79,
+        .baseHP        = 79,    //+15
         .baseAttack    = 165,
         .baseDefense   = 75,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 78,
+        .baseSpeed     = 100,   //+25
+        .baseSpAttack  = 78,    //-15
         .baseSpDefense = 83,
         .types = MON_TYPES(TYPE_GHOST),
         .catchRate = 45,

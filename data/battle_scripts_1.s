@@ -4284,6 +4284,13 @@ BattleScript_DoGhostCurse::
 	tryfaintmon BS_ATTACKER
 	goto BattleScript_MoveEnd
 
+BattleScript_VengefulActivates::
+	call BattleScript_AbilityPopUp
+	status2animation BS_ATTACKER, STATUS2_CURSED
+    printstring STRINGID_PKMNLAIDCURSE
+    waitmessage B_WAIT_TIME_LONG
+    goto BattleScript_MoveEnd
+
 BattleScript_EffectMatBlock::
 	attackcanceler
 	jumpifnotfirstturn BattleScript_FailedFromAtkString

@@ -379,7 +379,7 @@
 #define ABILITY_ROYAL_COAT 345   //shield dust for cats
 
 //Stage 3 dont forget to check all descriptor defines
-#define ABILITY_COZY_DREAMS 346      //heal at end of each turn
+#define ABILITY_COZY_DREAMS 346         //heal at end of each turn
 #define ABILITY_SOUL_BURN 347           //ghost moves chance to burn
 #define ABILITY_DIRT_DEVIL 348          //supersweet syrup for poison and ground types "messy"
 #define ABILITY_SPIKY_ARMOR 349         //toxic debris but spikes                 
@@ -432,10 +432,11 @@
 #define ABILITY_FIRE_MANE 395           //boost fire type move power by 50% let's make this a fire aura
 #define ABILITY_EELEVATE 396            //ground immunity, hazard immunity and boosts highest stat on KO
 #define ABILITY_AURA_GUARD 397          //halves damage from contact moves
-
+//make a physical gorilla tactics renamed for mega venu Y
 //boost highest stat at end of turn if X condition is true (weather, terrain, status, etc)
 //ghost moves leech hp
 //X type of moves have a chance to lower stats
+//new mega steelix ability that converts fire attacks into a boost to attack and gives immunity
 
 
 #define ABILITIES_COUNT_GEN9 398

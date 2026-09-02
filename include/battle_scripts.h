@@ -531,6 +531,7 @@ extern const u8 BattleScript_RockFlinchPrevention[];
 extern const u8 BattleScript_CozyDreams[];
 extern const u8 BattleScript_SoulDrainTriggers[];
 extern const u8 BattleScript_ToxicSwamp[];
+extern const u8 BattleScript_VengefulActivates[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

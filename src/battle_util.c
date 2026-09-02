@@ -6139,6 +6139,7 @@ case ABILITY_DIRT_DEVIL:
                 }
             }
             break;
+        
         case ABILITY_FLAME_BODY:
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
              && IsBattlerAlive(gBattlerAttacker)
@@ -6266,6 +6267,26 @@ case ABILITY_DIRT_DEVIL:
                 gBattleMons[gBattlerAttacker].status2 |= STATUS2_INFATUATED_WITH(gBattlerTarget);
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_CuteCharmActivates;
+                effect++;
+            }
+            break;
+
+        case ABILITY_VENGEFUL:
+
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+            && IsBattlerAlive(gBattlerAttacker)
+            && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+            && TARGET_TURN_DAMAGED
+            && IsBattlerAlive(gBattlerTarget)
+            && (B_ABILITY_TRIGGER_CHANCE >= GEN_4 ? RandomPercentage(RNG_CUTE_CHARM, 30) : RandomChance(RNG_CUTE_CHARM, 1, 3))
+            && !(gBattleMons[gBattlerAttacker].status2 & STATUS2_CURSED)
+            && GetBattlerHoldEffect(gBattlerAttacker, TRUE) != HOLD_EFFECT_PROTECTIVE_PADS
+            && IsMoveMakingContact(move, gBattlerAttacker))
+            {
+                gBattleMons[gBattlerAttacker].status2 |= STATUS2_CURSED;
+
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_VengefulActivates;
                 effect++;
             }
             break;

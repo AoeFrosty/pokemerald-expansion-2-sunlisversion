@@ -1106,8 +1106,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_NOCTOWL_MEGA] =
     {
         .baseHP        = 100,
-        .baseAttack    = 65,
-        .baseDefense   = 75,
+        .baseAttack    = 50,    //-15
+        .baseDefense   = 90,    //+15
         .baseSpeed     = 65,
         .baseSpAttack  = 102,
         .baseSpDefense = 145,
@@ -1347,7 +1347,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_PRANKSTER, ABILITY_PRANKSTER, ABILITY_PRANKSTER },
+        .abilities = { ABILITY_IRON_FIST, ABILITY_IRON_FIST, ABILITY_IRON_FIST },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Ledian"),
         .cryId = CRY_LEDIAN,
@@ -2287,11 +2287,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_AMPHAROS_MEGA] =
     {
         .baseHP        = 100,
-        .baseAttack    = 85,
-        .baseDefense   = AMPHAROS_DEFENSE + 20,
+        .baseAttack    = 85,    //-10
+        .baseDefense   = AMPHAROS_DEFENSE + 20, 
         .baseSpeed     = 45,
-        .baseSpAttack  = 175,
-        .baseSpDefense = 115,
+        .baseSpAttack  = 175,   //+10
+        .baseSpDefense = 125,   //+15
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 305 : 275,
